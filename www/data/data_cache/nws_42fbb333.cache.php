@@ -1,1 +1,0 @@
-<?php 'a:3:{s:19:\"__mp_cache_contents\";a:1:{i:0;a:8:{s:9:\"detail_id\";s:4:\"6455\";s:11:\"detail_name\";s:24:\"开发企业打卡软件\";s:8:\"order_id\";s:8:\"80005416\";s:8:\"obj_type\";s:4:\"task\";s:6:\"obj_id\";s:4:\"3450\";s:5:\"price\";s:7:\"1000.00\";s:3:\"num\";s:1:\"1\";s:11:\"detail_type\";N;}}s:18:\"__mp_cache_created\";i:1414474485;s:23:\"__mp_cache_dependencies\";N;}';
