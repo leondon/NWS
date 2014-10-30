@@ -1,0 +1,1 @@
+<?php 'a:3:{s:19:\"__mp_cache_contents\";a:4:{s:8:\"model_id\";s:1:\"2\";s:8:\"indus_id\";s:2:\"36\";s:11:\"profit_rate\";s:2:\"20\";s:4:\"cash\";s:7:\"1000.00\";}s:18:\"__mp_cache_created\";i:1414474485;s:23:\"__mp_cache_dependencies\";N;}';

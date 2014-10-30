@@ -1,0 +1,1 @@
+<?php 'a:3:{s:19:\"__mp_cache_contents\";a:1:{i:0;a:8:{s:9:\"detail_id\";s:4:\"6454\";s:11:\"detail_name\";s:15:\"数据库问题\";s:8:\"order_id\";s:8:\"80005415\";s:8:\"obj_type\";s:4:\"task\";s:6:\"obj_id\";s:4:\"3449\";s:5:\"price\";s:6:\"100.00\";s:3:\"num\";s:1:\"1\";s:11:\"detail_type\";N;}}s:18:\"__mp_cache_created\";i:1414472116;s:23:\"__mp_cache_dependencies\";N;}';

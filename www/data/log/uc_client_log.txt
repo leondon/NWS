@@ -1,0 +1,19 @@
+array (
+  'realtime' => '1970-01-01 08:00:00',
+)array (
+  'action' => 'synlogout',
+  'time' => '1412671154',
+  'realtime' => '2014-10-07 16:39:14',
+)array (
+  'action' => 'synlogout',
+  'time' => '1413947197',
+  'realtime' => '2014-10-22 11:06:37',
+)array (
+  'action' => 'synlogout',
+  'time' => '1414416443',
+  'realtime' => '2014-10-27 21:27:23',
+)array (
+  'action' => 'synlogout',
+  'time' => '1414494113',
+  'realtime' => '2014-10-28 19:01:53',
+)

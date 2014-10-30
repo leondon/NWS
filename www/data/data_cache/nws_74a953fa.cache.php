@@ -1,0 +1,1 @@
+<?php 'a:3:{s:19:\"__mp_cache_contents\";a:1:{i:0;a:8:{s:9:\"detail_id\";s:4:\"6458\";s:11:\"detail_name\";s:30:\"汉化刚才提的那个软件\";s:8:\"order_id\";s:8:\"80005419\";s:8:\"obj_type\";s:4:\"task\";s:6:\"obj_id\";s:4:\"3453\";s:5:\"price\";s:5:\"30.00\";s:3:\"num\";s:1:\"1\";s:11:\"detail_type\";N;}}s:18:\"__mp_cache_created\";i:1414480153;s:23:\"__mp_cache_dependencies\";N;}';

@@ -1,0 +1,1044 @@
+!SESSION 2014-08-24 09:03:24.620 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.5.0_09
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.php.product -product org.eclipse.epp.package.php.product -product org.eclipse.epp.package.php.product -product org.eclipse.epp.package.php.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.php.product -product org.eclipse.epp.package.php.product -product org.eclipse.epp.package.php.product -data C:\wamp\www -product org.eclipse.epp.package.php.product
+
+This is a continuation of log file C:\wamp\www\.metadata\.bak_8.log
+Created Time: 2014-08-24 09:03:42.785
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2014-08-24 09:03:42.786
+!MESSAGE 资源与文件系统不同步：“/NWS/uc_client/model/misc.php”。
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: 资源与文件系统不同步：“/NWS/uc_client/model/misc.php”。
+	at org.eclipse.core.internal.resources.File.checkSynchronized(File.java:103)
+	at org.eclipse.core.internal.resources.File.getContentDescription(File.java:273)
+	at org.eclipse.wst.sse.ui.internal.actions.FormatActionDelegate.processorAvailable(FormatActionDelegate.java:219)
+	at org.eclipse.wst.sse.ui.internal.actions.FormatActionDelegate.processorAvailable(FormatActionDelegate.java:232)
+	at org.eclipse.wst.sse.ui.internal.actions.FormatActionDelegate.processorAvailable(FormatActionDelegate.java:232)
+	at org.eclipse.wst.sse.ui.internal.actions.FormatActionDelegate.processorAvailable(FormatActionDelegate.java:232)
+	at org.eclipse.php.internal.ui.actions.format.FormatActionDelegate.selectionChanged(FormatActionDelegate.java:141)
+	at org.eclipse.ui.internal.PluginAction.refreshEnablement(PluginAction.java:206)
+	at org.eclipse.ui.internal.PluginAction.selectionChanged(PluginAction.java:277)
+	at org.eclipse.ui.internal.ObjectActionContributor$1.run(ObjectActionContributor.java:157)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.ObjectActionContributor.contributeObjectActions(ObjectActionContributor.java:160)
+	at org.eclipse.ui.internal.ObjectActionContributorManager.contributeObjectActions(ObjectActionContributorManager.java:97)
+	at org.eclipse.ui.internal.PopupMenuExtender.addObjectActions(PopupMenuExtender.java:262)
+	at org.eclipse.ui.internal.PopupMenuExtender.menuAboutToShow(PopupMenuExtender.java:339)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:338)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:469)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:491)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:241)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1058)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:4485)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4188)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1598)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2038)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4873)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:256)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4107)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3651)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2629)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2593)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2427)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:670)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:663)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2014-08-24 09:03:42.786
+!MESSAGE 资源与文件系统不同步：“/NWS/uc_client/model/misc.php”。
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2014-08-24 09:03:42.787
+!MESSAGE 资源与文件系统不同步：“/NWS/uc_client/model/note.php”。
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: 资源与文件系统不同步：“/NWS/uc_client/model/note.php”。
+	at org.eclipse.core.internal.resources.File.checkSynchronized(File.java:103)
+	at org.eclipse.core.internal.resources.File.getContentDescription(File.java:273)
+	at org.eclipse.wst.sse.ui.internal.actions.FormatActionDelegate.processorAvailable(FormatActionDelegate.java:219)
+	at org.eclipse.wst.sse.ui.internal.actions.FormatActionDelegate.processorAvailable(FormatActionDelegate.java:232)
+	at org.eclipse.wst.sse.ui.internal.actions.FormatActionDelegate.processorAvailable(FormatActionDelegate.java:232)
+	at org.eclipse.wst.sse.ui.internal.actions.FormatActionDelegate.processorAvailable(FormatActionDelegate.java:232)
+	at org.eclipse.php.internal.ui.actions.format.FormatActionDelegate.selectionChanged(FormatActionDelegate.java:141)
+	at org.eclipse.ui.internal.PluginAction.refreshEnablement(PluginAction.java:206)
+	at org.eclipse.ui.internal.PluginAction.selectionChanged(PluginAction.java:277)
+	at org.eclipse.ui.internal.ObjectActionContributor$1.run(ObjectActionContributor.java:157)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.ObjectActionContributor.contributeObjectActions(ObjectActionContributor.java:160)
+	at org.eclipse.ui.internal.ObjectActionContributorManager.contributeObjectActions(ObjectActionContributorManager.java:97)
+	at org.eclipse.ui.internal.PopupMenuExtender.addObjectActions(PopupMenuExtender.java:262)
+	at org.eclipse.ui.internal.PopupMenuExtender.menuAboutToShow(PopupMenuExtender.java:339)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:338)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:469)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:491)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:241)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1058)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:4485)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4188)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1598)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2038)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4873)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:256)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4107)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3651)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2629)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2593)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2427)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:670)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:663)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2014-08-24 09:03:42.787
+!MESSAGE 资源与文件系统不同步：“/NWS/uc_client/model/note.php”。
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2014-08-24 09:03:42.788
+!MESSAGE 资源与文件系统不同步：“/NWS/uc_client/model/pm.php”。
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: 资源与文件系统不同步：“/NWS/uc_client/model/pm.php”。
+	at org.eclipse.core.internal.resources.File.checkSynchronized(File.java:103)
+	at org.eclipse.core.internal.resources.File.getContentDescription(File.java:273)
+	at org.eclipse.wst.sse.ui.internal.actions.FormatActionDelegate.processorAvailable(FormatActionDelegate.java:219)
+	at org.eclipse.wst.sse.ui.internal.actions.FormatActionDelegate.processorAvailable(FormatActionDelegate.java:232)
+	at org.eclipse.wst.sse.ui.internal.actions.FormatActionDelegate.processorAvailable(FormatActionDelegate.java:232)
+	at org.eclipse.wst.sse.ui.internal.actions.FormatActionDelegate.processorAvailable(FormatActionDelegate.java:232)
+	at org.eclipse.php.internal.ui.actions.format.FormatActionDelegate.selectionChanged(FormatActionDelegate.java:141)
+	at org.eclipse.ui.internal.PluginAction.refreshEnablement(PluginAction.java:206)
+	at org.eclipse.ui.internal.PluginAction.selectionChanged(PluginAction.java:277)
+	at org.eclipse.ui.internal.ObjectActionContributor$1.run(ObjectActionContributor.java:157)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.ObjectActionContributor.contributeObjectActions(ObjectActionContributor.java:160)
+	at org.eclipse.ui.internal.ObjectActionContributorManager.contributeObjectActions(ObjectActionContributorManager.java:97)
+	at org.eclipse.ui.internal.PopupMenuExtender.addObjectActions(PopupMenuExtender.java:262)
+	at org.eclipse.ui.internal.PopupMenuExtender.menuAboutToShow(PopupMenuExtender.java:339)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:338)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:469)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:491)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:241)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1058)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:4485)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4188)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1598)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2038)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4873)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:256)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4107)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3651)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2629)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2593)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2427)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:670)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:663)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2014-08-24 09:03:42.788
+!MESSAGE 资源与文件系统不同步：“/NWS/uc_client/model/pm.php”。
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2014-08-24 09:03:42.789
+!MESSAGE 资源与文件系统不同步：“/NWS/uc_client/model/tag.php”。
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: 资源与文件系统不同步：“/NWS/uc_client/model/tag.php”。
+	at org.eclipse.core.internal.resources.File.checkSynchronized(File.java:103)
+	at org.eclipse.core.internal.resources.File.getContentDescription(File.java:273)
+	at org.eclipse.wst.sse.ui.internal.actions.FormatActionDelegate.processorAvailable(FormatActionDelegate.java:219)
+	at org.eclipse.wst.sse.ui.internal.actions.FormatActionDelegate.processorAvailable(FormatActionDelegate.java:232)
+	at org.eclipse.wst.sse.ui.internal.actions.FormatActionDelegate.processorAvailable(FormatActionDelegate.java:232)
+	at org.eclipse.wst.sse.ui.internal.actions.FormatActionDelegate.processorAvailable(FormatActionDelegate.java:232)
+	at org.eclipse.php.internal.ui.actions.format.FormatActionDelegate.selectionChanged(FormatActionDelegate.java:141)
+	at org.eclipse.ui.internal.PluginAction.refreshEnablement(PluginAction.java:206)
+	at org.eclipse.ui.internal.PluginAction.selectionChanged(PluginAction.java:277)
+	at org.eclipse.ui.internal.ObjectActionContributor$1.run(ObjectActionContributor.java:157)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.ObjectActionContributor.contributeObjectActions(ObjectActionContributor.java:160)
+	at org.eclipse.ui.internal.ObjectActionContributorManager.contributeObjectActions(ObjectActionContributorManager.java:97)
+	at org.eclipse.ui.internal.PopupMenuExtender.addObjectActions(PopupMenuExtender.java:262)
+	at org.eclipse.ui.internal.PopupMenuExtender.menuAboutToShow(PopupMenuExtender.java:339)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:338)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:469)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:491)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:241)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1058)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:4485)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4188)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1598)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2038)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4873)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:256)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4107)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3651)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2629)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2593)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2427)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:670)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:663)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2014-08-24 09:03:42.789
+!MESSAGE 资源与文件系统不同步：“/NWS/uc_client/model/tag.php”。
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2014-08-24 09:03:42.790
+!MESSAGE 资源与文件系统不同步：“/NWS/uc_client/model/user.php”。
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: 资源与文件系统不同步：“/NWS/uc_client/model/user.php”。
+	at org.eclipse.core.internal.resources.File.checkSynchronized(File.java:103)
+	at org.eclipse.core.internal.resources.File.getContentDescription(File.java:273)
+	at org.eclipse.wst.sse.ui.internal.actions.FormatActionDelegate.processorAvailable(FormatActionDelegate.java:219)
+	at org.eclipse.wst.sse.ui.internal.actions.FormatActionDelegate.processorAvailable(FormatActionDelegate.java:232)
+	at org.eclipse.wst.sse.ui.internal.actions.FormatActionDelegate.processorAvailable(FormatActionDelegate.java:232)
+	at org.eclipse.wst.sse.ui.internal.actions.FormatActionDelegate.processorAvailable(FormatActionDelegate.java:232)
+	at org.eclipse.php.internal.ui.actions.format.FormatActionDelegate.selectionChanged(FormatActionDelegate.java:141)
+	at org.eclipse.ui.internal.PluginAction.refreshEnablement(PluginAction.java:206)
+	at org.eclipse.ui.internal.PluginAction.selectionChanged(PluginAction.java:277)
+	at org.eclipse.ui.internal.ObjectActionContributor$1.run(ObjectActionContributor.java:157)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.ObjectActionContributor.contributeObjectActions(ObjectActionContributor.java:160)
+	at org.eclipse.ui.internal.ObjectActionContributorManager.contributeObjectActions(ObjectActionContributorManager.java:97)
+	at org.eclipse.ui.internal.PopupMenuExtender.addObjectActions(PopupMenuExtender.java:262)
+	at org.eclipse.ui.internal.PopupMenuExtender.menuAboutToShow(PopupMenuExtender.java:339)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:338)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:469)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:491)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:241)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1058)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:4485)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4188)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1598)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2038)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4873)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:256)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4107)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3651)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2629)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2593)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2427)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:670)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:663)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2014-08-24 09:03:42.791
+!MESSAGE 资源与文件系统不同步：“/NWS/uc_client/model/user.php”。
+
+!ENTRY org.eclipse.dltk.core 4 4 2014-08-24 09:03:42.887
+!MESSAGE Exception while retrieving /NWS/.buildpath, will revert to default buildpath
+!STACK 1
+org.eclipse.core.runtime.CoreException: 找不到文件：C:\wamp\www\NWS\.buildpath。
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:55)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:371)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:702)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:293)
+	at org.eclipse.dltk.internal.core.util.Util.getResourceContentsAsByteArray(Util.java:354)
+	at org.eclipse.dltk.internal.core.ScriptProject.getSharedProperty(ScriptProject.java:1426)
+	at org.eclipse.dltk.internal.core.ScriptProject.readBuildpathFile(ScriptProject.java:1121)
+	at org.eclipse.dltk.internal.core.ScriptProject.readBuildpathFile(ScriptProject.java:1110)
+	at org.eclipse.dltk.internal.core.ScriptProject.getRawBuildpath(ScriptProject.java:1092)
+	at org.eclipse.dltk.internal.core.ScriptProject.getRawBuildpath(ScriptProject.java:1074)
+	at org.eclipse.dltk.internal.core.ScriptProject.isOnBuildpath(ScriptProject.java:2654)
+	at org.eclipse.php.internal.ui.explorer.PHPExplorerLabelProvider.getImage(PHPExplorerLabelProvider.java:101)
+	at org.eclipse.jface.viewers.DecoratingLabelProvider.getImage(DecoratingLabelProvider.java:85)
+	at org.eclipse.jface.viewers.DecoratingLabelProvider.updateLabel(DecoratingLabelProvider.java:356)
+	at org.eclipse.jface.viewers.WrappedViewerLabelProvider.update(WrappedViewerLabelProvider.java:183)
+	at org.eclipse.jface.viewers.ViewerColumn.refresh(ViewerColumn.java:152)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:934)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$UpdateItemSafeRunnable.run(AbstractTreeViewer.java:102)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:1014)
+	at org.eclipse.jface.viewers.StructuredViewer$UpdateItemSafeRunnable.run(StructuredViewer.java:481)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.jface.viewers.StructuredViewer.updateItem(StructuredViewer.java:2141)
+	at org.eclipse.jface.viewers.StructuredViewer.internalUpdate(StructuredViewer.java:2124)
+	at org.eclipse.jface.viewers.StructuredViewer.update(StructuredViewer.java:2063)
+	at org.eclipse.jface.viewers.ColumnViewer.update(ColumnViewer.java:554)
+	at org.eclipse.jface.viewers.StructuredViewer.update(StructuredViewer.java:2007)
+	at org.eclipse.jface.viewers.StructuredViewer.handleLabelProviderChanged(StructuredViewer.java:1170)
+	at org.eclipse.dltk.ui.viewsupport.ProblemTreeViewer.handleLabelProviderChanged(ProblemTreeViewer.java:135)
+	at org.eclipse.jface.viewers.ContentViewer$1.labelProviderChanged(ContentViewer.java:97)
+	at org.eclipse.ui.internal.decorators.DecoratorManager$1.run(DecoratorManager.java:430)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.DecoratorManager.fireListener(DecoratorManager.java:428)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$3.runInUIThread(DecorationScheduler.java:530)
+	at org.eclipse.ui.progress.UIJob$1.run(UIJob.java:95)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:134)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4041)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2629)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2593)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2427)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:670)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:663)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+Caused by: java.io.FileNotFoundException: C:\wamp\www\NWS\.buildpath (The system cannot find the file specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:362)
+	... 61 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2014-08-24 09:03:42.888
+!MESSAGE 找不到文件：C:\wamp\www\NWS\.buildpath。
+!STACK 0
+java.io.FileNotFoundException: C:\wamp\www\NWS\.buildpath (The system cannot find the file specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:362)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:702)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:293)
+	at org.eclipse.dltk.internal.core.util.Util.getResourceContentsAsByteArray(Util.java:354)
+	at org.eclipse.dltk.internal.core.ScriptProject.getSharedProperty(ScriptProject.java:1426)
+	at org.eclipse.dltk.internal.core.ScriptProject.readBuildpathFile(ScriptProject.java:1121)
+	at org.eclipse.dltk.internal.core.ScriptProject.readBuildpathFile(ScriptProject.java:1110)
+	at org.eclipse.dltk.internal.core.ScriptProject.getRawBuildpath(ScriptProject.java:1092)
+	at org.eclipse.dltk.internal.core.ScriptProject.getRawBuildpath(ScriptProject.java:1074)
+	at org.eclipse.dltk.internal.core.ScriptProject.isOnBuildpath(ScriptProject.java:2654)
+	at org.eclipse.php.internal.ui.explorer.PHPExplorerLabelProvider.getImage(PHPExplorerLabelProvider.java:101)
+	at org.eclipse.jface.viewers.DecoratingLabelProvider.getImage(DecoratingLabelProvider.java:85)
+	at org.eclipse.jface.viewers.DecoratingLabelProvider.updateLabel(DecoratingLabelProvider.java:356)
+	at org.eclipse.jface.viewers.WrappedViewerLabelProvider.update(WrappedViewerLabelProvider.java:183)
+	at org.eclipse.jface.viewers.ViewerColumn.refresh(ViewerColumn.java:152)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:934)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$UpdateItemSafeRunnable.run(AbstractTreeViewer.java:102)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:1014)
+	at org.eclipse.jface.viewers.StructuredViewer$UpdateItemSafeRunnable.run(StructuredViewer.java:481)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.jface.viewers.StructuredViewer.updateItem(StructuredViewer.java:2141)
+	at org.eclipse.jface.viewers.StructuredViewer.internalUpdate(StructuredViewer.java:2124)
+	at org.eclipse.jface.viewers.StructuredViewer.update(StructuredViewer.java:2063)
+	at org.eclipse.jface.viewers.ColumnViewer.update(ColumnViewer.java:554)
+	at org.eclipse.jface.viewers.StructuredViewer.update(StructuredViewer.java:2007)
+	at org.eclipse.jface.viewers.StructuredViewer.handleLabelProviderChanged(StructuredViewer.java:1170)
+	at org.eclipse.dltk.ui.viewsupport.ProblemTreeViewer.handleLabelProviderChanged(ProblemTreeViewer.java:135)
+	at org.eclipse.jface.viewers.ContentViewer$1.labelProviderChanged(ContentViewer.java:97)
+	at org.eclipse.ui.internal.decorators.DecoratorManager$1.run(DecoratorManager.java:430)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.DecoratorManager.fireListener(DecoratorManager.java:428)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$3.runInUIThread(DecorationScheduler.java:530)
+	at org.eclipse.ui.progress.UIJob$1.run(UIJob.java:95)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:134)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4041)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2629)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2593)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2427)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:670)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:663)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+
+!ENTRY org.eclipse.osgi 2 1 2014-08-24 09:03:43.423
+!MESSAGE NLS unused message: disassembler_comma in: org.eclipse.jdt.internal.ui.JavaUIMessages
+!SESSION 2014-09-23 22:24:22.798 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -showlocation
+Command-line arguments:  -os win32 -ws win32 -arch x86 -showlocation
+
+!ENTRY org.eclipse.ui 2 0 2014-09-23 22:25:14.721
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-09-23 22:25:14.721
+!MESSAGE Commands should really have a category: plug-in='org.eclipse.php.ui', id='org.eclipse.dltk.ui.edit.text.java.source.quickMenu', categoryId='org.eclipse.jdt.ui.category.source'
+!SESSION 2014-09-23 22:30:00.342 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -showlocation
+Command-line arguments:  -os win32 -ws win32 -arch x86 -showlocation
+
+!ENTRY org.eclipse.ui 2 0 2014-09-23 22:30:10.245
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-09-23 22:30:10.245
+!MESSAGE Commands should really have a category: plug-in='org.eclipse.php.ui', id='org.eclipse.dltk.ui.edit.text.java.source.quickMenu', categoryId='org.eclipse.jdt.ui.category.source'
+!SESSION 2014-09-23 22:30:54.004 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -showlocation
+Command-line arguments:  -os win32 -ws win32 -arch x86 -showlocation
+
+!ENTRY org.eclipse.ui 2 0 2014-09-23 22:30:59.014
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-09-23 22:30:59.014
+!MESSAGE Commands should really have a category: plug-in='org.eclipse.php.ui', id='org.eclipse.dltk.ui.edit.text.java.source.quickMenu', categoryId='org.eclipse.jdt.ui.category.source'
+
+!ENTRY org.eclipse.ui.workbench 2 0 2014-09-23 22:31:06.723
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2014-09-23 22:31:06.723
+!MESSAGE Conflict for 'org.eclipse.dltk.ui.edit.text.script.refactor.quickMenu':
+HandlerActivation(commandId=org.eclipse.dltk.ui.edit.text.script.refactor.quickMenu,
+	handler=org.eclipse.dltk.internal.ui.actions.refactoring.RefactorActionGroup$3@104c501,
+	expression=AndExpression(ActivePartExpression(org.eclipse.php.internal.ui.explorer.PHPExplorerPart@17bd607),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1149578)),sourcePriority=1064960)
+HandlerActivation(commandId=org.eclipse.dltk.ui.edit.text.script.refactor.quickMenu,
+	handler=org.eclipse.dltk.internal.ui.actions.refactoring.RefactorActionGroup$3@21dfd8,
+	expression=AndExpression(ActivePartExpression(org.eclipse.php.internal.ui.explorer.PHPExplorerPart@17bd607),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1149578)),sourcePriority=1064960)
+!SESSION 2014-09-23 22:36:09.554 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -showlocation
+Command-line arguments:  -os win32 -ws win32 -arch x86 -showlocation
+
+!ENTRY org.eclipse.ui 2 0 2014-09-23 22:36:13.499
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-09-23 22:36:13.499
+!MESSAGE Commands should really have a category: plug-in='org.eclipse.php.ui', id='org.eclipse.dltk.ui.edit.text.java.source.quickMenu', categoryId='org.eclipse.jdt.ui.category.source'
+
+!ENTRY org.eclipse.ui.workbench 2 0 2014-09-23 22:36:21.197
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2014-09-23 22:36:21.198
+!MESSAGE Conflict for 'org.eclipse.dltk.ui.edit.text.script.refactor.quickMenu':
+HandlerActivation(commandId=org.eclipse.dltk.ui.edit.text.script.refactor.quickMenu,
+	handler=org.eclipse.dltk.internal.ui.actions.refactoring.RefactorActionGroup$3@16d8a39,
+	expression=AndExpression(ActivePartExpression(org.eclipse.php.internal.ui.explorer.PHPExplorerPart@6be376),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@19991d0)),sourcePriority=1064960)
+HandlerActivation(commandId=org.eclipse.dltk.ui.edit.text.script.refactor.quickMenu,
+	handler=org.eclipse.dltk.internal.ui.actions.refactoring.RefactorActionGroup$3@8dbe8f,
+	expression=AndExpression(ActivePartExpression(org.eclipse.php.internal.ui.explorer.PHPExplorerPart@6be376),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@19991d0)),sourcePriority=1064960)
+!SESSION 2014-09-23 22:36:55.067 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -showlocation
+Command-line arguments:  -os win32 -ws win32 -arch x86 -showlocation
+
+!ENTRY org.eclipse.equinox.app 0 0 2014-09-23 22:36:58.863
+!MESSAGE Product com.zend.php.ide could not be found.
+
+!ENTRY org.eclipse.ui 2 0 2014-09-23 22:36:59.395
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-09-23 22:36:59.395
+!MESSAGE Commands should really have a category: plug-in='org.eclipse.php.ui', id='org.eclipse.dltk.ui.edit.text.java.source.quickMenu', categoryId='org.eclipse.jdt.ui.category.source'
+
+!ENTRY org.eclipse.ui.workbench 2 0 2014-09-23 22:37:02.677
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2014-09-23 22:37:02.677
+!MESSAGE Conflict for 'org.eclipse.dltk.ui.edit.text.script.refactor.quickMenu':
+HandlerActivation(commandId=org.eclipse.dltk.ui.edit.text.script.refactor.quickMenu,
+	handler=org.eclipse.dltk.internal.ui.actions.refactoring.RefactorActionGroup$3@1547d8e,
+	expression=AndExpression(ActivePartExpression(org.eclipse.php.internal.ui.explorer.PHPExplorerPart@123ec42),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@9a105d)),sourcePriority=1064960)
+HandlerActivation(commandId=org.eclipse.dltk.ui.edit.text.script.refactor.quickMenu,
+	handler=org.eclipse.dltk.internal.ui.actions.refactoring.RefactorActionGroup$3@1ff1309,
+	expression=AndExpression(ActivePartExpression(org.eclipse.php.internal.ui.explorer.PHPExplorerPart@123ec42),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@9a105d)),sourcePriority=1064960)
+
+!ENTRY org.eclipse.ui 4 0 2014-09-23 22:37:03.286
+!MESSAGE Problems occurred restoring workbench.
+!SUBENTRY 1 unknown 0 0 2014-09-23 22:37:03.286
+!MESSAGE OK
+!SUBENTRY 1 unknown 0 0 2014-09-23 22:37:03.286
+!MESSAGE OK
+!SUBENTRY 1 unknown 0 0 2014-09-23 22:37:03.286
+!MESSAGE OK
+!SUBENTRY 1 unknown 0 0 2014-09-23 22:37:03.286
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.ui 4 0 2014-09-23 22:37:03.286
+!MESSAGE Unable to restore perspective: 工作空间 － PHP.
+!SUBENTRY 2 org.eclipse.ui 0 0 2014-09-23 22:37:03.286
+!MESSAGE Problems occurred restoring perspective.
+!SUBENTRY 3 org.eclipse.ui 0 0 2014-09-23 22:37:03.286
+!MESSAGE 
+!SUBENTRY 2 unknown 0 0 2014-09-23 22:37:03.286
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-09-23 22:37:03.286
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-09-23 22:37:03.286
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.ui 4 4 2014-09-23 22:37:03.286
+!MESSAGE Could not create view: org.eclipse.mylyn.tasks.ui.views.tasks
+!STACK 1
+org.eclipse.ui.PartInitException: Could not create view: org.eclipse.mylyn.tasks.ui.views.tasks
+	at org.eclipse.ui.internal.ViewFactory.createView(ViewFactory.java:158)
+	at org.eclipse.ui.internal.Perspective.createReferences(Perspective.java:1249)
+	at org.eclipse.ui.internal.Perspective.restoreState(Perspective.java:1219)
+	at org.eclipse.ui.internal.WorkbenchPage$17.runWithException(WorkbenchPage.java:3306)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:31)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4144)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.ui.application.WorkbenchAdvisor.openWindows(WorkbenchAdvisor.java:803)
+	at org.eclipse.ui.internal.Workbench$33.runWithException(Workbench.java:1600)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:31)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4144)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2609)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+!SUBENTRY 3 org.eclipse.ui 4 0 2014-09-23 22:37:03.288
+!MESSAGE Could not create view: org.eclipse.mylyn.tasks.ui.views.tasks
+!SUBENTRY 2 unknown 0 0 2014-09-23 22:37:03.288
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-09-23 22:37:03.288
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-09-23 22:37:03.288
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-09-23 22:37:03.288
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.ui 4 0 2014-09-23 22:37:03.288
+!MESSAGE Could not find view: org.eclipse.mylyn.tasks.ui.views.tasks
+!SUBENTRY 1 unknown 0 0 2014-09-23 22:37:03.288
+!MESSAGE OK
+
+!ENTRY org.eclipse.dltk.core.index.sql 4 0 2014-09-23 22:37:04.327
+!MESSAGE An exception occurred while connecting to a database. Retrying ...
+!STACK 0
+org.h2.jdbc.JdbcSQLException: Unsupported database file version or invalid file header in file "Old database: C:/wamp/www/.metadata/.plugins/org.eclipse.dltk.core.index.sql.h2/model.data.db - please convert the database to a SQL script and re-create it." [90048-168]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.engine.Database.open(Database.java:508)
+	at org.h2.engine.Database.openDatabase(Database.java:222)
+	at org.h2.engine.Database.<init>(Database.java:217)
+	at org.h2.engine.Engine.openSession(Engine.java:56)
+	at org.h2.engine.Engine.openSession(Engine.java:159)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:138)
+	at org.h2.engine.Engine.createSession(Engine.java:121)
+	at org.h2.engine.Engine.createSession(Engine.java:28)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:305)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:108)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:92)
+	at org.h2.Driver.connect(Driver.java:72)
+	at org.h2.jdbcx.JdbcDataSource.getJdbcConnection(JdbcDataSource.java:181)
+	at org.h2.jdbcx.JdbcDataSource.getXAConnection(JdbcDataSource.java:315)
+	at org.h2.jdbcx.JdbcDataSource.getPooledConnection(JdbcDataSource.java:341)
+	at org.h2.jdbcx.JdbcConnectionPool.getConnectionNow(JdbcConnectionPool.java:226)
+	at org.h2.jdbcx.JdbcConnectionPool.getConnection(JdbcConnectionPool.java:199)
+	at org.eclipse.dltk.internal.core.index.sql.h2.H2DbFactory.<init>(H2DbFactory.java:62)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:184)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.dltk.core.index.sql.DbFactory.getInstance(DbFactory.java:54)
+	at org.eclipse.dltk.internal.core.index.sql.h2.H2Cache.load(H2Cache.java:505)
+	at org.eclipse.dltk.core.index.sql.h2.H2Index.start(H2Index.java:38)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:300)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.dltk.core.index.sql.DbFactory.getInstance(DbFactory.java:54)
+	at org.eclipse.dltk.internal.core.index.sql.SqlIndexer.<init>(SqlIndexer.java:53)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:184)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.dltk.internal.core.index2.IndexerManager.<clinit>(IndexerManager.java:54)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.getIndexerParticipant(ModelAccess.java:345)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.getElementResolver(ModelAccess.java:382)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:276)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:263)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findMethods(ModelAccess.java:137)
+	at org.eclipse.php.internal.core.model.PhpModelAccess.findMethods(PhpModelAccess.java:64)
+	at org.eclipse.php.internal.core.PHPCorePlugin.initializeAfterLoad(PHPCorePlugin.java:415)
+	at org.eclipse.php.internal.ui.InitializeAfterLoadJob$RealJob.run(InitializeAfterLoadJob.java:29)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.dltk.core.index.sql 4 0 2014-09-23 22:37:04.336
+!MESSAGE An exception occurred while connecting to a database. Retrying ...
+!STACK 0
+org.h2.jdbc.JdbcSQLException: Unsupported database file version or invalid file header in file "Old database: C:/wamp/www/.metadata/.plugins/org.eclipse.dltk.core.index.sql.h2/model.data.db - please convert the database to a SQL script and re-create it." [90048-168]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.engine.Database.open(Database.java:508)
+	at org.h2.engine.Database.openDatabase(Database.java:222)
+	at org.h2.engine.Database.<init>(Database.java:217)
+	at org.h2.engine.Engine.openSession(Engine.java:56)
+	at org.h2.engine.Engine.openSession(Engine.java:159)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:138)
+	at org.h2.engine.Engine.createSession(Engine.java:121)
+	at org.h2.engine.Engine.createSession(Engine.java:28)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:305)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:108)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:92)
+	at org.h2.Driver.connect(Driver.java:72)
+	at org.h2.jdbcx.JdbcDataSource.getJdbcConnection(JdbcDataSource.java:181)
+	at org.h2.jdbcx.JdbcDataSource.getXAConnection(JdbcDataSource.java:315)
+	at org.h2.jdbcx.JdbcDataSource.getPooledConnection(JdbcDataSource.java:341)
+	at org.h2.jdbcx.JdbcConnectionPool.getConnectionNow(JdbcConnectionPool.java:226)
+	at org.h2.jdbcx.JdbcConnectionPool.getConnection(JdbcConnectionPool.java:199)
+	at org.eclipse.dltk.internal.core.index.sql.h2.H2DbFactory.<init>(H2DbFactory.java:62)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:184)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.dltk.core.index.sql.DbFactory.getInstance(DbFactory.java:54)
+	at org.eclipse.dltk.internal.core.index.sql.h2.H2Cache.load(H2Cache.java:505)
+	at org.eclipse.dltk.core.index.sql.h2.H2Index.start(H2Index.java:38)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:300)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.dltk.core.index.sql.DbFactory.getInstance(DbFactory.java:54)
+	at org.eclipse.dltk.internal.core.index.sql.SqlIndexer.<init>(SqlIndexer.java:53)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:184)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.dltk.internal.core.index2.IndexerManager.<clinit>(IndexerManager.java:54)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.getIndexerParticipant(ModelAccess.java:345)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.getElementResolver(ModelAccess.java:382)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:276)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:263)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findMethods(ModelAccess.java:137)
+	at org.eclipse.php.internal.core.model.PhpModelAccess.findMethods(PhpModelAccess.java:64)
+	at org.eclipse.php.internal.core.PHPCorePlugin.initializeAfterLoad(PHPCorePlugin.java:415)
+	at org.eclipse.php.internal.ui.InitializeAfterLoadJob$RealJob.run(InitializeAfterLoadJob.java:29)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.dltk.core.index.sql 4 0 2014-09-23 22:37:04.342
+!MESSAGE An exception occurred while connecting to a database. Retrying ...
+!STACK 0
+org.h2.jdbc.JdbcSQLException: Unsupported database file version or invalid file header in file "Old database: C:/wamp/www/.metadata/.plugins/org.eclipse.dltk.core.index.sql.h2/model.data.db - please convert the database to a SQL script and re-create it." [90048-168]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.engine.Database.open(Database.java:508)
+	at org.h2.engine.Database.openDatabase(Database.java:222)
+	at org.h2.engine.Database.<init>(Database.java:217)
+	at org.h2.engine.Engine.openSession(Engine.java:56)
+	at org.h2.engine.Engine.openSession(Engine.java:159)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:138)
+	at org.h2.engine.Engine.createSession(Engine.java:121)
+	at org.h2.engine.Engine.createSession(Engine.java:28)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:305)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:108)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:92)
+	at org.h2.Driver.connect(Driver.java:72)
+	at org.h2.jdbcx.JdbcDataSource.getJdbcConnection(JdbcDataSource.java:181)
+	at org.h2.jdbcx.JdbcDataSource.getXAConnection(JdbcDataSource.java:315)
+	at org.h2.jdbcx.JdbcDataSource.getPooledConnection(JdbcDataSource.java:341)
+	at org.h2.jdbcx.JdbcConnectionPool.getConnectionNow(JdbcConnectionPool.java:226)
+	at org.h2.jdbcx.JdbcConnectionPool.getConnection(JdbcConnectionPool.java:199)
+	at org.eclipse.dltk.internal.core.index.sql.h2.H2DbFactory.<init>(H2DbFactory.java:62)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:184)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.dltk.core.index.sql.DbFactory.getInstance(DbFactory.java:54)
+	at org.eclipse.dltk.internal.core.index.sql.SqlIndexer.<init>(SqlIndexer.java:53)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:184)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.dltk.internal.core.index2.IndexerManager.<clinit>(IndexerManager.java:54)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.getIndexerParticipant(ModelAccess.java:345)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.getElementResolver(ModelAccess.java:382)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:276)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:263)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findMethods(ModelAccess.java:137)
+	at org.eclipse.php.internal.core.model.PhpModelAccess.findMethods(PhpModelAccess.java:64)
+	at org.eclipse.php.internal.core.PHPCorePlugin.initializeAfterLoad(PHPCorePlugin.java:415)
+	at org.eclipse.php.internal.ui.InitializeAfterLoadJob$RealJob.run(InitializeAfterLoadJob.java:29)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.dltk.core.index.sql 4 0 2014-09-23 22:37:04.344
+!MESSAGE An exception occurred while connecting to a database. Retrying ...
+!STACK 0
+org.h2.jdbc.JdbcSQLException: Unsupported database file version or invalid file header in file "Old database: C:/wamp/www/.metadata/.plugins/org.eclipse.dltk.core.index.sql.h2/model.data.db - please convert the database to a SQL script and re-create it." [90048-168]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.engine.Database.open(Database.java:508)
+	at org.h2.engine.Database.openDatabase(Database.java:222)
+	at org.h2.engine.Database.<init>(Database.java:217)
+	at org.h2.engine.Engine.openSession(Engine.java:56)
+	at org.h2.engine.Engine.openSession(Engine.java:159)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:138)
+	at org.h2.engine.Engine.createSession(Engine.java:121)
+	at org.h2.engine.Engine.createSession(Engine.java:28)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:305)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:108)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:92)
+	at org.h2.Driver.connect(Driver.java:72)
+	at org.h2.jdbcx.JdbcDataSource.getJdbcConnection(JdbcDataSource.java:181)
+	at org.h2.jdbcx.JdbcDataSource.getXAConnection(JdbcDataSource.java:315)
+	at org.h2.jdbcx.JdbcDataSource.getPooledConnection(JdbcDataSource.java:341)
+	at org.h2.jdbcx.JdbcConnectionPool.getConnectionNow(JdbcConnectionPool.java:226)
+	at org.h2.jdbcx.JdbcConnectionPool.getConnection(JdbcConnectionPool.java:199)
+	at org.eclipse.dltk.internal.core.index.sql.h2.H2DbFactory.<init>(H2DbFactory.java:62)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:184)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.dltk.core.index.sql.DbFactory.getInstance(DbFactory.java:54)
+	at org.eclipse.dltk.internal.core.index.sql.SqlIndexer.<init>(SqlIndexer.java:53)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:184)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.dltk.internal.core.index2.IndexerManager.<clinit>(IndexerManager.java:54)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.getIndexerParticipant(ModelAccess.java:345)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.getElementResolver(ModelAccess.java:382)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:276)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:263)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findMethods(ModelAccess.java:137)
+	at org.eclipse.php.internal.core.model.PhpModelAccess.findMethods(PhpModelAccess.java:64)
+	at org.eclipse.php.internal.core.PHPCorePlugin.initializeAfterLoad(PHPCorePlugin.java:415)
+	at org.eclipse.php.internal.ui.InitializeAfterLoadJob$RealJob.run(InitializeAfterLoadJob.java:29)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.dltk.core.index.sql 4 0 2014-09-23 22:37:04.551
+!MESSAGE An exception has thrown while performing a search
+!STACK 0
+org.h2.jdbc.JdbcSQLException: Unsupported database file version or invalid file header in file "Old database: C:/wamp/www/.metadata/.plugins/org.eclipse.dltk.core.index.sql.h2/model.data.db - please convert the database to a SQL script and re-create it." [90048-168]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.engine.Database.open(Database.java:508)
+	at org.h2.engine.Database.openDatabase(Database.java:222)
+	at org.h2.engine.Database.<init>(Database.java:217)
+	at org.h2.engine.Engine.openSession(Engine.java:56)
+	at org.h2.engine.Engine.openSession(Engine.java:159)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:138)
+	at org.h2.engine.Engine.createSession(Engine.java:121)
+	at org.h2.engine.Engine.createSession(Engine.java:28)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:305)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:108)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:92)
+	at org.h2.Driver.connect(Driver.java:72)
+	at org.h2.jdbcx.JdbcDataSource.getJdbcConnection(JdbcDataSource.java:181)
+	at org.h2.jdbcx.JdbcDataSource.getXAConnection(JdbcDataSource.java:315)
+	at org.h2.jdbcx.JdbcDataSource.getPooledConnection(JdbcDataSource.java:341)
+	at org.h2.jdbcx.JdbcConnectionPool.getConnectionNow(JdbcConnectionPool.java:226)
+	at org.h2.jdbcx.JdbcConnectionPool.getConnection(JdbcConnectionPool.java:199)
+	at org.eclipse.dltk.internal.core.index.sql.h2.H2DbFactory.createConnection(H2DbFactory.java:145)
+	at org.eclipse.dltk.internal.core.index.sql.SqlSearchEngine.search(SqlSearchEngine.java:66)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:285)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:263)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findMethods(ModelAccess.java:137)
+	at org.eclipse.php.internal.core.model.PhpModelAccess.findMethods(PhpModelAccess.java:64)
+	at org.eclipse.php.internal.core.PHPCorePlugin.initializeAfterLoad(PHPCorePlugin.java:415)
+	at org.eclipse.php.internal.ui.InitializeAfterLoadJob$RealJob.run(InitializeAfterLoadJob.java:29)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.dltk.core.index.sql 4 0 2014-09-23 22:37:04.553
+!MESSAGE An exception has thrown while performing a search
+!STACK 0
+org.h2.jdbc.JdbcSQLException: Unsupported database file version or invalid file header in file "Old database: C:/wamp/www/.metadata/.plugins/org.eclipse.dltk.core.index.sql.h2/model.data.db - please convert the database to a SQL script and re-create it." [90048-168]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.engine.Database.open(Database.java:508)
+	at org.h2.engine.Database.openDatabase(Database.java:222)
+	at org.h2.engine.Database.<init>(Database.java:217)
+	at org.h2.engine.Engine.openSession(Engine.java:56)
+	at org.h2.engine.Engine.openSession(Engine.java:159)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:138)
+	at org.h2.engine.Engine.createSession(Engine.java:121)
+	at org.h2.engine.Engine.createSession(Engine.java:28)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:305)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:108)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:92)
+	at org.h2.Driver.connect(Driver.java:72)
+	at org.h2.jdbcx.JdbcDataSource.getJdbcConnection(JdbcDataSource.java:181)
+	at org.h2.jdbcx.JdbcDataSource.getXAConnection(JdbcDataSource.java:315)
+	at org.h2.jdbcx.JdbcDataSource.getPooledConnection(JdbcDataSource.java:341)
+	at org.h2.jdbcx.JdbcConnectionPool.getConnectionNow(JdbcConnectionPool.java:226)
+	at org.h2.jdbcx.JdbcConnectionPool.getConnection(JdbcConnectionPool.java:199)
+	at org.eclipse.dltk.internal.core.index.sql.h2.H2DbFactory.createConnection(H2DbFactory.java:145)
+	at org.eclipse.dltk.internal.core.index.sql.SqlSearchEngine.search(SqlSearchEngine.java:66)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:285)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:263)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findTypes(ModelAccess.java:203)
+	at org.eclipse.php.internal.core.model.PhpModelAccess.findTypes(PhpModelAccess.java:87)
+	at org.eclipse.php.internal.core.PHPCorePlugin.initializeAfterLoad(PHPCorePlugin.java:421)
+	at org.eclipse.php.internal.ui.InitializeAfterLoadJob$RealJob.run(InitializeAfterLoadJob.java:29)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.dltk.core.index.sql 4 0 2014-09-23 22:37:04.556
+!MESSAGE An exception has thrown while performing a search
+!STACK 0
+org.h2.jdbc.JdbcSQLException: Unsupported database file version or invalid file header in file "Old database: C:/wamp/www/.metadata/.plugins/org.eclipse.dltk.core.index.sql.h2/model.data.db - please convert the database to a SQL script and re-create it." [90048-168]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.engine.Database.open(Database.java:508)
+	at org.h2.engine.Database.openDatabase(Database.java:222)
+	at org.h2.engine.Database.<init>(Database.java:217)
+	at org.h2.engine.Engine.openSession(Engine.java:56)
+	at org.h2.engine.Engine.openSession(Engine.java:159)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:138)
+	at org.h2.engine.Engine.createSession(Engine.java:121)
+	at org.h2.engine.Engine.createSession(Engine.java:28)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:305)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:108)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:92)
+	at org.h2.Driver.connect(Driver.java:72)
+	at org.h2.jdbcx.JdbcDataSource.getJdbcConnection(JdbcDataSource.java:181)
+	at org.h2.jdbcx.JdbcDataSource.getXAConnection(JdbcDataSource.java:315)
+	at org.h2.jdbcx.JdbcDataSource.getPooledConnection(JdbcDataSource.java:341)
+	at org.h2.jdbcx.JdbcConnectionPool.getConnectionNow(JdbcConnectionPool.java:226)
+	at org.h2.jdbcx.JdbcConnectionPool.getConnection(JdbcConnectionPool.java:199)
+	at org.eclipse.dltk.internal.core.index.sql.h2.H2DbFactory.createConnection(H2DbFactory.java:145)
+	at org.eclipse.dltk.internal.core.index.sql.SqlSearchEngine.search(SqlSearchEngine.java:66)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:285)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:263)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findFields(ModelAccess.java:70)
+	at org.eclipse.php.internal.core.model.PhpModelAccess.findFields(PhpModelAccess.java:40)
+	at org.eclipse.php.internal.core.PHPCorePlugin.initializeAfterLoad(PHPCorePlugin.java:427)
+	at org.eclipse.php.internal.ui.InitializeAfterLoadJob$RealJob.run(InitializeAfterLoadJob.java:29)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.dltk.core.index.sql 4 0 2014-09-23 22:37:04.558
+!MESSAGE An exception has thrown while performing a search
+!STACK 0
+org.h2.jdbc.JdbcSQLException: Unsupported database file version or invalid file header in file "Old database: C:/wamp/www/.metadata/.plugins/org.eclipse.dltk.core.index.sql.h2/model.data.db - please convert the database to a SQL script and re-create it." [90048-168]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.engine.Database.open(Database.java:508)
+	at org.h2.engine.Database.openDatabase(Database.java:222)
+	at org.h2.engine.Database.<init>(Database.java:217)
+	at org.h2.engine.Engine.openSession(Engine.java:56)
+	at org.h2.engine.Engine.openSession(Engine.java:159)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:138)
+	at org.h2.engine.Engine.createSession(Engine.java:121)
+	at org.h2.engine.Engine.createSession(Engine.java:28)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:305)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:108)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:92)
+	at org.h2.Driver.connect(Driver.java:72)
+	at org.h2.jdbcx.JdbcDataSource.getJdbcConnection(JdbcDataSource.java:181)
+	at org.h2.jdbcx.JdbcDataSource.getXAConnection(JdbcDataSource.java:315)
+	at org.h2.jdbcx.JdbcDataSource.getPooledConnection(JdbcDataSource.java:341)
+	at org.h2.jdbcx.JdbcConnectionPool.getConnectionNow(JdbcConnectionPool.java:226)
+	at org.h2.jdbcx.JdbcConnectionPool.getConnection(JdbcConnectionPool.java:199)
+	at org.eclipse.dltk.internal.core.index.sql.h2.H2DbFactory.createConnection(H2DbFactory.java:145)
+	at org.eclipse.dltk.internal.core.index.sql.SqlSearchEngine.search(SqlSearchEngine.java:66)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:285)
+	at org.eclipse.dltk.core.index2.search.ModelAccess.findElements(ModelAccess.java:263)
+	at org.eclipse.php.internal.core.model.PhpModelAccess.findIncludes(PhpModelAccess.java:135)
+	at org.eclipse.php.internal.core.PHPCorePlugin.initializeAfterLoad(PHPCorePlugin.java:433)
+	at org.eclipse.php.internal.ui.InitializeAfterLoadJob$RealJob.run(InitializeAfterLoadJob.java:29)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)

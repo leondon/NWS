@@ -1,0 +1,1 @@
+<?php 'a:3:{s:19:\"__mp_cache_contents\";a:3:{s:7:\"task_id\";s:4:\"3451\";s:8:\"model_id\";s:1:\"3\";s:9:\"task_cash\";s:5:\"80.00\";}s:18:\"__mp_cache_created\";i:1414478017;s:23:\"__mp_cache_dependencies\";N;}';

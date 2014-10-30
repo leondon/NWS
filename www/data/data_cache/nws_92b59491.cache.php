@@ -1,0 +1,1 @@
+<?php 'a:3:{s:19:\"__mp_cache_contents\";a:1:{i:0;a:4:{s:11:\"day_rule_id\";s:4:\"1363\";s:9:\"rule_cash\";s:6:\"100.00\";s:8:\"rule_day\";s:2:\"50\";s:8:\"model_id\";s:1:\"2\";}}s:18:\"__mp_cache_created\";i:1414474485;s:23:\"__mp_cache_dependencies\";N;}';

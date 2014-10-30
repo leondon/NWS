@@ -1,0 +1,39 @@
+<!--[if lt IE 9]>
+    <script src="static/js/html5.js" type="text/javascript"></script>
+    <script src="static/js/respond.min.js" type="text/javascript"></script>
+<![endif]-->
+{if $do=='index'}
+<script src="static/js/jquery.min.1.8.3.js"></script>
+<!-- 幻灯片 -->
+<link href="static/js/jqplugins/fotorama/fotorama.css" type="text/css" rel="stylesheet">
+<script src="static/js/jqplugins/fotorama/fotorama.js"></script>
+<!-- 滚动视图 -->
+<script src="static/js/jqplugins/jcarousel/jquery.jcarousel.js"></script>
+<script src="static/js/jqplugins/jcarousel/jquery.jcarousel.control.js"></script>
+<script src="static/js/jqplugins/jcarousel/jquery.jcarousel.autoscroll.js"></script>
+{else}
+<script src="static/js/jquery.min.js"></script>
+{/if}
+<script src="static/js/bootstrap.min.js"></script>
+<script src="static/js/jquery.form.js"></script>
+<script src="static/js/jquery.lazyload.js"></script>
+<script src="static/js/bootstrap-datetimepicker.js"></script>
+<script src="static/js/bootstrap-datetimepicker.zh-CN.js"></script>
+<script src="static/js/sco.confirm.js"></script>
+<script src="static/js/sco.modal.js"></script>
+<script src="static/js/sco.valid.js"></script>
+<script src="static/js/holder.min.js"></script>
+<script src="static/js/model/common/base.js"></script>
+{if $do==user}
+<link href="tpl/default/{$_K['sitecss']}/user.css" rel="stylesheet" type="text/css">
+{elseif $do==seller}
+<link href="tpl/default/{$_K['sitecss']}/store.css" rel="stylesheet" type="text/css">
+{elseif $do=='index'}
+ {if $_K['theme']}
+ <link href="tpl/default/theme/{$_K['theme']}/home.css" type="text/css" rel="stylesheet" >
+ {else}
+ <link href="tpl/default/{$_K['sitecss']}/home.css" type="text/css" rel="stylesheet" >
+ {/if}
+{else}
+<link href="tpl/default/{$_K['sitecss']}/style.css" rel="stylesheet" type="text/css">
+{/if}
