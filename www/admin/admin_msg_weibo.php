@@ -21,4 +21,4 @@ if (isset ( $submit )) {
 		kekezu::admin_show_msg($_lang['oauth_api_config_success'],$url,3,'','success');
 	}
 }
-require $template_obj->template('admin/tpl/admin_'.$do.'_'.$view);
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_'.$do.'_'.$view);

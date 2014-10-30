@@ -47,7 +47,7 @@ if ($_SESSION['t_access_token'] || ($_SESSION['t_openid'] && $_SESSION['t_openke
     }
 }
 if (empty ( $oauthInfo )) {
-	kekezu::show_msg('授权失败，请重试','index.php?do=user&view=account&op=binding',3,null,'warning');
+	header('Location:index.php?do=user&view=account&op=binding');
 }
 $saveInfo = array (
 		'account' => UserCenter::getUnique ( $oauthInfo ),
@@ -57,9 +57,9 @@ $saveInfo = array (
 );
 if($isBind == 'bindAccount'){
 	if(UserCenter::bindingAccount($gUid, $gUserInfo['username'], $saveInfo)){
-		kekezu::show_msg('绑定成功','index.php?do=user&view=account&op=binding',3,null,'success');
+		header('Location:index.php?do=user&view=account&op=binding');
 	}else {
-		kekezu::show_msg('请勿重复绑定','index.php?do=user&view=account&op=binding',3,null,'warning');
+		header('Location:index.php?do=user&view=account&op=binding');
 	}
 }else{
 	$_SESSION[$saveInfo['type'].'_oauthInfo'] = $saveInfo;

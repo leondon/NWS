@@ -382,13 +382,17 @@ abstract class keke_task_class {
 		}
 	}
 	public function check_if_can_hand() {
-		global $_K;
-		global $_lang;
+		global $_lang,$uid, $_K;
+		$intSecond = 180;
 		if (! $this->_priv ['work_hand'] ['pass']) {
 			return '没有交稿权限';
 		}
 		if (! $this->_process_can ['work_hand']) {
 			return '当前任务状态无法进行交稿';
+		}
+		$arrWorkInfo = $this->getRecentWorkInfo();
+		if(time() - intval($arrWorkInfo['work_time']) < $intSecond){
+			return '两次交稿时间间隔不能少于3分钟';
 		}
 		return true;
 	}
@@ -583,6 +587,10 @@ abstract class keke_task_class {
 		global $uid;
 		$work_info = db_factory::get_one ( sprintf ( "select * from %switkey_task_work where hide_work=1 and uid=%d and task_id=%d", TABLEPRE, $uid, $this->_task_id ) );
 		return $work_info;
+	}
+	function getRecentWorkInfo() {
+		global $uid;
+		return db_factory::get_one ( sprintf ( "select * from %switkey_task_work where uid=%d and task_id=%d order by work_time desc limit 0,1", TABLEPRE, $uid, $this->_task_id ) );
 	}
 	public function getPayitemShow(){
 		if($this->_task_info['task_status']==0||$this->_task_info['task_status']==1||TOOL == FALSE){

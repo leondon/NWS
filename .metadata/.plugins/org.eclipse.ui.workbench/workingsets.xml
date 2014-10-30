@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.php.ui.workingset.PHPWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1410707787427_1" label="admin" name="admin">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/www/admin" type="2"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.php.ui.workingset.PHPWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1410936313563_2" label="www" name="www">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/www/control" type="2"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/www/admin" type="2"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/www/index.php" type="1"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/www/favicon.ico_wamp" type="1"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/www/data" type="2"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/www/lang" type="2"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/www/.project" type="1"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/www/install" type="2"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/www/app_comm.php" type="1"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/www/include" type="2"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/www/uc_client" type="2"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/www/keke" type="2"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/www/auth" type="2"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/www/api" type="2"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/www/.buildpath" type="1"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/www/js.php" type="1"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/www/tpl" type="2"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/www/config" type="2"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/www/task" type="2"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/www/favicon.ico" type="1"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/www/shop" type="2"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/www/lib" type="2"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/www/index_wamp.php" type="1"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/www/static" type="2"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.php.ui.workingset.PHPWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1411360262264_3" label="lang" name="lang">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/www/lang" type="2"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1408870908717_0" label="窗口工作集" name="Aggregate for window 1408870908715"/>
+</workingSetManager>

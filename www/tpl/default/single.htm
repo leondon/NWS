@@ -18,11 +18,7 @@
 
 
         <div id="server-info" class=" single-detail">
-
-
-			<!--{eval echo htmlspecialchars_decode($arrArtInfo['content'])}-->
-
-
+			<!--{eval echo stripslashes(htmlspecialchars_decode(stripslashes($arrArtInfo['content'])))}-->
         </div>
 
 

@@ -3,8 +3,8 @@ $excite_uid and $intExciteUid = intval($excite_uid);
 $excite_code and $strExciteCode = strval($excite_code);
 $arrUserInfo = kekezu::get_user_info($intExciteUid);
 if($arrUserInfo){
+	$strMd5Code = md5($arrUserInfo['uid'].','.$arrUserInfo['username'].','.$arrUserInfo['email']);
 	if($arrUserInfo['status']=='3'){
-		$strMd5Code = md5($arrUserInfo['uid'].','.$arrUserInfo['username'].','.$arrUserInfo['email']);
 		if($strMd5Code==$strExciteCode){
 			$intRes = db_factory::execute(sprintf("update %switkey_space set status='1' where uid='%d'",TABLEPRE,$intExciteUid));
 		}

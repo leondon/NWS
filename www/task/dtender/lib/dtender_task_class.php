@@ -442,7 +442,7 @@ class dtender_task_class extends keke_task_class {
 			keke_finance_class::cash_in ( $bid_info ['uid'], $real_cash, 'task_bid', '', 'task', $this->_task_id, $profit_cash );
 			$v_arr = array ($_lang ['username'] => $this->_bid_info ['username'], $_lang ['model_name'] => $this->_model_name, $_lang ['task_id'] => $this->_task_id, $_lang ['task_title'] => $this->_task_title, $_lang ['num'] => $plan_info ['plan_step'], $_lang ['cash_msg'] => $real_cash );
 			keke_msg_class::notify_user ( $this->_bid_info ['uid'], $this->_bid_info ['username'], 'plan_haved_pay', $_lang ['plan_haved_pay_notice'], $v_arr );
-			$feed_arr = array ("feed_username" => array ("content" => $bid_info ['username'], "url" => "index.php?do=seller&id=" . $bid_info ['uid'] ), "action" => array ("content" => $_lang ['success_bid_haved'], "url" => "" ), "event" => array ("content" => "$this->_task_title", "url" => "index.php?do=task&id=" . $this->_task_info ['task_id'], 'cash' => $real_cash ) );
+			$feed_arr = array ("feed_username" => array ("content" => $bid_info ['username'], "url" => "index.php?do=seller&id=" . $bid_info ['uid'] ), "action" => array ("content" => $_lang ['success_bid_haved'], "url" => "" ), "event" => array ("content" => "$this->_task_title", "url" => "index.php?do=task&id=" . $this->_task_info ['task_id'], 'cash' => number_format($real_cash,'2') ) );
 			kekezu::save_feed ( $feed_arr, $bid_info ['uid'], $bid_info ['username'], 'work_accept', $this->_task_info ['task_id'] );
 			return true;
 		} else {

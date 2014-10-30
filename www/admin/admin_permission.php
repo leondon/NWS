@@ -31,4 +31,4 @@ switch (isset($sbt_action)){
 		}
 		break;
 }
-require keke_tpl_class::template ( 'admin/tpl/admin_' . $do );
+require keke_tpl_class::template ( ADMIN_DIRECTORY.'/tpl/admin_' . $do );

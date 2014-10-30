@@ -1,0 +1,1 @@
+<?php 'a:3:{s:19:\"__mp_cache_contents\";a:3:{s:8:\"username\";s:15:\"下线的下线\";s:6:\"mobile\";s:0:\"\";s:5:\"email\";s:18:\"25454512485@qq.com\";}s:18:\"__mp_cache_created\";i:1414677745;s:23:\"__mp_cache_dependencies\";N;}';

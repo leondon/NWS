@@ -8,10 +8,16 @@ $strUrl = $_K['siteurl'].'/index.php?do=retrieve&strStep=step1';
 switch ($strStep) {
 	case "step1" :
 		if (kekezu::submitcheck ( $formhash )) {
+			if(strtolower(CHARSET)=='gbk'){
+				$account=kekezu::utftogbk($account);
+			}
 			$arrUserInfo = kekezu::get_user_info ( $account, true );
-			;
 			if (! $arrUserInfo) {
-				$tips ['errors'] ['account'] = '此账号不存在';
+				$tips ['errors'] ['account'] = '账号不存在';
+				kekezu::show_msg ( $tips, NULL, NULL, NULL, 'error' );
+			}
+			if ($email && $arrUserInfo['email'] != trim($email)) {
+				$tips ['errors'] ['email'] = '邮箱不存在';
 				kekezu::show_msg ( $tips, NULL, NULL, NULL, 'error' );
 			}
 			if ($getPasswordCode) {

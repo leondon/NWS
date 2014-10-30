@@ -10,4 +10,4 @@ if ($op == 'del') {
 	kekezu::admin_system_log ( $_lang['delete_user_group']."$groupinfo_arr[groupname]" );
 	kekezu::admin_show_msg ( $_lang['operate_success'], "index.php?do=user&view=group_list", 3 ,'','success');
 }
-require $template_obj->template ( 'admin/tpl/admin_user_group_list' );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_user_group_list' );

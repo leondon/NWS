@@ -58,7 +58,6 @@ class keke_lang_class {
 		$r = self::get_lang();
 		$package or $package = self::$_package;
 		$file_name = S_ROOT."lang/".$r."/{$package}/{$action}.php";
-		//echo $file_name;
 		is_file($file_name) and  include $file_name;
 		return $lang;
 	}

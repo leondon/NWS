@@ -268,4 +268,4 @@ if ($tag_info['tag_type']==1)
 		die($tag_info['code']);
 	}
 	$datalist = $temp_arr;
-require_once $template_obj->template ( 'admin/tpl/template_tag_'.$tag_info['tplname'] );
+require_once $template_obj->template(ADMIN_DIRECTORY.'/tpl/template_tag_'.$tag_info['tplname'] );

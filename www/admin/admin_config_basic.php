@@ -167,4 +167,4 @@ EOT;
 	}
 	return $rule_arr;
 }
-require $template_obj->template ( 'admin/tpl/admin_config_' . $view );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_config_' . $view );

@@ -1,0 +1,1 @@
+<?php 'a:3:{s:19:\"__mp_cache_contents\";s:5:\"admin\";s:18:\"__mp_cache_created\";i:1414677885;s:23:\"__mp_cache_dependencies\";N;}';

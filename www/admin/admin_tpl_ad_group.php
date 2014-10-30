@@ -36,4 +36,4 @@ $page and $page = intval ( $page ) or $page = '1';
 $tag_arr = $table_obj->get_grid ( $where, $url, $page, $page_size );
 $pages = $tag_arr ['pages'];
 $tag_arr = $tag_arr ['data'];
-require $template_obj->template ( 'admin/tpl/admin_' . $do . '_' . $view );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_' . $do . '_' . $view );

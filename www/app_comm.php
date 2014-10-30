@@ -14,6 +14,8 @@ $exec_time_traver = kekezu::exec_js ( 'get' );
 (! isset ( $exec_time_traver ) || $exec_time_traver < time ()) and $exec_time_traver = true or $exec_time_traver = false;
 $_R = $_REQUEST;
 $_R = kekezu::k_input ( $_R );
+$_GET   = kekezu::k_input($_GET);
+$_POST  = kekezu::k_input($_POST);
 $_R and extract ( $_R, EXTR_SKIP );
 isset ( $inajax ) and $_K ['inajax'] = $inajax;
 unset ( $uid, $username );

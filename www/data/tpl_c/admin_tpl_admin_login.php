@@ -1,4 +1,4 @@
-<?php keke_tpl_class::checkrefresh('admin/tpl/admin_login', '1412666193' );?><!DOCTYPE HTML>
+<?php keke_tpl_class::checkrefresh('admin/tpl/admin_login', '1414677881' );?><!DOCTYPE HTML>
 <!--[if lt IE 7]> <html dir="ltr" lang="zh-cn" id="ie6" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
 <!--[if IE 7]>    <html dir="ltr" lang="zh-cn" id="ie7" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
 <!--[if IE 8]>    <html dir="ltr" lang="zh-cn" id="ie8" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->

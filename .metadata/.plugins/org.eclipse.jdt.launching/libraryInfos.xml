@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libraryInfos>
+<libraryInfo home="C:\Program Files (x86)\PHP100\EclipsePHP Studio" version="1.5.0_09">
+<bootpath>
+<entry path="C:\Program Files (x86)\PHP100\EclipsePHP Studio\jre\lib\rt.jar"/>
+<entry path="C:\Program Files (x86)\PHP100\EclipsePHP Studio\jre\lib\i18n.jar"/>
+<entry path="C:\Program Files (x86)\PHP100\EclipsePHP Studio\jre\lib\sunrsasign.jar"/>
+<entry path="C:\Program Files (x86)\PHP100\EclipsePHP Studio\jre\lib\jsse.jar"/>
+<entry path="C:\Program Files (x86)\PHP100\EclipsePHP Studio\jre\lib\jce.jar"/>
+<entry path="C:\Program Files (x86)\PHP100\EclipsePHP Studio\jre\lib\charsets.jar"/>
+<entry path="C:\Program Files (x86)\PHP100\EclipsePHP Studio\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files (x86)\PHP100\EclipsePHP Studio\jre\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files (x86)\PHP100\EclipsePHP Studio\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Program Files (x86)\PHP100\EclipsePHP Studio\jre" version="1.5.0_09">
+<bootpath>
+<entry path="C:\Program Files (x86)\PHP100\EclipsePHP Studio\jre\lib\rt.jar"/>
+<entry path="C:\Program Files (x86)\PHP100\EclipsePHP Studio\jre\lib\i18n.jar"/>
+<entry path="C:\Program Files (x86)\PHP100\EclipsePHP Studio\jre\lib\sunrsasign.jar"/>
+<entry path="C:\Program Files (x86)\PHP100\EclipsePHP Studio\jre\lib\jsse.jar"/>
+<entry path="C:\Program Files (x86)\PHP100\EclipsePHP Studio\jre\lib\jce.jar"/>
+<entry path="C:\Program Files (x86)\PHP100\EclipsePHP Studio\jre\lib\charsets.jar"/>
+<entry path="C:\Program Files (x86)\PHP100\EclipsePHP Studio\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files (x86)\PHP100\EclipsePHP Studio\jre\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files (x86)\PHP100\EclipsePHP Studio\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+</libraryInfos>

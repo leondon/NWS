@@ -419,6 +419,7 @@ class tender_task_class extends keke_task_class {
 		global $_lang;
 		$task_config = $this->_task_config;
 		$task_info = $this->_task_info;
+		 $fRealCash = floatval($task_info['real_cash']);
 		$url = $_K ['siteurl'] . '/index.php?do=task&id=' . $this->_task_id;
 		$task_status = $this->_task_status;
 		$order_info = db_factory::get_one ( sprintf ( "select order_amount,order_status from %switkey_order where order_id='%d'", TABLEPRE, intval ( $order_id ) ) );
@@ -429,17 +430,18 @@ class tender_task_class extends keke_task_class {
 			return pay_return_fac_class::struct_response ( $_lang['operate_notice'], $notice, $url, 'success' );
 		} else {
 			$arrOrderDetail = keke_order_class::get_order_detail($order_id);
-			foreach($arrOrderDetail as $k=>$v){
-				if($v['obj_type']=='task'&&$v['detail_type'] == null){
-					$data = array(':model_name'=>$this->_model_name,':task_id'=>$this->_task_id,':task_title'=>$this->_task_title);
-					keke_finance_class::init_mem('pub_task', $data);
-					$res = keke_finance_class::cash_out ( $task_info ['uid'], $v['price'], 'pub_task', 0, 'task', $this->_task_id  );
-				}else{
-					PayitemClass::createPayitemRecord($v['detail_type'],$v['num'],$v['obj_type'],$v['obj_id']);
+			if(!empty($arrOrderDetail)){
+				foreach($arrOrderDetail as $k=>$v){
+					if($v['obj_type']=='task'&&$v['detail_type'] == null){
+						$data = array(':model_name'=>$this->_model_name,':task_id'=>$this->_task_id,':task_title'=>$this->_task_title);
+						keke_finance_class::init_mem('pub_task', $data);
+						$res = keke_finance_class::cash_out ( $task_info ['uid'], $v['price'], 'pub_task', 0, 'task', $this->_task_id  );
+					}else{
+						PayitemClass::createPayitemRecord($v['detail_type'],$v['num'],$v['obj_type'],$v['obj_id']);
+					}
 				}
 			}
-			switch ($res == true) {
-				case "1" :
+			if($fRealCash == 0 || $res ){
 					$objProm = keke_prom_class::get_instance ();
 					if ($objProm->is_meet_requirement ( "pub_task", $this->_task_id )) {
 						$objProm->create_prom_event ( "pub_task", $this->_guid, $task_info ['task_id'], $task_info ['task_cash'] );
@@ -458,11 +460,9 @@ class tender_task_class extends keke_task_class {
 						kekezu::save_feed ( $feed_arr,$task_info['uid'],$task_info['username'], 'pub_task',$task_info['task_id']);
 						return pay_return_fac_class::struct_response ( $_lang['operate_notice'], $_lang['task_pay_success_and_task_pub_success'], $url, 'success' );
 					}
-					break;
-				case "0" :
-					$pay_url = $_K ['siteurl'] . "/index.php?do=pay&order_id=$order_id";
-					return pay_return_fac_class::struct_response ( $_lang['operate_notice'], $_lang['task_pay_error_and_please_repay'], $pay_url, 'warning' );
-					break;
+			}else{
+				$pay_url = $_K ['siteurl'] . "/index.php?do=pay&order_id=$order_id";
+				return pay_return_fac_class::struct_response ( $_lang['operate_notice'], $_lang['task_pay_error_and_please_repay'], $pay_url, 'warning' );
 			}
 		}
 	}

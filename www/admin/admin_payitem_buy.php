@@ -25,4 +25,4 @@ $pages = $page_obj->getPages ( $count, $page_size, $page, $url );
 $where .= $pages [where];
 $payitem_record_obj->setWhere ( $where );
 $payitem_record_arr = $payitem_record_obj->query_keke_witkey_payitem_record ();
-require $template_obj->template ( 'admin/tpl/admin_payitem_' . $view );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_payitem_' . $view );

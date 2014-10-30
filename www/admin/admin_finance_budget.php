@@ -132,4 +132,4 @@ if (isset ( $ac ) && $order_id) { //
 	}
 	$res and kekezu::admin_show_msg ( $_lang['mulit_operate_success'], $url,3,'','success' ) or kekezu::admin_show_msg ( $_lang['mulit_operate_fail'], $url,3,'','warning' );
 }
-require $template_obj->template ( 'admin/tpl/admin_' . $do . '_' . $view );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_' . $do . '_' . $view );

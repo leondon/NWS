@@ -1,4 +1,4 @@
-<?php keke_tpl_class::checkrefresh('tpl/default/index', '1412589758' );?><!DOCTYPE HTML>
+<?php keke_tpl_class::checkrefresh('tpl/default/index', '1414677737' );?><!DOCTYPE HTML>
 <!--[if lt IE 7]> <html dir="ltr" lang="zh-cn" id="ie6"> <![endif]--><!--[if IE 7]>    <html dir="ltr" lang="zh-cn" id="ie7"> <![endif]--><!--[if IE 8]>    <html dir="ltr" lang="zh-cn" id="ie8"> <![endif]-->
 <!--[if gt IE 8]><!-->
     <html dir="ltr" lang="zh-cn">
@@ -46,19 +46,23 @@
 <script src="static/js/sco.valid.js"></script>
 <script src="static/js/holder.min.js"></script>
 <script src="static/js/model/common/base.js"></script>
-<?php if($do==user) { ?>
-<link href="tpl/default/<?php echo $_K['sitecss'];?>/user.css" rel="stylesheet" type="text/css">
-<?php } elseif($do==seller) { ?>
-<link href="tpl/default/<?php echo $_K['sitecss'];?>/store.css" rel="stylesheet" type="text/css">
-<?php } elseif($do=='index') { ?>
- <?php if($_K['theme']) { ?>
- <link href="tpl/default/theme/<?php echo $_K['theme'];?>/home.css" type="text/css" rel="stylesheet" >
- <?php } else { ?>
- <link href="tpl/default/<?php echo $_K['sitecss'];?>/home.css" type="text/css" rel="stylesheet" >
- <?php } ?>
-<?php } else { ?>
-<link href="tpl/default/<?php echo $_K['sitecss'];?>/style.css" rel="stylesheet" type="text/css">
-<?php } ?>
+
+<?php include(S_ROOT.'/control/include.php'); ?>
+
+<script type="text/javascript">
+$(function(){
+$('.color-selected .nav-sub-list a').click(function() {
+var css = $(this).attr('data-css');
+var color = $(this).attr('data-rel');
+$('.nav-item-link span.style-color').removeClass().addClass('style-color '+ color);
+$('#active-style').attr('href', 'tpl/default/'+ css +'/style.css');
+$('#active-style-user').attr('href', 'tpl/default/'+ css +'/user.css');
+$('#active-style-store').attr('href', 'tpl/default/'+ css +'/store.css');
+$('#active-style-home').attr('href', 'tpl/default/'+ css +'/home.css');
+});
+})
+
+</script>
         <script type="text/javascript">
             var SITEURL = '<?php echo $_K['siteurl'];?>', SKIN_PATH = '<?php echo SKIN_PATH;?>', LANG = '<?php echo $language;?>', INDEX = '<?php echo $do;?>', CHARSET = '<?php echo CHARSET;?>';
         </script>
@@ -545,7 +549,7 @@
 
 <div class="home-case-first">
 
-<a class="img-box" <?php if($v['obj_type']=='task') { ?>href="index.php?do=task&id=<?php echo $arrCaseLists['0']['obj_id']?>" <?php } else { ?> href="index.php?do=goods&id=<?php echo $arrCaseLists['0']['obj_id']?>"<?php } ?> title="<?php echo $arrCaseLists['0']['case_title'];?>" title="<?php echo $arrCaseLists?>">
+<a class="img-box" <?php if($arrCaseLists['0']['obj_type']=='task') { ?>href="index.php?do=task&id=<?php echo $arrCaseLists['0']['obj_id']?>" <?php } else { ?> href="index.php?do=goods&id=<?php echo $arrCaseLists['0']['obj_id']?>"<?php } ?> title="<?php echo $arrCaseLists['0']['case_title'];?>" title="<?php echo $arrCaseLists?>">
 <img class="lazy" src="tpl/default/img/grey.gif" data-original="<?php if(file_exists($arrCaseLists['0']['case_img'])) { ?><?php echo keke_shop_class::output_pics($arrCaseLists[0]['case_img'],210,1); ?><?php } else { ?>tpl/default/img/shop/shop_default_big.jpg<?php } ?>" alt="<?php echo $arrCaseLists['0']['case_title'];?>">
 </a>
 <a title="<?php echo $arrCaseLists['0']['case_title'];?>" class="home-case-first-title" href="javascript:void(0);">
@@ -700,6 +704,7 @@
       <div class="footer-copyright">
         <p><?php if($basic_config['company']) { ?>公司名称:<?php echo $basic_config['company'];?><?php } ?> <?php if($basic_config['address']) { ?>地址:<?php echo $basic_config['address'];?><?php } ?> <?php if($basic_config['phone']) { ?>电话:<?php echo $basic_config['phone'];?><?php } ?></p>
         <p><?php if($basic_config['copyright']) { ?>Powered by <?php echo P_NAME;?><?php echo KEKE_VERSION;?> <?php echo $basic_config['copyright'];?><?php } ?> <?php if($basic_config['filing']) { ?> <a href="http://icp.valu.cn/" target="_blank"><?php echo $basic_config['filing'];?></a><?php } ?></p>
+        <p><?php if($basic_config['stats_code']) { ?><?php echo stripslashes(stripslashes($basic_config['stats_code'])); ?><?php } ?></p>
       </div>
       <!-- footer-copyright end -->
   </div><!-- container end -->
@@ -707,15 +712,49 @@
 
 
 <div id="fix-box">
-  <a id="top" href="javascript:void(0);"><i class="fa fa-arrow-circle-up"></i></a>
+  <a id="top" href="javascript:void(0);"><i class="fa fa-angle-up"></i></a>
 </div>
 <!-- #fix-box end -->
 
+
+
+
 <?php if($uid) { ?>
+    <!-- IM -->
+    	
+    <!-- IM -->
+    
 <?php kekezu::update_oltime($uid,$username) ?>
+<?php } else { ?>
+
+
 <?php } ?>
+
+
+
+
+
+
+
+<script type="text/javascript">
+$(function(){
+  $('.color-selected .nav-sub-list a').click(function() {
+    var css = $(this).attr('data-css');
+    var color = $(this).attr('data-rel');
+    $('.nav-item-link span.style-color').removeClass().addClass('style-color '+ color);
+    $('#active-style').attr('href', 'tpl/default/'+ css +'/style.css');
+    $('#active-style-user').attr('href', 'tpl/default/'+ css +'/user.css');
+    $('#active-style-store').attr('href', 'tpl/default/'+ css +'/store.css');
+    $('#active-style-home').attr('href', 'tpl/default/'+ css +'/home.css');
+  });
+})
+  
+</script>
+
+
 <script type="text/javascript">
 var uid='<?php echo $uid;?>';
+var UseIm= true;
 var actionDo = '<?php echo $do;?>';
 var username='<?php echo $username;?>';
 var auid = '<?php echo $oauth_user_info['account'];?>';

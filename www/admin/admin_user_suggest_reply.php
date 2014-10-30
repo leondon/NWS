@@ -21,4 +21,4 @@ if($suggest_id){
 		$res_id and kekezu::admin_show_msg ($_lang['operate_notice'], $url, "2", '回复成功','success') or kekezu::admin_show_msg ( $_lang['operate_notice'], $url, "2",'回复失败', 'warning' );
 	}
 }
-require $template_obj->template ( 'admin/tpl/admin_user_suggest_reply' );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_user_suggest_reply' );

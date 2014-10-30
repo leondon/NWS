@@ -13,4 +13,4 @@ foreach ( $kekezu->_model_list as $k => $v ) {
 }
 $mark_config_arr = $mark_config_obj->get_grid ( '1=1', $url, '', 14 );
 $mark_config_arr = $mark_config_arr ['data'];
-require $kekezu->_tpl_obj->template ( "admin/tpl/admin_" . $do . "_" . $view . "_" . $op );
+require $kekezu->_tpl_obj->template(ADMIN_DIRECTORY."/tpl/admin_" . $do . "_" . $view . "_" . $op );

@@ -1,4 +1,4 @@
-<!--{template admin/tpl/admin_header}-->
+<!--{template ADMIN_DIRECTORY/tpl/admin_header}-->
 
 <div class="page_title">
     	<h1>{$_lang['witkey_service_manage']}</h1>
@@ -46,14 +46,14 @@
 						<th>{$_lang['result_order']}</th>
 						<td colspan="5">
 
-							 <select name="w[ord]" onchange="orderJump(this.value)">
-                     		 	 <option {if $w[ord]=='service_id desc' or !isset($w[ord])}selected="selected" {/if}  value="service_id desc">ID{$_lang['desc']}</option>
-                     		 	 <option {if $w[ord]=='service_id asc'} selected="selected" {/if}  value="service_id asc">ID{$_lang['asc']}</option>
+							 <select name="ord" onchange="orderJump(this.value)">
+                     		 	 <option {if $ord=='service_id desc' or !isset($ord)}selected="selected" {/if}  value="service_id desc">ID{$_lang['desc']}</option>
+                     		 	 <option {if $ord=='service_id asc'} selected="selected" {/if}  value="service_id asc">ID{$_lang['asc']}</option>
                      		 </select>
- 							<select name="w[page_size]"  onchange="pageJump(this.value)">
-	                			<option value="10" {if $w[page_size]=='10'}selected="selected"{/if}>{$_lang['page_size']}10</option>
-	                			<option value="20" {if $w[page_size]=='20'}selected="selected"{/if}>{$_lang['page_size']}20</option>
-	                			<option value="30" {if $w[page_size]=='30'}selected="selected"{/if}>{$_lang['page_size']}30</option>
+ 							<select name="page_size"  onchange="pageJump(this.value)">
+	                			<option value="10" {if $page_size=='10'}selected="selected"{/if}>{$_lang['page_size']}10</option>
+	                			<option value="20" {if $page_size=='20'}selected="selected"{/if}>{$_lang['page_size']}20</option>
+	                			<option value="30" {if $page_size=='30'}selected="selected"{/if}>{$_lang['page_size']}30</option>
 	            			</select>
 	           				<button class="pill" type="submit" value="{$_lang['search']}" name="sbt_search"><span class="icon magnifier">&nbsp;</span>{$_lang['search']}</button>
 						</td>
@@ -69,7 +69,7 @@
     <div class="title"><h2>{$_lang['shop_list']}</h2></div>
     <div class="detail">
 	<form action="" method="post" name="frm_list" id="frm_list">
-		<input type="hidden" name="w[page_size]" value="{$page_size}">
+		<input type="hidden" name="page_size" value="{$page_size}">
 		<div id="ajax_dom">
 		<input type="hidden" name="page" value="{$page}" />
     	<table cellpadding="0" cellspacing="0">
@@ -147,11 +147,11 @@
 		window.location.href = url+'&w[service_status]='+service_status;
 	}
 	function orderJump(value){
-		var ord1 = $("#ord1").children("option:selected").val();//selected的值
-		window.location.href= url+'&ord[0]='+ord1+'&ord[1]='+value;
+		//var ord1 = $("#ord1").children("option:selected").val();//selected的值
+		window.location.href= url+'&ord='+value;
 	}
 	function pageJump(value){
 		window.location.href = url+'&page_size='+value;
 	}
 </script>
- <!--{template admin/tpl/admin_footer}-->
+ <!--{template ADMIN_DIRECTORY/tpl/admin_footer}-->

@@ -39,7 +39,7 @@
 			<!--{eval $arrUserLeve=unserialize($v[seller_level])}-->
             {$arrUserLeve['pic']}
           </h2>
-		  {if $v['workhide']==1&&$gUid!=$arrTaskInfo['uid']&&$gUid!=$v['uid']}
+		   {if $v['bid_status']==8||($v['workhide']==1&&$gUid!=$arrTaskInfo['uid']&&$gUid!=$v['uid'])}
 		      	<div class="no-data">
 				<p class="lead text-warning"><i class="fa fa-ban fa-2x"></i> 您无权查看 ！</p>
 				</div>

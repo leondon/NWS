@@ -1,0 +1,1 @@
+<?php 'a:3:{s:19:\"__mp_cache_contents\";a:6:{s:14:\"mark_config_id\";s:2:\"14\";s:3:\"obj\";s:7:\"service\";s:4:\"good\";s:3:\"100\";s:6:\"normal\";s:2:\"50\";s:3:\"bad\";s:1:\"0\";s:4:\"type\";s:1:\"2\";}s:18:\"__mp_cache_created\";i:1414677742;s:23:\"__mp_cache_dependencies\";N;}';

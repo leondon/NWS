@@ -4,14 +4,17 @@ class PayitemClass {
 		return keke_table_class::get_instance ( $table );
 	}
 	public static function getPayitemList ($strType='task',$pk=null,$intIsOpen=1,$strUncode=null){
-		intval($intIsOpen)==1 and $strWhere = " and is_open = 1";
-		$strType and $strWhere .= " and item_type='$strType' ";
-		$strUncode and $strWhere .= " and item_code!='$strUncode' ";
-		$pk         or $pk = "item_code";
-		$arrPayitemList = kekezu::get_table_data ( "*", "witkey_payitem", "1=1 $strWhere ", "", "", "", $pk,3600 );
-		return $arrPayitemList;
+		if(TOOL === TRUE){
+			intval($intIsOpen)==1 and $strWhere = " and is_open = 1";
+			$strType and $strWhere .= " and item_type='$strType' ";
+			$strUncode and $strWhere .= " and item_code!='$strUncode' ";
+			$pk         or $pk = "item_code";
+			$arrPayitemList = kekezu::get_table_data ( "*", "witkey_payitem", "1=1 $strWhere ", "", "", "", $pk,3600 );
+			return $arrPayitemList;
+		}
 	}
   public static function getPayitemListDetail($strType = 'task',$objId){
+  	if(TOOL === TRUE){
   	    $objInfo = self::getObjInfo($strType,$objId);
         if($strType=='task'){
         	switch($objInfo['task_status']){
@@ -49,11 +52,15 @@ class PayitemClass {
         	}
         }
      return $arrPayitemLists;
+  	}
   }
   public static function getPayitemRecord($strType='task',$objId,$code){
+  	if( TOOL === TRUE){
       return db_factory::get_one(sprintf("select * from ".TABLEPRE."witkey_payitem_record where obj_type='%s' and obj_id=%d and item_code='%s'",$strType,$objId,$code));
+  	}
   }
 	public static function getPayitemListForPub($strType = 'task'){
+		if(TOOL === TRUE){
 		$arrPayitemLists = self::getPayitemList($strType);
 		switch ($strType) {
 			case 'task':
@@ -81,15 +88,19 @@ class PayitemClass {
 			}
 		}
 		return $arrPayitemLists;
+		}
 	}
 	public static function getPayitemPriceList($strType = 'task'){
+		if(TOOL === TRUE){
 		$arrPayitemLists = self::getPayitemList($strType);
 		foreach ($arrPayitemLists as $k=>$v){
 			$arrPayitemPriceLists[$k]= floatval($v['item_cash']);
 		}
 		return $arrPayitemPriceLists;
+		}
 	}
 	public static function getPayitemOrderAmountByObjId($objId,$objType = 'task'){
+		if(TOOL === TRUE){
 		$returnArray = array();
 		$payitemConfig = self::getPayitemConfig();
 		$strDetailType = "'".implode("','", array_keys($payitemConfig))."'";
@@ -99,8 +110,10 @@ class PayitemClass {
 			$returnArray =  db_factory::get_one(sprintf("select order_id,order_name,order_amount from ".TABLEPRE."witkey_order where order_id ='%d' limit 1",$orderId));
 		}
 		return $returnArray;
+		}
 	}
 	public static function validPayitemCount($arrPayitemNum,$endDate){
+		if(TOOL === TRUE){
 		$arrGetDate = getdate ();
 		$relTime = $arrGetDate ['hours'] * 3600 + $arrGetDate ['minutes'] * 60 + $arrGetDate ['seconds'];
 		$endTime = strtotime ( $endDate ) + $relTime ;
@@ -120,8 +133,10 @@ class PayitemClass {
 				}
 			}
 		}
+		}
 	}
 	public static function validPayitemCosts($totalCosts){
+		if(TOOL === TRUE){
 		global $user_info;
 		$totalCosts = floatval($totalCosts);
 		$userYe 	= floatval($user_info['balance']);
@@ -129,8 +144,10 @@ class PayitemClass {
 			$tips['errors']['txt_goodstop'] = '当前的余额不足，不能购买该增值服务';
 			kekezu::show_msg($tips,NULL,NULL,NULL,'error');
 		}
+		}
 	}
 	public static function getPayitemCash($arrPayitemNum,$type){
+		if(TOOL === TRUE){
 		$arrPayitemLists = self::getPayitemList($type);
 	    $floatPayitemCash = '';
         foreach($arrPayitemNum as $k=>$v){
@@ -139,16 +156,18 @@ class PayitemClass {
               }
         }
 		return $floatPayitemCash;
+		}
 	}
 	public static function creatPayitemOrder($arrPayitemBuy,$type,$objId,$taskOrderId = '0'){
+		if(TOOL === TRUE){
 		$taskOrderId = intval($taskOrderId);
 		$floatCash = self::getPayitemCash($arrPayitemBuy,$type);
 		$arrPayitemLists = self::getPayitemList($type);
 		$arrObjInfo =  self::getObjInfo($type,$objId);
-		if($floatCash){
 			if($taskOrderId>0){
 				$intOrderId = $taskOrderId;
-			}else{
+			}
+			else{
 				$intOrderId = keke_order_class::create_order($arrObjInfo['model_id'], '', '', '购买增值服务', $floatCash, '购买增值服务','wait');
 			}
 			if($intOrderId){
@@ -157,15 +176,15 @@ class PayitemClass {
 					keke_order_class::create_order_detail($intOrderId, '购买增值服务'.$arrPayitemLists[$k]['item_name'],$type, $arrObjInfo['id'], $cash,$v,$k);
 				}
 			}
-		}
 		return $intOrderId;
+		}
 	}
 	public static function payPayitemOrder($orderId){
 		global $user_info;
+		if(TOOL === TRUE){
         $arrOrderDetail = keke_order_class::get_order_detail($orderId);
         $arrOrderInfo = keke_order_class::get_order_info($orderId);
         $floatCash = floatval($arrOrderInfo['order_amount']);
-        if($floatCash){
         	$floatUserCash = $user_info['balance'];
         	if($floatUserCash>=$floatCash){
         		foreach($arrOrderDetail as $k=>$v){
@@ -181,6 +200,7 @@ class PayitemClass {
         }
 	}
 	public static function dispose_order($orderId){
+		if(TOOL === TRUE){
 		$arrOrderDetail = keke_order_class::get_order_detail($orderId);
 		$arrOrderInfo = keke_order_class::get_order_info($orderId);
 		$floatCash = floatval($arrOrderInfo['order_amount']);
@@ -188,14 +208,26 @@ class PayitemClass {
 			PayitemClass::createPayitemRecord($v['detail_type'],$v['num'],$v['obj_type'],$v['obj_id']);
 		}
 		keke_order_class::set_order_status($orderId, 'ok');
+		}
 	}
 	public static function createPayitemRecord($item,$num,$type,$objId){
-		global $uid,$username;
+		if(TOOL === TRUE){
+		if($type=='task'){
+			$objInfo = db_factory::get_one ( sprintf ( "select * from %switkey_task where task_id='%d'", TABLEPRE, $objId ) );
+		}else{
+			$objInfo = db_factory::get_one ( sprintf ( "select * from %switkey_service where service_id='%d'", TABLEPRE, $objId ) );
+		}
+		$uid = $objInfo['uid'];
+		$username = $objInfo['username'];
 		$arrPayitemLists = self::getPayitemList($type);
 		$data = array(':item_name'=>$arrPayitemLists[$item]['item_name']);
 		keke_finance_class::init_mem('payitem', $data);
 		$cash = $num*$arrPayitemLists[$item]['item_cash'];
-		$intFinaId = keke_finance_class::cash_out ( $uid, $cash, 'payitem', $cash, $type, $objId );
+        if($cash){
+        	$intFinaId = keke_finance_class::cash_out ( $uid, $cash, 'payitem', $cash, $type, $objId );
+        }else{
+        	$intFinaId = 1;
+        }
 		if($intFinaId){
 			$objRecord = new Keke_witkey_payitem_record_class ();
 			$objRecord->setItem_code ( $item );
@@ -217,12 +249,14 @@ class PayitemClass {
 					$objRecord->create_keke_witkey_payitem_record ();
 				}
 			}else{
-				 $objRecord->create_keke_witkey_payitem_record ();
+				 $res = $objRecord->create_keke_witkey_payitem_record ();
 			}
 			self::updateObjStatus($item,$type,$objId);
 		}
+		}
 	}
 	public static function setTaskWorkHide($taskId){
+		if(TOOL === TRUE){
 		$arrTaskInfo = self::getObjInfo('task',$taskId);
         if(in_array($arrTaskInfo['model_id'],array(4,5))){
         	$strTable = TABLEPRE.'witkey_task_bid';
@@ -230,8 +264,10 @@ class PayitemClass {
         	$strTable = TABLEPRE.'witkey_task_work';
         }
 		db_factory::execute(sprintf("update %s set workhide = 1 where task_id = %d",$strTable,$taskId));
+		}
 	}
 	public static function updateObjStatus($item,$type,$objId){
+		if(TOOL === TRUE){
 		$arrObjInfo = self::getObjInfo($type,$objId);
 		if ($type == 'task') {
 			$strTable = TABLEPRE . 'witkey_task';
@@ -244,8 +280,10 @@ class PayitemClass {
 		if($item == 'workhide'){
 			self::setTaskWorkHide($objId);
 		}
+		}
 	}
 	public static function getObjInfo($type = 'task', $objId) {
+		if(TOOL === TRUE){
 		if ($type == 'task') {
 			$strTable = TABLEPRE . 'witkey_task';
 			$strField = ' task_id as id,sub_time,model_id,task_status,tasktop,urgent,workhide';
@@ -256,9 +294,11 @@ class PayitemClass {
 			$strPrimary = ' service_id ';
 		}
 		return db_factory::get_one ( sprintf ( "select %s from %s where %s=" . intval ( $objId ), $strField, $strTable, $strPrimary ) );
-	}
+		}
+		}
     public static function getPayitemConfig( $item_code = null,$pk=null) {
-		global $kekezu;
+    	global $kekezu;
+    	if(TOOL === TRUE){
 		$pk or $pk = "item_code";
 		$payitem_list = kekezu::get_table_data ( "*", "witkey_payitem", "1=1 $where ", "", "", "", $pk,3600 );
 		if ($item_code) {
@@ -267,12 +307,16 @@ class PayitemClass {
 		} else {
 			return $payitem_list;
 		}
+    	}
 	}
     public static function editPayitem($item_id, $item_info = array()) {
+    	if(TOOL === TRUE){
 		$obj = self::getTableObj ();
 		return $obj->save ( $item_info, array ("item_id" => $item_id ) );
+    	}
 	}
 	public static function refundPayitem($objId,$objType){
+		if(TOOL === TRUE){
 		$payitemConfig = self::getPayitemConfig();
 		$strDetailType = "'".implode("','", array_keys($payitemConfig))."'";
 		$arrOrderDetailLists = db_factory::query(sprintf("select * from ".TABLEPRE."witkey_order_detail where obj_id =%d and obj_type = '%s' and detail_type in(%s) ",$objId,$objType,$strDetailType));
@@ -293,8 +337,10 @@ class PayitemClass {
 				}
 			}
 		}
+		}
 	}
 	public static function updateTopitem($objId,$objType){
+		if(TOOL === TRUE){
 		$sql = "select * from ".TABLEPRE."witkey_order_detail where obj_id = '".$objId."' and obj_type = '".$objType."' and detail_type =  '".$objType."top'";
 		$payitemRecordInfo = db_factory::get_one($sql);
 		if($payitemRecordInfo){
@@ -302,5 +348,5 @@ class PayitemClass {
 			db_factory::execute("update ".TABLEPRE."witkey_payitem_record set on_time = ".time().",end_time = ".$topTime." where obj_id = '".$objId."' and obj_type = '".$objType."' and item_code =  '".$objType."top'");
 		}
 	}
-
+	}
 }

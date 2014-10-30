@@ -90,4 +90,4 @@ if($acAjax){
 	$sql = "update ".TABLEPRE.'witkey_industry set '.$fields .' = '. $value .' where indus_id = '.$indusId;
 	db_factory::execute($sql);
 }
-require $kekezu->_tpl_obj->template ( "admin/tpl/admin_task_$view" );
+require $kekezu->_tpl_obj->template(ADMIN_DIRECTORY."/tpl/admin_task_$view" );

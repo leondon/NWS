@@ -18,4 +18,4 @@ if( $sbt_edit ) {
 } else {
 	$item_id and $item_info = db_factory::get_one(" select * from ".TABLEPRE."witkey_prom_item where item_id = '$item_id'");
 }
-require $template_obj->template ( 'admin/tpl/admin_'.$do.'_' . $view );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_'.$do.'_' . $view );

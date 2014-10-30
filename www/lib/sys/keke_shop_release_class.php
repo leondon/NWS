@@ -229,7 +229,7 @@ abstract class keke_shop_release_class {
 		}
 	}
 	public function check_access($r_step, $model_id, $release_info, $service_id = null, $output = 'normal') {
-		global $_lang;
+		global $_lang,$gUid,$uid;
 		switch ($r_step) {
 			case "step1" : 
 				break;
@@ -239,8 +239,11 @@ abstract class keke_shop_release_class {
 				}
 				break;
 			case "step3" : 
-				$sql = sprintf ( " select service_status,service_id from %switkey_service where service_id = '%d' and on_time>%d", TABLEPRE, $service_id, time () - 600 );
+				$sql = sprintf ( " select uid,service_status,service_id from %switkey_service where service_id = '%d' and on_time>%d", TABLEPRE, $service_id, time () - 600 );
 				$service_info = db_factory::get_one ( $sql );
+				if($service_info['uid'] != $uid){
+					kekezu::keke_show_msg ( "index.php?do=pubgoods", '你没有权限访问该页面', "error", $output );
+				}
 				$service_info or kekezu::keke_show_msg ( "index.php?do=pubgoods", $_lang['page_expired_notice'], "error", $output );
 				return $service_info;
 				break;

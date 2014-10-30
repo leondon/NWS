@@ -1,10 +1,10 @@
-<!--{template admin/tpl/admin_header}--> 
+<!--{template ADMIN_DIRECTORY/tpl/admin_header}--> 
  
 	<div class="page_title">	
     	<h1>{if $type=='art'}{$_lang['article']}{elseif $type=='help'}{$_lang['help']}{elseif $type=='bulletin'}{$_lang['bulletin']}{elseif $type=='about'}{$_lang['about']}{else}{$_lang['single_page']}{/if}{$_lang['manage']}</h1>
          <div class="tool">
-            <a href="index.php?do=$do&view=list&type=$type" {if $view=='list'}class="here" {/if}>文章列表</a>
-            <a href="index.php?do=$do&view=edit&type=$type" {if $view=='edit'}class="here" {/if}>添加文章</a>
+            <a href="index.php?do=$do&view=list&type=$type" {if $view=='list'}class="here" {/if}>文章列表</a>     
+            {if $type!='about'}<a href="index.php?do=$do&view=edit&type=$type" {if $view=='edit'}class="here" {/if}>添加文章</a>{/if}     
     	</div>
 	</div>
     <!--页头结束-->
@@ -160,4 +160,4 @@
 		})
  }
 </script>
-<!--{template admin/tpl/admin_footer}-->
+<!--{template ADMIN_DIRECTORY/tpl/admin_footer}-->

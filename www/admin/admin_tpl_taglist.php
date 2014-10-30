@@ -44,4 +44,4 @@ if ($op == 'del') {
 	$tag_arr = $d ['data'];
 	$pages = $d ['pages'];
 }
-require $template_obj->template ( 'admin/tpl/admin_tpl_' . $view );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_tpl_' . $view );

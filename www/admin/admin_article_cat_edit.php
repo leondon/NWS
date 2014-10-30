@@ -77,4 +77,4 @@ $temp_arr = array();
 kekezu::get_tree($art_cat_arr,$temp_arr,'option',$art_cat_pid,'art_cat_id','art_cat_pid','cat_name');
 $cat_arr = $temp_arr;
 unset($temp_arr);
-require  $template_obj->template('admin/tpl/admin_'. $do .'_'. $view);
+require  $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_'. $do .'_'. $view);

@@ -77,6 +77,7 @@ $(function(){
 	$('#getForm1').scojs_valid({
 		rules: {
 			account  : ['not_empty',{'min_length': 2},{'max_length': 20}],
+			email  : ['not_empty','email'],
 			getPasswordCode:['not_empty']
 		},
 		messages: {
@@ -84,6 +85,10 @@ $(function(){
 				not_empty: "请输入账号",
 				min_length: "账号不少于2个字符",
 				max_length: "账号不能超过20个字符"
+			},
+			email: {
+				not_empty: "请输入邮箱",
+				email: "请输入正确的邮箱"
 			},
 			getPasswordCode:{
 				not_empty: "请输入验证码",

@@ -23,4 +23,4 @@ if ($ac === 'del') {
 	$auth_item_obj->setWhere ( $where . $pages ['where'] );
 	$auth_item_arr = $auth_item_obj->query_keke_witkey_auth_item ();
 }
-require $kekezu->_tpl_obj->template ( 'admin/tpl/admin_' . $do . '_' . $view );
+require $kekezu->_tpl_obj->template(ADMIN_DIRECTORY.'/tpl/admin_' . $do . '_' . $view );

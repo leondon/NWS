@@ -25,4 +25,13 @@ $intPagesize and $strUrl .="&intPagesize=".intval($intPagesize);
 	$intCount = $arrDatas ['count'];
 	$strPages = $arrDatas ['pages'];
 unset($objArticleT);
+if($id){
+	$arrHelpKerword = db_factory::get_one("select art_cat_pid from ".TABLEPRE.'witkey_article_category where art_cat_id = '.intval($id));
+	$arrHelpKerword = db_factory::get_one("select seo_title, seo_keyword,seo_desc from ".TABLEPRE.'witkey_article_category where art_cat_id = '.intval($arrHelpKerword['art_cat_pid']));
+}else{
+	$arrHelpKerword = db_factory::get_one("select art_cat_pid from ".TABLEPRE.'witkey_article_category where art_cat_id = 100');
+}
+$strPageTitle = '帮助中心--'.$kekezu->_sys_config['website_name'].$arrHelpKerword['seo_title'];
+$strPageKeyword = $kekezu->_sys_config['website_name'].'帮助中心,'.$arrHelpKerword['seo_keyword'];
+$strPageDescription = $kekezu->_sys_config['website_name'].'帮助中心,'.$arrHelpKerword['seo_desc'];
 $_SESSION['spread'] = 'index.php?do=help';

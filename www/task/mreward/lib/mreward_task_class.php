@@ -153,8 +153,6 @@ public function getProjectProgressDesc() {
 		$where .= "  order by field(a.work_status,'7','3','2','1') desc,work_time asc ";
 		if (! empty ( $p )) {
 			$page_obj = $kekezu->_page_obj;
-			$page_obj->setAjax ( 1 );
-			$page_obj->setAjaxDom ( "gj_summery" );
 			$count = intval ( db_factory::get_count ( $count_sql . $where ) );
 			$pages = $page_obj->getPages ( $count, $p ['page_size'], $p ['page'], $p ['url'], $p ['anchor'] );
 			$where .= $pages ['where'];
@@ -263,7 +261,7 @@ public function getProjectProgressDesc() {
 						"event" => array (
 								"content" => "$this->_task_title ",
 								"url" => "index.php?do=task&id=$this->_task_id",
-								'cash' => $prize_real_cash
+								'cash' => number_format($prize_real_cash,'2')
 						)
 				);
 				kekezu::save_feed ( $feed_arr, $work_info ['uid'], $work_info ['username'], 'work_accept', $this->_task_id );

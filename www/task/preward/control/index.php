@@ -24,9 +24,9 @@ $objTime->validtaskstatus();
 $intBidCount = $objTask->get_work_count ( "work_status=6" );
 switch ($view){
 	case "work":
-		intval ( $intPage ) and $p ['page'] = intval ( $intPage ) or $p ['page']='1';
+		intval ( $page ) and $p ['page'] = intval ( $page ) or $p ['page']='1';
 		intval ( $intPagesize ) and $p ['page_size'] = intval ( $intPagesize ) or $p['page_size']=10;
-		$p['url'] = $strUrl."&view=work&intPagesize=".$p ['page_size']."&intPage=".$p ['page'];
+		$p['url'] = $strUrl."&view=work&intPagesize=".$p ['page_size']."&page=".$p ['page'];
 		$p ['anchor'] = '#detail';
 		if($st){
 			$p['url'] .="&st=".$st;

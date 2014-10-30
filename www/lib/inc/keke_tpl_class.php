@@ -116,6 +116,10 @@ class keke_tpl_class {
 	static function readtemplate($name) {
 		global $_K;
 		$tpl = keke_tpl_class::tpl_exists ( $name );
+		$tplArr =  explode('/',$tpl);
+		$oldFirstDir =$tplArr['0'];
+		eval('$firstDir = '.$tplArr['0'].';');
+		$tpl =$firstDir.substr($tpl,strlen($oldFirstDir),strlen($tpl)-strlen($oldFirstDir));
 		$tplfile = S_ROOT . './' . $tpl . '.htm';
 		$sub_tpls [] = $tpl;
 		if (! file_exists ( $tplfile )) {
@@ -234,9 +238,11 @@ class keke_tpl_class {
 		$url = str_replace ( array (
 				'do=',
 				'&',
+				'='
 		), array (
 				'',
 				'-',
+				'-'
 		), $url );
 		$hot = $hot ? '#' . $hot : '';
 		return  '='.$url . '.html' . $hot ;
@@ -249,7 +255,7 @@ class keke_tpl_class {
 		header ( "Content-type: application/xml; charset=" . CHARSET );
 		echo '<' . "?xml version=\"1.0\" encoding=\"" . CHARSET . "\"?>\n";
 		echo "<root><![CDATA[" . trim ( $content ) . "]]></root>";
-		extension_loaded ( 'zlib' ) && ob_end_flush (); 
+		extension_loaded ( 'zlib' ) && ob_end_flush ();
 		exit ();
 	}
 }

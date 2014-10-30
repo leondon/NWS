@@ -15,4 +15,4 @@ if ($target_id) {
 	$target_arr = db_factory::get_one ( "select * from ".TABLEPRE."witkey_ad_target where target_id='$target_id'" );
 	$target_arr['position'] = var_export(unserialize($target_arr['position']),1);
 }
-require $template_obj->template ( 'admin/tpl/admin_' . $do . '_' . $view );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_' . $do . '_' . $view );

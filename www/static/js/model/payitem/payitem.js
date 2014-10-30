@@ -4,12 +4,16 @@ $(function(){
 	var objItem = $("input[name^='txt_']");
 	objItem.keyup(function(){
 		var arrPrice = new Array();
+		var intNum = 0;
 		objItem.each(function(i,obj){
-			var objVal= parseInt($(obj).val());
-			var objPrice = $(obj).attr('data-unit-price');
+			var objVal= parseInt($(obj).val())+0;
 			if(isNaN(objVal)||objVal ==''){
 				objVal = 0;
 			}
+			intNum = parseInt(intNum)+objVal;
+			//alert(intNum);
+			var objPrice = $(obj).attr('data-unit-price');
+
 			if(isNaN(objPrice)||objPrice ==''){
 				objPrice = 0;
 			}
@@ -20,7 +24,7 @@ $(function(){
 			tatalPrice += arrPrice[i];
 		}
 		$('#payitem-costs').text(tatalPrice);
-		if(tatalPrice>0){
+		if(intNum>0){
 			$("#btn-payitempay").removeAttr('disabled');
 		}
 

@@ -7,7 +7,7 @@ class keke_admin_class {
 	}
 	static function get_admin_menu() {
 		global $kekezu,$_lang;
-		//$menuset_arr = $kekezu->_cache_obj->get ( 'menu_resource_cache' );
+		$menuset_arr = $kekezu->_cache_obj->get ( 'menu_resource_cache' );
 		if (! $menuset_arr) {
 			$resource_obj = new Keke_witkey_resource_class ();
 			$resource_obj->setWhere ( "1=1 order by listorder asc" );

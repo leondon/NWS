@@ -203,11 +203,4 @@ $lang = array (
 		'last_modify' => '上次修改时间',
 		'bind_account' => '绑定账号', 
 
-	/*爬网*/
-		'crawl_task' => '爬网',
-		'crawl_scope' => '爬网范围',
-		'start_id' => '开始任务ID',
-		'end_id' => '结束任务ID',
-		'crawl'  => '开爬'
-
 ); 

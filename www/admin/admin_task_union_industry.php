@@ -13,4 +13,4 @@ if (isset($sbt_edit)){
 		db_factory::execute("update ".TABLEPRE."witkey_service set indus_pid = $slt_indus_id where indus_pid = $to_indus_id");
 		kekezu::admin_show_msg($_lang['industry_union_success'],$url,3,'','success');
 }
-require_once $template_obj->template ( 'admin/tpl/admin_'.$do.'_' . $view );
+require_once $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_'.$do.'_' . $view );

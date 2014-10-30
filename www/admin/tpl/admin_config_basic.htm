@@ -1,4 +1,4 @@
-<!--{template admin/tpl/admin_header}-->
+<!--{template ADMIN_DIRECTORY/tpl/admin_header}-->
 <div class="page_title">
     	<h1>{$_lang['global_config']}</h1>
          <div class="tool">
@@ -111,7 +111,7 @@
                     {$_lang['third_party_code_statistics']}{$_lang['zh_mh']}
                 </th>
                 <td>
-                    <textarea cols="50" name="stats_code" msg="{$_lang['third_party_code_statistics']}{$_lang['length']}3-500" msgArea="txt_stats_code_msg" rows="3" class="textarea"><!--{eval echo stripslashes($config_arr['stats_code']);}--></textarea>
+                    <textarea cols="50" name="stats_code" msg="{$_lang['third_party_code_statistics']}{$_lang['length']}3-500" msgArea="txt_stats_code_msg" rows="3" class="textarea"><!--{eval echo stripslashes(stripslashes($config_arr['stats_code']));}--></textarea>
                     <span id="txt_stats_code_msg"></span><br/>&nbsp;&nbsp;{$_lang['js_code']}
                 </td>
             </tr>
@@ -492,4 +492,4 @@ $(function(){
 	    $("#web_logo").val(json.msg.url);
 }
 </script>
-<!--{template admin/tpl/admin_footer}-->
+<!--{template ADMIN_DIRECTORY/tpl/admin_footer}-->

@@ -44,4 +44,4 @@ if (isset ( $ac )) {
 	$sql.=$where.$pages['where'];
 	$case_arr =db_factory::query($sql);
 }
-require $template_obj->template ( 'admin/tpl/admin_' . $do . '_' . $view );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_' . $do . '_' . $view );

@@ -192,9 +192,9 @@ abstract class keke_report_class {
 						break;
 					case "order" : 
 						if ($process_type == 'pass') {
-							$res = db_factory::execute ( sprintf ( " update %switkey_order set order_status='close' where order_id='%d' ", TABLEPRE, $report_info ['origin_id'] ) );
+							$res = db_factory::execute ( sprintf ( " update %switkey_order set order_status='close' where order_id='%d' ", TABLEPRE, $report_info ['obj_id'] ) );
 						} else { 
-							$res = db_factory::execute ( sprintf ( " update %switkey_order set order_status='%s' where order_id='%d' ", TABLEPRE, $front_status, $report_info ['origin_id'] ) );
+							$res = db_factory::execute ( sprintf ( " update %switkey_order set order_status='%s' where order_id='%d' ", TABLEPRE, $front_status, $report_info ['obj_id'] ) );
 						}
 						break;
 					case "product" :
@@ -377,9 +377,9 @@ abstract class keke_report_class {
 		global $kekezu;
 		$model_info = $kekezu->_model_list [$this->_obj_info ['model_id']];
 		if ($model_info ['model_code'] == 'dtender' || $model_info ['model_code'] == 'tender') { 
-		 	return db_factory::execute ( sprintf ( "update %switkey_task_bid set bid_status = 7 where bid_id = '%d'", TABLEPRE, $obj_id ) );
+		 	return db_factory::execute ( sprintf ( "update %switkey_task_bid set bid_status = 8 where bid_id = '%d'", TABLEPRE, $obj_id ) );
 		} else{
-			return db_factory::execute ( sprintf ( "update %switkey_task_work set work_status = 7 where work_id = '%d'", TABLEPRE, $obj_id ) );
+			return db_factory::execute ( sprintf ( "update %switkey_task_work set work_status = 8 where work_id = '%d'", TABLEPRE, $obj_id ) );
 		}
 	}
 	public function cancel_bid($obj_id) {

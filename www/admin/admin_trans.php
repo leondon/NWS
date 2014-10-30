@@ -52,7 +52,7 @@ if ($ac) {
 	}
 }
 if ($view != 'process') {
-	require keke_tpl_class::template ( 'admin/tpl/admin_trans_rights' );
+	require keke_tpl_class::template ( ADMIN_DIRECTORY.'/tpl/admin_trans_rights' );
 } else {
 	require ADMIN_ROOT . 'admin_' . $do . '_' . $view . '.php';
 }

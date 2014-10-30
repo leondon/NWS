@@ -9,7 +9,7 @@ if($sbt_edit){
 	$model_list=$kekezu->_model_list;
 }
 $kekezu->_cache_obj->gc();
-require keke_tpl_class::template("/admin/tpl/admin_payitem_edit");
+require keke_tpl_class::template(ADMIN_DIRECTORY."/tpl/admin_payitem_edit");
 function get_fid($path){
 	if(!path){ return false;}
 	$querystring = substr(strstr($path, '?'), 1);

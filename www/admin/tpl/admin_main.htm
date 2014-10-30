@@ -1,4 +1,4 @@
-<!--{template admin/tpl/admin_header}-->
+<!--{template ADMIN_DIRECTORY/tpl/admin_header}-->
 <!--
 <div class="po_ab fixed-right adv ">
 		<a href="#">{$_lang['ad_leasing']}w150xh90</a>
@@ -169,7 +169,7 @@
             <li>
                 {$_lang['server_max_upload_file']} : {if $sys_info ['file_uploads']}	{$sys_info['max_filesize']} {else}<font color=red>$_lang['close'] </font>{/if}
             </li>
-			
+
 			 <li>
                  {$_lang['db_size']} : $dbsize MB
             </li> 
@@ -188,4 +188,4 @@
 		window.location.href = 'index.php?do=model&model_id='+model_id+'&view=list';
 	}
 </script>
-<!--{template admin/tpl/admin_footer}-->
+<!--{template ADMIN_DIRECTORY/tpl/admin_footer}-->

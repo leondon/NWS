@@ -796,7 +796,7 @@ class sreward_task_class extends keke_task_class {
 		global $_lang, $_K;
 		$agree_title = $this->_task_title . '-' . $work_info ['work_id'];
 		$agree_id = keke_task_agreement::create_agreement ( $agree_title, $this->_model_id, $this->_task_id, $work_info ['work_id'], $this->_guid, $work_info ['uid'] );
-		$a_url = '<a href="' . $_K ['siteurl'] . '/index.php?do=agreement&agree_id=' . $agree_id . '">' . $agree_title . '</a>';
+		$a_url = '<a href="' . $_K ['siteurl'] . '/index.php?do=agreement&taskId='.$this->_task_id.'&agreeId=' . $agree_id . '">' . $agree_title . '</a>';
 		$notice = $_lang ['task_in_jf_stage'];
 		$s_arr = array (
 				$_lang ['agreement_link'] => $a_url,
@@ -1060,7 +1060,8 @@ class sreward_task_class extends keke_task_class {
 					);
 					keke_finance_class::init_mem ( 'pub_task', $data );
 					$res = keke_finance_class::cash_out ( $task_info ['uid'], $v['price'], 'pub_task', 0, 'task', $this->_task_id  );
-				}else{
+				}
+				if($v['obj_type']=='task'&&$v['detail_type']){
 					PayitemClass::createPayitemRecord($v['detail_type'],$v['num'],$v['obj_type'],$v['obj_id']);
 				}
 			}

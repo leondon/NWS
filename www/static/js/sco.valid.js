@@ -354,26 +354,28 @@
 									setTimeout(function(){window.location.href=response.url;},2000);
 						  	  	}
 							},1000);
-						
+
 						}
 					} else if (response.status === 'success') {
 						if (typeof options.onSuccess !== 'function' || options.onSuccess.call(this, response, validator, $form) !== false) {
-							if (response.data.next) {
-								if (response.data.next === '.') {			// refresh current page
-									window.location.href = window.location.href.replace(/#.*$/, '');
-								} else if (response.data.next === 'x') {	// close the parent modal
-									$form.closest('.modal').trigger('close');
-								} else {
-									window.location.href = response.data.next;
+							if(response.data){
+								if (response.data.next) {
+									if (response.data.next === '.') {			// refresh current page
+										window.location.href = window.location.href.replace(/#.*$/, '');
+									} else if (response.data.next === 'x') {	// close the parent modal
+										$form.closest('.modal').trigger('close');
+									} else {
+										window.location.href = response.data.next;
+									}
 								}
-							}
-							if (response.data.message) {
-								$('.close').trigger('click');
-								tipsOp(response.data,response.status);
-								if(response.url){
-									setTimeout(function(){window.location.href=response.url;},2000);
+								if (response.data.message) {
+									$('.close').trigger('click');
+									tipsOp(response.data,response.status);
+									if(response.url){
+										setTimeout(function(){window.location.href=response.url;},2000);
+									}
+									//$.scojs_message(response.data.message, $.scojs_message.TYPE_OK);
 								}
-								//$.scojs_message(response.data.message, $.scojs_message.TYPE_OK);
 							}
 						}
 					}

@@ -12,7 +12,7 @@ $lang = array(
       'permissions_config_update_success'=>'权限配置修改成功',
       'has_update_more_reward'=>'修改了多人悬赏任务的',
 
-      
+
 /*task_config.htm*/
       'industry_binding'=>'行业绑定',
       'choose_industry'=>'选择行业',
@@ -33,7 +33,7 @@ $lang = array(
 /*task_control.htm*/
       'task_commission_strategy'=>'任务佣金策略',
       'task_audit_money_set'=>'任务审核金额设定',
-      'greater_money_not_audit_notice'=>'任务需审核后发布成功的金额最小值，设为0即无限制',
+      'greater_money_not_audit_notice'=>'发布赏金低于该设定金额的任务需要审核，设为0即无限制',
       'task_min_money_set'=>'任务最小金额设定',
       'fill_in_right_audit_money'=>'填写正确任务审核金额',
       'task_audit_money_allow_decimal'=>'任务审核金额允许小数',
@@ -83,7 +83,7 @@ $lang = array(
       'every_time_delay_money_error'=>'每次延期金额最少金额填写错误',
       'task_delay_min_one_yuan'=>'任务延期最少金额为1元',
       'delay_days_limit'=>'延期最大天数  ',
-   
+
       'every_max_delay_days_error'=>'每次最大延期天数不正确',
       'max_delay_days_notice'=>'任务最大延期天数不得小于2天',
       'max_delay'=>'最大延期',
@@ -95,7 +95,7 @@ $lang = array(
       'tick_comment_notice'=>'勾选则评论在任务进行中隐藏，任务结束公开',
 
 /*task_priv.htm*/
-      'item_name'=>'项目名称',     
+      'item_name'=>'项目名称',
       'user_identity'=>'用户身份',
       'times_limit'=>'次数限制',
 

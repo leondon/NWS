@@ -81,4 +81,4 @@ $order_info or kekezu::admin_show_msg ( $_lang['charge_num_not_exist'], $url,3,'
 	$recharge_obj->setWhere ( $where . $pages [where] );
 	$recharge_arr = $recharge_obj->query_keke_witkey_order_charge();
 }
-require $template_obj->template ( 'admin/tpl/admin_' . $do . '_' . $view );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_' . $do . '_' . $view );

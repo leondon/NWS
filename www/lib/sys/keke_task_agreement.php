@@ -57,7 +57,7 @@ abstract class keke_task_agreement {
 		$this->_buyer_status = $agree_info ['buyer_status'];
 		$this->_seller_uid = $agree_info ['seller_uid'];
 		$this->_seller_status = $agree_info ['seller_status'];
-		$this->_agree_url = "<a href=\"" . $_K ['siteurl'] . "/index.php?do=agreement" . "&agree_id=" . $this->_agree_id . "\">" . $this->_agree_info ['agree_title'] . "</a>";
+		$this->_agree_url = "<a href=\"" . $_K ['siteurl'] . "/index.php?do=agreement" . "&taskId=".$this->_task_id."&agreeId=" . $this->_agree_id . "\">" . $this->_agree_info ['agree_title'] . "</a>";
 	}
 	public function buyer_contact_init() {
 		$info = db_factory::get_one ( sprintf ( " select a.contact,a.username,b.truename,b.phone,b.email,b.qq,b.msn from %switkey_task a left join %switkey_space b on a.uid=b.uid where a.task_id='%d'", TABLEPRE, TABLEPRE, $this->_task_id ) );

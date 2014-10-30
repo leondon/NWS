@@ -374,7 +374,7 @@ class preward_task_class extends keke_task_class {
 				"event" => array (
 						"content" => "$this->_task_title",
 						"url" => "index.php?do=task&id=$this->_task_id",
-						'cash' => $real_cash
+						'cash' => number_format($real_cash,'2')
 				)
 		);
 		kekezu::save_feed ( $feed_arr, $work_info ['uid'], $work_info ['username'], 'work_accept', $this->_task_id );
@@ -494,7 +494,7 @@ class preward_task_class extends keke_task_class {
 		$hege_count = $this->get_work_count ( "work_status=6" );
 		$hege_count and $use_cash = floatval ( $this->_task_info ['single_cash'] ) * $hege_count;
 		$work_count = intval ( $this->_task_info ['work_count'] );
-				$cash = floatval ( $this->_task_info ['cash_cost'] );
+				$cash = floatval ( $task_cash );
 				if ($hege_count > 0) {
 					$sy = $cash - $use_cash;
 					if ($sy >= 0) {

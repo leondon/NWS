@@ -60,4 +60,4 @@ if ($op == "open") {
 	die ();
 }
 $model_list = $kekezu->_model_list;
-require $template_obj->template ( 'admin/tpl/admin_config_model' );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_config_model' );

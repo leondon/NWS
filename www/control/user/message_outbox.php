@@ -10,9 +10,9 @@ if (isset ( $action )) {
 				foreach ( $ckb as $v ) {
 					list ( $intMsgId, $intStatus ) = explode ( ',', $v );
 					if ($intStatus == 0) {
-						db_factory::execute ( "update " . TABLEPRE . "witkey_msg set msg_status=1 where msg_id = $intMsgId" );
+						db_factory::execute ( "update " . TABLEPRE . "witkey_msg set msg_status=1 where msg_id = ".intval($intMsgId) );
 					} else {
-						$objMsgT->del ( 'msg_id', $intMsgId );
+						$objMsgT->del ( 'msg_id', intval($intMsgId) );
 					}
 				}
 				kekezu::show_msg ( '删除成功', $strUrl, NULL, NULL, 'ok' );

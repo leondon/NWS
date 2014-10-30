@@ -114,4 +114,4 @@ function get_cat($pid = NULL, $cache = NULL) {
 		$cat_arr = kekezu::get_table_data ( '*', "witkey_article_category", $where, "listorder", '', '', 'art_cat_id', $cache );
 		return $cat_arr;
 	}
-require  $template_obj->template('admin/tpl/admin_'. $do .'_'. $view);
+require  $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_'. $do .'_'. $view);

@@ -19,4 +19,4 @@ if(isset($sbt_edit)){
 		kekezu::admin_show_msg($msg,'index.php?do='.$do.'&view='.$view,2,'','success');
 	}
 }
-require $template_obj->template ( 'admin/tpl/admin_' . $do . '_' . $view );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_' . $do . '_' . $view );

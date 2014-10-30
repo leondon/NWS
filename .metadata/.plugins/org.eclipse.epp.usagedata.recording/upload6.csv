@@ -1,0 +1,301 @@
+what,kind,bundleId,bundleVersion,description,time
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410706322036
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410706333996
+activated,view,org.eclipse.php.ui,2.2.0.v20100616-1900,"org.eclipse.php.ui.explorer",1410706348332
+opened,editor,org.eclipse.wst.html.ui,1.0.500.v201006030742,"org.eclipse.wst.html.core.htmlsource.source",1410706348419
+activated,editor,org.eclipse.wst.html.ui,1.0.500.v201006030742,"org.eclipse.wst.html.core.htmlsource.source",1410706348493
+activated,editor,org.eclipse.wst.html.ui,1.0.500.v201006030742,"org.eclipse.wst.html.core.htmlsource.source",1410706472437
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.delete",1410706477611
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.save",1410706479367
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410706479912
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410706506150
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.undo",1410706507383
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.save",1410706508075
+error,log,,,"找不到标记 id 8931。",1410706508167
+error,log,,,"找不到标记 id 8935。",1410706508168
+error,log,,,"找不到标记 id 8940。",1410706508169
+error,log,,,"找不到标记 id 8943。",1410706508170
+error,log,,,"找不到标记 id 8941。",1410706508171
+error,log,,,"找不到标记 id 8934。",1410706508172
+error,log,,,"找不到标记 id 8932。",1410706508172
+error,log,,,"找不到标记 id 8942。",1410706508173
+error,log,,,"找不到标记 id 8939。",1410706508174
+error,log,,,"找不到标记 id 8930。",1410706508175
+error,log,,,"找不到标记 id 8936。",1410706508175
+error,log,,,"找不到标记 id 8937。",1410706508176
+error,log,,,"找不到标记 id 8933。",1410706508177
+error,log,,,"找不到标记 id 8929。",1410706508178
+error,log,,,"找不到标记 id 8938。",1410706508178
+activated,editor,org.eclipse.wst.html.ui,1.0.500.v201006030742,"org.eclipse.wst.html.core.htmlsource.source",1410706509850
+activated,view,org.eclipse.php.ui,2.2.0.v20100616-1900,"org.eclipse.php.ui.explorer",1410706804833
+activated,editor,org.eclipse.wst.html.ui,1.0.500.v201006030742,"org.eclipse.wst.html.core.htmlsource.source",1410706808617
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410706818081
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410706842336
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.save",1410707148186
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410707148960
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410707162118
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.undo",1410707163013
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.save",1410707164020
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410707164580
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410707166383
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.save",1410707175896
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410707176422
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410707185056
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.undo",1410707185878
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.save",1410707186523
+error,log,,,"找不到标记 id 8992。",1410707186616
+error,log,,,"找不到标记 id 9003。",1410707186617
+error,log,,,"找不到标记 id 8995。",1410707186618
+error,log,,,"找不到标记 id 8994。",1410707186619
+error,log,,,"找不到标记 id 9000。",1410707186620
+error,log,,,"找不到标记 id 8999。",1410707186621
+error,log,,,"找不到标记 id 9001。",1410707186622
+error,log,,,"找不到标记 id 8998。",1410707186623
+error,log,,,"找不到标记 id 8993。",1410707186623
+error,log,,,"找不到标记 id 8996。",1410707186624
+error,log,,,"找不到标记 id 8991。",1410707186625
+error,log,,,"找不到标记 id 8989。",1410707186627
+error,log,,,"找不到标记 id 8990。",1410707186628
+error,log,,,"找不到标记 id 8997。",1410707186629
+error,log,,,"找不到标记 id 9002。",1410707186630
+activated,view,org.eclipse.php.ui,2.2.0.v20100616-1900,"org.eclipse.php.ui.explorer",1410707192701
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410707200746
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410707217087
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410707217904
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410707246232
+activated,editor,org.eclipse.wst.html.ui,1.0.500.v201006030742,"org.eclipse.wst.html.core.htmlsource.source",1410707248126
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410707251773
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.findReplace",1410707251815
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410707252914
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410707255166
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.paste",1410707257305
+activated,view,org.eclipse.search,3.6.0.v20100520-0800,"org.eclipse.search.ui.views.SearchView",1410707258527
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410707266229
+executed,command,org.eclipse.search,3.6.0.v20100520-0800,"org.eclipse.search.ui.openSearchDialog",1410707266244
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410707266553
+error,log,,,"文本搜索期间遇到了问题。",1410707271865
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410707273058
+opened,editor,org.eclipse.wst.html.ui,1.0.500.v201006030742,"org.eclipse.wst.html.core.htmlsource.source",1410707285546
+activated,editor,org.eclipse.wst.html.ui,1.0.500.v201006030742,"org.eclipse.wst.html.core.htmlsource.source",1410707287093
+activated,view,org.eclipse.search,3.6.0.v20100520-0800,"org.eclipse.search.ui.views.SearchView",1410707300574
+activated,editor,org.eclipse.wst.html.ui,1.0.500.v201006030742,"org.eclipse.wst.html.core.htmlsource.source",1410707357307
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410707386495
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410707425370
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410707428093
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410707546365
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.copy",1410707570145
+activated,editor,org.eclipse.php.ui,2.2.0.v20100616-1900,"org.eclipse.php.editor",1410707570992
+activated,editor,org.eclipse.wst.html.ui,1.0.500.v201006030742,"org.eclipse.wst.html.core.htmlsource.source",1410707576121
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410707716684
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410707724659
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410707731649
+activated,view,org.eclipse.search,3.6.0.v20100520-0800,"org.eclipse.search.ui.views.SearchView",1410707795113
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410707795155
+executed,command,org.eclipse.search,3.6.0.v20100520-0800,"org.eclipse.search.ui.openSearchDialog",1410707795194
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410707795898
+error,log,,,"文本搜索期间遇到了问题。",1410707796273
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410707799120
+activated,editor,org.eclipse.wst.html.ui,1.0.500.v201006030742,"org.eclipse.wst.html.core.htmlsource.source",1410707893741
+activated,view,org.eclipse.search,3.6.0.v20100520-0800,"org.eclipse.search.ui.views.SearchView",1410707900522
+activated,editor,org.eclipse.wst.html.ui,1.0.500.v201006030742,"org.eclipse.wst.html.core.htmlsource.source",1410707900809
+activated,editor,org.eclipse.php.ui,2.2.0.v20100616-1900,"org.eclipse.php.editor",1410707947859
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410707950447
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.cut",1410707966269
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.paste",1410707967554
+activated,view,org.eclipse.search,3.6.0.v20100520-0800,"org.eclipse.search.ui.views.SearchView",1410707969412
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410707969470
+executed,command,org.eclipse.search,3.6.0.v20100520-0800,"org.eclipse.search.ui.openSearchDialog",1410707969491
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410707969850
+error,log,,,"文本搜索期间遇到了问题。",1410707970006
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410707971363
+activated,editor,org.eclipse.php.ui,2.2.0.v20100616-1900,"org.eclipse.php.editor",1410707971760
+activated,view,org.eclipse.search,3.6.0.v20100520-0800,"org.eclipse.search.ui.views.SearchView",1410707975611
+closed,editor,org.eclipse.wst.html.ui,1.0.500.v201006030742,"org.eclipse.wst.html.core.htmlsource.source",1410707980137
+opened,editor,org.eclipse.php.ui,2.2.0.v20100616-1900,"org.eclipse.php.editor",1410707980249
+activated,editor,org.eclipse.php.ui,2.2.0.v20100616-1900,"org.eclipse.php.editor",1410707994265
+activated,view,org.eclipse.search,3.6.0.v20100520-0800,"org.eclipse.search.ui.views.SearchView",1410708001974
+activated,editor,org.eclipse.php.ui,2.2.0.v20100616-1900,"org.eclipse.php.editor",1410708019295
+activated,editor,org.eclipse.php.ui,2.2.0.v20100616-1900,"org.eclipse.php.editor",1410708022727
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410708040852
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410708043989
+activated,editor,org.eclipse.php.ui,2.2.0.v20100616-1900,"org.eclipse.php.editor",1410708044025
+activated,editor,org.eclipse.php.ui,2.2.0.v20100616-1900,"org.eclipse.php.editor",1410708058219
+closed,editor,org.eclipse.php.ui,2.2.0.v20100616-1900,"org.eclipse.php.editor",1410708058219
+activated,editor,org.eclipse.php.ui,2.2.0.v20100616-1900,"org.eclipse.php.editor",1410708059501
+activated,editor,org.eclipse.wst.html.ui,1.0.500.v201006030742,"org.eclipse.wst.html.core.htmlsource.source",1410708062418
+activated,editor,org.eclipse.wst.html.ui,1.0.500.v201006030742,"org.eclipse.wst.html.core.htmlsource.source",1410708064850
+activated,editor,org.eclipse.wst.html.ui,1.0.500.v201006030742,"org.eclipse.wst.html.core.htmlsource.source",1410708065812
+closed,editor,org.eclipse.wst.html.ui,1.0.500.v201006030742,"org.eclipse.wst.html.core.htmlsource.source",1410708065813
+activated,editor,org.eclipse.php.ui,2.2.0.v20100616-1900,"org.eclipse.php.editor",1410708115483
+closed,editor,org.eclipse.wst.html.ui,1.0.500.v201006030742,"org.eclipse.wst.html.core.htmlsource.source",1410708115483
+activated,editor,org.eclipse.php.ui,2.2.0.v20100616-1900,"org.eclipse.php.editor",1410708118700
+closed,editor,org.eclipse.php.ui,2.2.0.v20100616-1900,"org.eclipse.php.editor",1410708118700
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410708121069
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410708129022
+activated,editor,org.eclipse.php.ui,2.2.0.v20100616-1900,"org.eclipse.php.editor",1410708129077
+activated,editor,org.eclipse.php.ui,2.2.0.v20100616-1900,"org.eclipse.php.editor",1410708135803
+closed,editor,org.eclipse.php.ui,2.2.0.v20100616-1900,"org.eclipse.php.editor",1410708135803
+activated,editor,org.eclipse.php.ui,2.2.0.v20100616-1900,"org.eclipse.php.editor",1410708138886
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410708150944
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410762870266
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410762870822
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410766648832
+activated,editor,org.eclipse.php.ui,2.2.0.v20100616-1900,"org.eclipse.php.editor",1410766653262
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410766678516
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410766680252
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410766684103
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410767159004
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410767159520
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410767202772
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410767207804
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410767711024
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410769682724
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410769688726
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410769689578
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410769690953
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410770676984
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410770685654
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410770687281
+activated,view,org.eclipse.php.ui,2.2.0.v20100616-1900,"org.eclipse.php.ui.explorer",1410770703150
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410770708294
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410770746516
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410770747933
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410771419619
+activated,editor,org.eclipse.php.ui,2.2.0.v20100616-1900,"org.eclipse.php.editor",1410771421173
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410771422703
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410771423810
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410771424215
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410771425534
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410771430745
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410771627345
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410771683438
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410772062358
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410772063142
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410772064650
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410772064975
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410772071558
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410773443926
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410773526689
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410773554714
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410773562300
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410773589487
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410773596846
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410773600280
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410773623795
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410773625187
+activated,editor,org.eclipse.php.ui,2.2.0.v20100616-1900,"org.eclipse.php.editor",1410773629458
+activated,editor,org.eclipse.php.ui,2.2.0.v20100616-1900,"org.eclipse.php.editor",1410773635872
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410773638258
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410774024115
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410774026286
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.findReplace",1410774026340
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410774027270
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410774032064
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.paste",1410774034368
+activated,view,org.eclipse.search,3.6.0.v20100520-0800,"org.eclipse.search.ui.views.SearchView",1410774035888
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410774035953
+executed,command,org.eclipse.search,3.6.0.v20100520-0800,"org.eclipse.search.ui.openSearchDialog",1410774035976
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410774036346
+error,log,,,"文本搜索期间遇到了问题。",1410774039232
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410774040732
+closed,editor,org.eclipse.php.ui,2.2.0.v20100616-1900,"org.eclipse.php.editor",1410774042034
+opened,editor,org.eclipse.wst.html.ui,1.0.500.v201006030742,"org.eclipse.wst.html.core.htmlsource.source",1410774042140
+activated,editor,org.eclipse.wst.html.ui,1.0.500.v201006030742,"org.eclipse.wst.html.core.htmlsource.source",1410774042257
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.copy",1410774079323
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410774139579
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.findReplace",1410774139649
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410774147417
+activated,view,org.eclipse.php.ui,2.2.0.v20100616-1900,"org.eclipse.php.ui.explorer",1410774169785
+opened,editor,org.eclipse.wst.html.ui,1.0.500.v201006030742,"org.eclipse.wst.html.core.htmlsource.source",1410774170815
+activated,editor,org.eclipse.wst.html.ui,1.0.500.v201006030742,"org.eclipse.wst.html.core.htmlsource.source",1410774171244
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410774173289
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.findReplace",1410774173345
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410774177292
+activated,view,org.eclipse.php.ui,2.2.0.v20100616-1900,"org.eclipse.php.ui.explorer",1410774180000
+activated,editor,org.eclipse.wst.html.ui,1.0.500.v201006030742,"org.eclipse.wst.html.core.htmlsource.source",1410774180150
+activated,view,org.eclipse.php.ui,2.2.0.v20100616-1900,"org.eclipse.php.ui.explorer",1410774180266
+activated,editor,org.eclipse.wst.html.ui,1.0.500.v201006030742,"org.eclipse.wst.html.core.htmlsource.source",1410774180370
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.save",1410774191411
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410774192031
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410774205180
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.undo",1410774206854
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.undo",1410774207613
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.save",1410774208318
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.copy",1410774219751
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410774221257
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.findReplace",1410774221312
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410774223106
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410774226453
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.paste",1410774228580
+activated,view,org.eclipse.search,3.6.0.v20100520-0800,"org.eclipse.search.ui.views.SearchView",1410774230417
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410774230497
+executed,command,org.eclipse.search,3.6.0.v20100520-0800,"org.eclipse.search.ui.openSearchDialog",1410774230523
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410774230911
+error,log,,,"文本搜索期间遇到了问题。",1410774231200
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410774232680
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410774234619
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410774281594
+activated,editor,org.eclipse.wst.html.ui,1.0.500.v201006030742,"org.eclipse.wst.html.core.htmlsource.source",1410774282598
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.copy",1410774332907
+activated,view,org.eclipse.search,3.6.0.v20100520-0800,"org.eclipse.search.ui.views.SearchView",1410774333250
+activated,editor,org.eclipse.wst.html.ui,1.0.500.v201006030742,"org.eclipse.wst.html.core.htmlsource.source",1410774347045
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410774564603
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410775260239
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410775277416
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410775389407
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.save",1410775399900
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410775401914
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410775432114
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410775432739
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410775901136
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410775969256
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410775979468
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410775982315
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410775998429
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410776004121
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410776009262
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.0.v20100520-0800,"org.eclipse.ui.edit.text.goto.lineEnd",1410776041772
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.0.v20100520-0800,"org.eclipse.ui.edit.text.goto.lineStart",1410776048264
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.0.v20100520-0800,"org.eclipse.ui.edit.text.goto.lineStart",1410776049054
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.0.v20100520-0800,"org.eclipse.ui.edit.text.goto.lineEnd",1410776123727
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.0.v20100520-0800,"org.eclipse.ui.edit.text.goto.lineStart",1410776125211
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.0.v20100520-0800,"org.eclipse.ui.edit.text.goto.lineStart",1410776125600
+activated,view,org.eclipse.search,3.6.0.v20100520-0800,"org.eclipse.search.ui.views.SearchView",1410776132867
+opened,editor,org.eclipse.wst.html.ui,1.0.500.v201006030742,"org.eclipse.wst.html.core.htmlsource.source",1410776133145
+activated,editor,org.eclipse.wst.html.ui,1.0.500.v201006030742,"org.eclipse.wst.html.core.htmlsource.source",1410776134279
+activated,view,org.eclipse.search,3.6.0.v20100520-0800,"org.eclipse.search.ui.views.SearchView",1410776141846
+activated,editor,org.eclipse.wst.html.ui,1.0.500.v201006030742,"org.eclipse.wst.html.core.htmlsource.source",1410776143622
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410776170010
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410776170831
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410776171545
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410776180533
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410776192598
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410776197082
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.undo",1410776199844
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.save",1410776202918
+activated,view,org.eclipse.search,3.6.0.v20100520-0800,"org.eclipse.search.ui.views.SearchView",1410776204928
+activated,editor,org.eclipse.wst.html.ui,1.0.500.v201006030742,"org.eclipse.wst.html.core.htmlsource.source",1410776207105
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.0.v20100520-0800,"org.eclipse.ui.edit.text.goto.lineEnd",1410776256441
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.0.v20100520-0800,"org.eclipse.ui.edit.text.goto.lineStart",1410776258108
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.0.v20100520-0800,"org.eclipse.ui.edit.text.goto.lineStart",1410776258939
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410776523096
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410776561557
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.save",1410776611647
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410776612136
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410776628452
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.save",1410776634584
+activated,view,org.eclipse.search,3.6.0.v20100520-0800,"org.eclipse.search.ui.views.SearchView",1410776641138
+activated,editor,org.eclipse.wst.html.ui,1.0.500.v201006030742,"org.eclipse.wst.html.core.htmlsource.source",1410776641391
+activated,view,org.eclipse.search,3.6.0.v20100520-0800,"org.eclipse.search.ui.views.SearchView",1410776665268
+activated,editor,org.eclipse.wst.html.ui,1.0.500.v201006030742,"org.eclipse.wst.html.core.htmlsource.source",1410776665512
+activated,view,org.eclipse.search,3.6.0.v20100520-0800,"org.eclipse.search.ui.views.SearchView",1410776668587
+activated,editor,org.eclipse.wst.html.ui,1.0.500.v201006030742,"org.eclipse.wst.html.core.htmlsource.source",1410776668835
+activated,view,org.eclipse.search,3.6.0.v20100520-0800,"org.eclipse.search.ui.views.SearchView",1410776671895
+activated,editor,org.eclipse.wst.html.ui,1.0.500.v201006030742,"org.eclipse.wst.html.core.htmlsource.source",1410776672129
+activated,view,org.eclipse.search,3.6.0.v20100520-0800,"org.eclipse.search.ui.views.SearchView",1410776673877
+activated,editor,org.eclipse.wst.html.ui,1.0.500.v201006030742,"org.eclipse.wst.html.core.htmlsource.source",1410776674191
+activated,view,org.eclipse.search,3.6.0.v20100520-0800,"org.eclipse.search.ui.views.SearchView",1410776676404
+activated,editor,org.eclipse.wst.html.ui,1.0.500.v201006030742,"org.eclipse.wst.html.core.htmlsource.source",1410776676653
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.save",1410776686847
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410776687248
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1410776688470

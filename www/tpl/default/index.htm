@@ -289,7 +289,7 @@
 
 			<div class="home-case-first">
 
-				<a class="img-box" {if $v['obj_type']=='task'}href="index.php?do=task&id=$arrCaseLists[0]['obj_id']" {else} href="index.php?do=goods&id=$arrCaseLists[0]['obj_id']"{/if} title="{$arrCaseLists[0]['case_title']}" title="$arrCaseLists">
+				<a class="img-box" {if $arrCaseLists[0]['obj_type']=='task'}href="index.php?do=task&id=$arrCaseLists[0]['obj_id']" {else} href="index.php?do=goods&id=$arrCaseLists[0]['obj_id']"{/if} title="{$arrCaseLists[0]['case_title']}" title="$arrCaseLists">
 					<img class="lazy" src="tpl/default/img/grey.gif" data-original="{if file_exists($arrCaseLists[0]['case_img'])}<!--{eval echo keke_shop_class::output_pics($arrCaseLists[0]['case_img'],210,1);}-->{else}tpl/default/img/shop/shop_default_big.jpg{/if}" alt="{$arrCaseLists[0]['case_title']}">
 				</a>
 				<a title="{$arrCaseLists[0]['case_title']}" class="home-case-first-title" href="javascript:void(0);">

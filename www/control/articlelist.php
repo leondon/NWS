@@ -1,9 +1,9 @@
 <?php defined ( 'IN_KEKE' ) or exit ( 'Access Denied' );
-$strNavActive = 'article';
+$strNavActive = 'articlelist';
 $strUrl = $_K['siteurl']."/index.php?do=articlelist";
 $catid and $strUrl .="&catid=".intval($catid);
 $intPage and $strUrl .="&intPage=".$intPage;
-$arrArtCats = kekezu::get_table_data ( "*", "witkey_article_category", "cat_type='article' and art_cat_pid=1", "", "", "", "", null );
+$arrArtCats = kekezu::get_table_data ( "*", "witkey_article_category", "cat_type='article' and art_cat_pid=1", "listorder asc", "", "", "", null );
 $page and $intPage = intval($page);
 $intPage = intval ( $intPage ) ? $intPage : 1;
 $intPagesize = intval ( $intPagesize ) ? $intPagesize : 20;

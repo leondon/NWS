@@ -15,7 +15,7 @@ if ($type == 'complaint') {
 	} else {
 		$report_info = keke_report_class::get_report_info ( $report_id );
 	}
-	require keke_tpl_class::template ( 'admin/tpl/admin_trans_process' );
+	require keke_tpl_class::template ( ADMIN_DIRECTORY.'/tpl/admin_trans_process' );
 } else {
 	 if(empty($obj_info)||empty($obj_info ['model_id']))
 	 {

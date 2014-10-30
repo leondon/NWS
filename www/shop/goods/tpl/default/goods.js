@@ -27,7 +27,8 @@ $(function(){
 			txt_title:	['not_empty',{min_length:2}, {max_length:50} ],
 	    	tar_content:['not_empty',{min_length:20},{max_length:65565} ],
 	    	txt_price:	['not_empty','decimal',{'max_length': 8}],
-	    	agreementchecked:['not_empty']
+	    	agreementchecked:['not_empty'],
+	    	file_ids:['not_empty']
 		},
 		messages: {
 			indus_pid: {
@@ -53,6 +54,9 @@ $(function(){
 			},
 			agreementchecked:{
 				not_empty: "请先同意发布协议",
+			},
+			file_ids:{
+				not_empty: "请上传图片",
 			}
 		},
 		wrapper:'.form-group'

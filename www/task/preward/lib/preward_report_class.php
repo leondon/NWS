@@ -123,7 +123,7 @@ class preward_report_class extends keke_report_class {
 		$this->_task_info['task_status'] == 8  and kekezu::admin_show_msg ( '操作提示', "index.php?do=trans&view=report&type=$type", "3","当前任务不能屏蔽稿件","warning" );
 		$work_info = $this->_task_obj->get_task_work($work_id);
 		$work_info['work_status'] != 0 and kekezu::admin_show_msg ( '操作提示', "index.php?do=trans&view=report&type=$type", "3","当前稿件雇主已选择，不能屏蔽此稿件","warning" );
-		$this->_task_obj->set_work_status($work_id, 7);
+		$this->_task_obj->set_work_status($work_id, 8);
 	}
 }
 ?>

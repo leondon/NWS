@@ -41,4 +41,4 @@ $msg_tpl = db_factory::get_one ( "select content from " . TABLEPRE . "witkey_msg
 $msg_tpl = $msg_tpl ['content'];
 $phone_tpl = db_factory::get_one ( "select content from " . TABLEPRE . "witkey_msg_tpl where tpl_code='$slt_tpl_code' and send_type=2" );
 $phone_tpl = $phone_tpl ['content'];
-require $kekezu->_tpl_obj->template ( 'admin/tpl/admin_msg_' . $view );
+require $kekezu->_tpl_obj->template(ADMIN_DIRECTORY.'/tpl/admin_msg_' . $view );

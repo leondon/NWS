@@ -26,7 +26,7 @@ switch ($op) {
 				}
 			}
 		}
-		require $template_obj->template ( 'admin/tpl/admin_user_custom_add' );
+		require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_user_custom_add' );
 		die();
 		break;
 	case "del" :
@@ -63,4 +63,4 @@ switch ($op) {
 		$space_obj->setWhere ( $sql . $pages ['where'] );
 		$userlist_arr = $space_obj->query_keke_witkey_space ();
 		$grouplist_arr = keke_admin_class::get_user_group ();
-require $template_obj->template ( 'admin/tpl/admin_user_custom_list' );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_user_custom_list' );

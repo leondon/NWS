@@ -28,4 +28,4 @@ if($ac=='update'){
 	}
 	$res and kekezu::admin_show_msg ( $_lang['update_mi_success'], $url,3,'','success' ) or kekezu::admin_show_msg ( $_lang['update_mi_fail'], $url,3,'','warning' );
 }
-require $template_obj->template ( 'admin/tpl/admin_config_' . $view );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_config_' . $view );

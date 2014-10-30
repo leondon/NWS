@@ -11,4 +11,4 @@ if ($sbt_edit) {
 	kekezu::admin_system_log ( $_lang['edit_template'] . $tplname . '/' . $tname );
 	kekezu::admin_show_msg ( $_lang['tpl_edit_success'], "index.php?do=tpl&view=tpllist&tplname=$tplname",3,'','success' );
 }
-require $template_obj->template ( 'admin/tpl/admin_tpl_' . $view );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_tpl_' . $view );

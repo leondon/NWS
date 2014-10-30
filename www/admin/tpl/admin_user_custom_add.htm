@@ -1,4 +1,4 @@
-<!--{template admin/tpl/admin_header}-->
+<!--{template ADMIN_DIRECTORY/tpl/admin_header}-->
 <div class="page_title">
     <h1>{$_lang['rights_set']}</h1>
     <div class="tool">
@@ -18,7 +18,7 @@
                     <span class="bg1 t_r">{$_lang['user']}ID{$_lang['zh_mh']}</span>
                  </th>
                  <td>
-                 	<input type="text" name="fds[uid]" value="$edituid"  id="uid"  style="width:260px;" limit="required:true;len:2-20" msg="请输入用户编号1-10位" msgArea="txt_uid_msg" class="txt"><b style="color:red"> *</b><span id="txt_uid_msg"></span>
+                 	<input type="text" name="fds[uid]" value="$edituid"  id="uid"  style="width:260px;" limit="required:true;len:1-10" msg="请输入用户编号1-10位" msgArea="txt_uid_msg" class="txt"><b style="color:red"> *</b><span id="txt_uid_msg"></span>
 				 
 				 </td>
              </tr>
@@ -89,4 +89,4 @@
         </form>
     </div>
 </div>
-<!--{template admin/tpl/admin_footer}-->
+<!--{template ADMIN_DIRECTORY/tpl/admin_footer}-->

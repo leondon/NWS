@@ -18,4 +18,4 @@ if (isset ( $submit )) {
 	$attent_api = unserialize($attent_api);
 	$attent_list = kekezu::get_table_data ( "k,v,desc", "witkey_basic_config", "type='attention'", 'listorder asc ', "", "", "k" );
 }
-require keke_tpl_class::template ( 'admin/tpl/admin_' . $do . '_' . $view );
+require keke_tpl_class::template ( ADMIN_DIRECTORY.'/tpl/admin_' . $do . '_' . $view );

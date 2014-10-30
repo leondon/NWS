@@ -62,8 +62,7 @@ $(function(){
 		rules: {
 			email  : ['not_empty','email'],
 			mobile : ['not_empty','digit',{min_length:11},{max_length:11}],
-			qq : ['not_empty','digit',{max_length:12}],
-			msn : ['not_empty'],
+			qq : ['digit',{max_length:12}],
 			phone : ['not_empty','alpha_dash'],
 		},
 		messages: {
@@ -78,13 +77,11 @@ $(function(){
 				max_length:'请检查手机号码是否输入正确'
 			},
 			qq:{
-				not_empty: "请输入QQ号码",
+
 				digit: "请输入正确的QQ号码",
 				max_length:'输入长度不符'
 			},
-			msn:{
-				not_empty: "请输入MSN号码"
-			},
+
 			phone:{
 				not_empty: "请输入固定电话号码",
 				alpha_dash: "请输入正确的固定电话号码"

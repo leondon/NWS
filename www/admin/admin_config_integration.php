@@ -66,7 +66,7 @@ if ($type == 'uc'){
 		kekezu::admin_system_log($_lang['uc_integrate_log']);
 		kekezu::admin_show_msg($_lang['uc_integrate_success'],"index.php?do=config&view=integration",2,'','success');
 	}
-	require  $template_obj->template ( 'admin/tpl/admin_config_'.$view.'_uc' );
+	require  $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_config_'.$view.'_uc' );
 	die();
 }
-require  $template_obj->template ( 'admin/tpl/admin_config_'.$view );
+require  $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_config_'.$view );

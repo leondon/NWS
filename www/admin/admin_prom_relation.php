@@ -39,4 +39,4 @@ if (isset ( $ac )) {
 	$prom_relation_obj->setWhere ( $where . $pages ['where'] );
 	$prom_relation_arr = $prom_relation_obj->query_keke_witkey_prom_relation ();
 }
-require $template_obj->template ( 'admin/tpl/admin_' . $do . '_' . $view );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_' . $do . '_' . $view );

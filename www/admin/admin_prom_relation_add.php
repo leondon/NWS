@@ -10,4 +10,4 @@ if( isset($sbt_edit) ) {
 	}
 }
 isset($relation_id) && $relation_info = db_factory::get_one(" select * from ".TABLEPRE."witkey_prom_relation where relation_id = '$relation_id'");
-require $template_obj->template('admin/tpl/admin_'.$do."_".$view);
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_'.$do."_".$view);

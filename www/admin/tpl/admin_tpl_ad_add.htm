@@ -1,4 +1,4 @@
-<!--{template admin/tpl/admin_header}-->
+<!--{template ADMIN_DIRECTORY/tpl/admin_header}-->
 <div class="page_title">
 	<h1>{$_lang['ads']}{$page_tips}</h1>
 	<div class="tool">
@@ -51,7 +51,7 @@
 							original-title="{$_lang['ads_description']}"
 							msgArea="item_title_msg" /><b style="color: red">*</b>
 						<!--
-                            {if $group_arr}<input type="hidden" value="{$ad_data['ad_name']}" name="hdn_ad_name" />{/if} 隐藏域优先添加 
+                            {if $group_arr}<input type="hidden" value="{$ad_data['ad_name']}" name="hdn_ad_name" />{/if} 隐藏域优先添加
                             -->
 							<span id="item_title_msg">{$_lang['ads_description']}</span></td>
 					</tr>
@@ -97,7 +97,7 @@
 									'according_display_effect_enter_content']} cols="100" rows="10"
 									class="txt">{$ad_data['ad_content']}</textarea></td>
 						</tr>
-						
+
 					</tbody>
 					<!-- 文字 -->
 					<tbody id="div_ad_2" class="hidden">
@@ -108,7 +108,7 @@
 									'according_display_effect_enter_content']} rows="10"
 									class="txt">{$ad_data['ad_content']}</textarea></td>
 						</tr>
-						
+
 					</tbody>
 					<!-- 图片 -->
 					<tbody id="div_ad_3" class="hidden">
@@ -144,25 +144,25 @@
 								title={$_lang[ 'enter_img_ads_height']} class="txt"
 								msgArea="span_height" /><span id="span_height"></span></td>
 						</tr>
-						
+
 					</tbody>
 					<!-- flash -->
 					<tbody id="div_ad_4" class="hidden">
 						<tr>
 							<th>{$_lang['flash_address']}</th>
 							<td><div id="flash_way">
-									<input type="radio" id="flash_file" name="flash_method" value="file" checked="checked">{$_lang['file']} 
+									<input type="radio" id="flash_file" name="flash_method" value="file" checked="checked">{$_lang['file']}
 									<input type="radio" id="flash_url"  name="flash_method" value="url">url
-									<br /> 
+									<br />
 									<input type="file" name="ad_type_flash_file" id="ad_type_flash_file"
 										value="{$ad_data['ad_file']}"
 										onchange="isExtName(this,1)" ext=".swf" />
-									<input type="text" name="ad_type_flash_url" id="ad_type_flash_url" size="60" 
-										{if $ad_data['ad_file']} 
+									<input type="text" name="ad_type_flash_url" id="ad_type_flash_url" size="60"
+										{if $ad_data['ad_file']}
 											value="{$ad_data['ad_file']}"
-										{/if} 
-										class="txt" style="display: none;" /> 
-									
+										{/if}
+										class="txt" style="display: none;" />
+
 								</div>
 							</td>
 						</tr>
@@ -180,21 +180,21 @@
 								name="ad_type_flash_height" id="ad_type_flash_height"
 								title={$_lang[ 'flash_ads_height']} class="txt" /></td>
 						</tr>
-					
+
 					</tbody>
 						<tr>
 							<th>链接地址</th>
 							<td><input type="text" value="{$ad_data['ad_url']}"
 								name="ad_url" class="txt" title={$_lang[ 'img_ads_img_call_address']} /></td>
 						</tr>
-						{if $ad_data['listorder']>0}
+
 					<tr>
 						<th>{$_lang['order']}</th>
 						<td><input type="text" name="listorder"
 							value="{$ad_data['listorder']}" class="txt" limit="type:int" />
 							</td>
 					</tr>
-					{/if}
+
 					<tr>
 						<th>{$_lang['is_open']}</th>
 						<td><input type="radio" name="rdn_is_allow" value="1"
@@ -243,7 +243,7 @@
             			$("#ad_type_flash_url").show();
             			$("#ad_type_flash_file").hide();
             		});
-            		
+
             		$("#rdn_position :radio").click(function(){
             			var type=$("#select_ad_type :checked").val();
             			var typeID=type+"_select";
@@ -252,7 +252,7 @@
             			var sel_option=document.getElementById(typeID);
             			if(typeof(sel_option)=="object")
             				sel_option.options['i'].selected=true;//没有触发onchange事件
-            				var v=sel_option.value; 
+            				var v=sel_option.value;
             				setsize(v,type);
             		})
             });
@@ -271,12 +271,12 @@
 					}
 				}
 				function checkform(){
-					
+
 					var i = checkForm(document.getElementById('form1'));
 					if(i){
-								
+
 					 	document.getElementById("form1").submit();
-																
+
 					}else{
 						return false;
 					}
@@ -294,9 +294,9 @@
 					}
 					}
 					return objYN;
-					
+
 					}
-				function chkRadio(){				
+				function chkRadio(){
 				 var position = document.getElementsByName("ad_position");
 				 var objYN;
 				 var i;
@@ -309,9 +309,9 @@
 				 }
 				return objYN;
 				}
-		
+
             </script>
 		</div>
 	</div>
 </div>
-<!--{template admin/tpl/admin_footer}-->
+<!--{template ADMIN_DIRECTORY/tpl/admin_footer}-->

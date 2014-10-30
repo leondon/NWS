@@ -54,4 +54,4 @@ if (isset ( $sbt_edit )) {
 	$msg_obj->setWhere($where.$pages['where']);
 	$msg_config =$msg_obj->query_keke_witkey_msg_config();
 }
-require $template_obj->template ( 'admin/tpl/admin_msg_' . $view );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_msg_' . $view );

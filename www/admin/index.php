@@ -3,9 +3,8 @@ define ( "ADMIN_KEKE", TRUE );
 define ( "IN_KEKE", TRUE );
 require '../app_comm.php';
 $_K ['is_rewrite'] = 0;
-define ( 'ADMIN_ROOT', S_ROOT . '/admin/' ); 
-$_K ['admin_tpl_path'] = S_ROOT . '/admin/tpl/'; 
-
+define ( 'ADMIN_ROOT', S_ROOT . '/'.ADMIN_DIRECTORY.'/' ); 
+$_K ['admin_tpl_path'] = S_ROOT . '/'.ADMIN_DIRECTORY.'/tpl/'; 
 $dos = array (
 		'square',
 		'app',
@@ -50,8 +49,7 @@ $dos = array (
 		'trans',
 		'keke',
 		'payitem' ,
-		'store',
-		'crawl'
+		'store'
 );
 (! empty ( $do ) && in_array ( $do, $dos )) or $do = 'index';
 $admin_info = kekezu::get_user_info ( $_SESSION ['uid'] );
@@ -76,8 +74,7 @@ $menu_arr = array (
 		'finance' => $_lang ['finance_manage'],
 		'user' => $_lang ['user_manage'],
 		'tool' => $_lang ['system_tool'],
-		'app' => $_lang ['app_center'],
-		'crawl' => $_lang ['crawl_task']
+		'app' => $_lang ['app_center']
 );
 $admin_obj=new keke_admin_class();
 require ADMIN_ROOT . 'admin_' . $do . '.php';

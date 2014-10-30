@@ -18,7 +18,7 @@ $lang = array(
 	'task_auditing_cash_set'=>'任务审核金额设定',
 	'txt_task_auditing_cash_msg'=>'填写正确任务审核金额',
 	'txt_task_auditing_cash_title'=>'任务审核金额允许小数',
-	'task_cash_notice'=>'(任务需审核后发布成功的金额最小值，设为0即无限制)',
+	'task_cash_notice'=>'(发布赏金低于该设定金额的任务需要审核，设为0即无限制)',
 	'set_task_min_cash'=>'任务最小金额设定',
 	'task_min_cash_msg'=>'任务最小金额填写错误',
 	'task_min_cash_title'=>'任务最小金额为可以含小数',
@@ -54,7 +54,7 @@ $lang = array(
 	'task_sub_time_title'=>'天（大于等于1的整数天，且需要小于等于交稿时间最大规则天数）',
 	'task_public_time_notice'=>'天（大于等于0的整数天，设为0即无公示期）',
 	'task_min_day'=>'任务交稿截止最小天数',
-	
+
 	'task_min_day_msg'=>'任务最小时间不对,最少1天',
 	'task_min_day_title'=>'任务最小时间为1天',
 	'task_vote_time'=>'任务投票期时间',

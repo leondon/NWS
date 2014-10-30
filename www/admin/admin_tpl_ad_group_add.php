@@ -39,4 +39,4 @@ if ($ac && $ac == 'edit') {
 	$ad_info = $tag_obj->query_keke_witkey_tag ();
 	$ad_info = $ad_info [0];
 }
-require $template_obj->template ( 'admin/tpl/admin_' . $do . '_' . $view );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_' . $do . '_' . $view );

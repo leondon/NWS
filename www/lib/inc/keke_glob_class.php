@@ -133,10 +133,7 @@ class keke_glob_class {
 		global $_lang;
 		$r = array(
 		'sina'=>array('name'=>$_lang['sina_weibo'],'ico'=>'sina'),
-		'ten'=>array('name'=>$_lang['tenxun_weibo'],'ico'=>'ten'),
 		'qq'=>array('name'=>$_lang['qq_number'],'ico'=>'qq'),
-		'taobao'=>array('name'=>$_lang['taobao'],'ico'=>'taobao'),
-		'alipay'=>array('name'=>$_lang['alipay'],'ico'=>'alipay'),
 		'douban'=>array('name'=>'豆瓣','ico'=>'douban'),
 		'renren'=>array('name'=>'人人','ico'=>'renren'),
 	);
@@ -265,5 +262,10 @@ class keke_glob_class {
 			return $ch_arr[(int)$num];
 		}
 		return $ch_arr;
+	}
+	public static function updateLog($content){
+		$fp=fopen(S_ROOT."/dbTools/file/dbUpdate.log",'a');
+		fwrite($fp,date("Y-m-d H:i:s",time()).' '.$content."\r\n");
+		fclose($fp);
 	}
 }

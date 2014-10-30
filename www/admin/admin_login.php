@@ -7,4 +7,4 @@ if ($is_submit) {
 	$admin_obj->admin_login ( $user_name, $pass_word, $allow_num, $token );
 	die();
 }
-require keke_tpl_class::template ( 'admin/tpl/admin_' . $do );
+require keke_tpl_class::template ( ADMIN_DIRECTORY.'/tpl/admin_' . $do );

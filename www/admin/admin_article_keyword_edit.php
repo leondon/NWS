@@ -21,4 +21,4 @@ if ($sbt_edit) {
 	}
 	kekezu::admin_show_msg($_lang['operate_success'],$url,3,'','success');
 }
-require $template_obj->template ( 'admin/tpl/admin_' . $do . "_" . $view );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_' . $do . "_" . $view );

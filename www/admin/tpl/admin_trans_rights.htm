@@ -1,4 +1,4 @@
-<!--{template admin/tpl/admin_header}-->
+<!--{template ADMIN_DIRECTORY/tpl/admin_header}-->
 <div class="page_title">
     <h1>{$_lang['trans_rights']}</h1>
     <div class="tool">
@@ -132,13 +132,17 @@
 				<a href="{$_K['siteurl']}/index.php?do=task&id={$v['origin_id']}&view=work#detail" target="_blank">
 				{/if}
 			{elseif $v['obj']=='order'}<!--商品订单-->
-				<a href="{$_K['siteurl']}/index.php?do=goods&id={$v['origin_id']}" target="_blank">
+				{if $v['origin_id']}<a href="{$_K['siteurl']}/index.php?do=goods&id={$v['origin_id']}" target="_blank">{/if}
 			{elseif $v['obj']=='product'}<!--商品-->
-				<a href="{$_K['siteurl']}/index.php?do=goods&id={$v['origin_id']}" target="_blank">
+				<a href="{$_K['siteurl']}/index.php?do=goods&id={$v['obj_id']}" target="_blank">
 			{elseif $v['obj']=='seller'}<!--商家-->
 				<a href="{$_K['siteurl']}/index.php?do=seller&id={$v['to_uid']}" target="_blank">
 			{/if}
-        	{$_lang['view_belongs']}{$trans_object[$v['obj']]}</a>
+        	 {if $v['obj']=='order'}
+        	 	{if $v['origin_id']} {$_lang['view_belongs']}{$trans_object[$v['obj']]}</a>{else}雇佣任务{/if}
+        	 {else}
+        	 		{$_lang['view_belongs']}{$trans_object[$v['obj']]}</a>
+        	 {/if}
 		 </td>
 		 <td>{$v['report_reason']}</td>
 		 <td><!--{eval echo kekezu::cutstr($v['report_desc'],30);}-->...</td>
@@ -196,4 +200,4 @@
 		});
 	})
 </script>
-<!--{template admin/tpl/admin_footer}-->
+<!--{template ADMIN_DIRECTORY/tpl/admin_footer}-->

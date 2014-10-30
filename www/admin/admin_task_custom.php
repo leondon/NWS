@@ -31,7 +31,7 @@ if ($by) {
 		echo $str;
 		die ();
 	}
-	require $template_obj->template ( 'admin/tpl/admin_task_' . $view . '_reply' );
+	require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_task_' . $view . '_reply' );
 	exit ();
 }
-require $template_obj->template ( 'admin/tpl/admin_task_' . $view );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_task_' . $view );

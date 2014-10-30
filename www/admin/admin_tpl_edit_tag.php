@@ -38,4 +38,4 @@ if ($submit) {
 	$kekezu->_cache_obj->del ( 'tag_list_cache' );
 	kekezu::admin_show_msg ($_lang['tag_change_success'], "index.php?do=tpl&view=taglist&tag_type=$tag_type&type=$type",3,'','success' );
 }
-require  $kekezu->_tpl_obj->template ( 'admin/tpl/admin_tpl_' . $view . '_' . 'autocode');
+require  $kekezu->_tpl_obj->template(ADMIN_DIRECTORY.'/tpl/admin_tpl_' . $view . '_' . 'autocode');

@@ -17,4 +17,4 @@ if ($sbt_edit) {
  	$api_open =  db_factory::get_one("select v from ".TABLEPRE."witkey_basic_config where k='map_api_open'");
  	$api_open =unserialize($api_open['v']);
 }
-require $template_obj->template ( 'admin/tpl/admin_' . $do . '_' . $view );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_' . $do . '_' . $view );

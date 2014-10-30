@@ -100,4 +100,4 @@ if ($sbt_action && is_array ( $ckb )) {
 	}
 	$uids and $shop_open = kekezu::get_table_data('shop_id,uid','witkey_shop','uid in ('.implode(',',$uids).')','','','','uid');
 }
-require $template_obj->template ( 'admin/tpl/admin_user_list' );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_user_list' );

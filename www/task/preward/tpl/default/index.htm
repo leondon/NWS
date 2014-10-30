@@ -29,7 +29,7 @@
                  {if $arrProcess_can['work_hand']&&$gUid}
                 <a href="index.php?do=taskhandle&op=turnaround&taskId={$arrTaskInfo['task_id']}" class="btn btn-primary btn-lg">我要交稿</a>
               {/if}
-              {if $arrProcess_can['delay']&&$gUid}
+              {if $arrProcess_can['delay']&&$gUid&&!$intBidCount}
                 <a href="index.php?do=taskhandle&op=delay&taskId={$arrTaskInfo['task_id']}" class="btn btn-primary btn-lg">我要延期</a>
               {/if}
 
@@ -115,7 +115,7 @@
       <h2 class="detail-title-min">需求描述</h2>
 	  <div class="detail-img">
 	  	{loop $arrTaskPics $k $v}
-        <a class="detail-img-item" href="$v" title="" rel="detail-img-group">
+        <a class="detail-img-item" href="$v"  rel="detail-img-group">
           <img src="$v" alt="">
         </a>
 		{/loop}

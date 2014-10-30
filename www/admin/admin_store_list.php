@@ -75,4 +75,4 @@ function get_good_num($uid){
 	$order_count = db_factory::get_one(sprintf("select count(service_id) as count from %switkey_service where uid = '%d'",TABLEPRE,$uid));
 	return $order_count['count'];
 }
-require $template_obj->template ( 'admin/tpl/admin_' . $do . '_' . $view );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_' . $do . '_' . $view );

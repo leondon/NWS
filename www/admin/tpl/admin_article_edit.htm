@@ -1,4 +1,4 @@
-<!--{template admin/tpl/admin_header}-->
+<!--{template ADMIN_DIRECTORY/tpl/admin_header}-->
  <div class="page_title">
     	<h1>{$_lang['article']}{$_lang['manage']}</h1>
         <div class="tool">
@@ -146,9 +146,11 @@
                       <tr>
                         <th scope="row">{if $type=='art'}{$_lang['article']}{elseif $type=='help'}{$_lang['help']}{elseif $type=='bulletin'}{$_lang['bulletin']}{elseif $type=='about'}{$_lang['about']}{else}{$_lang['single_page']}{/if}{$_lang['content']}{$_lang['zh_mh']}</th>
                         <td>
-                         <textarea rows="30" name="fields[content]" style="width:75%;" id="tar_content"  class="xheditor {urlBase:'$_K['siteurl']/',tools:'simple',admin:'../',html5Upload:false,emotMark:false,upImgUrl:'../index.php?do=ajax&view=upload&filename=filedata'}" cols="70">{$art_info['content']}</textarea>
+                         <textarea rows="30" name="fields[content]" style="width:75%;" id="tar_content"  class="xheditor {urlBase:'$_K['siteurl']/',tools:'simple',admin:'../',html5Upload:false,emotMark:false,upImgUrl:'../index.php?do=ajax&view=upload&filename=filedata'}" cols="70"><!--{eval echo stripslashes($art_info['content'])}--></textarea>
 						</td>
 					 </tr>
+					 
+					 {if $type=='art'}
                      <tr>
                         <th scope="row">SEO{$_lang['title']}{$_lang['zh_mh']}</th>
                         <td><textarea cols="70" rows="2"  name="fields[seo_title]" value="{$art_info['seo_title']}">{$art_info['seo_title']}</textarea></td>
@@ -163,6 +165,7 @@
                         <th scope="row">SEO{$_lang['description']}{$_lang['zh_mh']}</th>
                         <td><textarea cols="70" rows="3" name="fields[seo_desc]" value="{$art_info['seo_desc']}">{$art_info['seo_desc']}</textarea></td>
                      </tr>
+                     {/if}
 
 
 
@@ -246,4 +249,4 @@ function del_file(file_path){
 
 </script>
 
-<!--{template admin/tpl/admin_footer}-->
+<!--{template ADMIN_DIRECTORY/tpl/admin_footer}-->

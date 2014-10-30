@@ -1,4 +1,4 @@
-<!--{template admin/tpl/admin_header}-->
+<!--{template ADMIN_DIRECTORY/tpl/admin_header}-->
  
 
 	<div class="page_title">
@@ -59,6 +59,8 @@
                         </td>
                       </tr>
                       
+                      {if $type =='help'}
+                      
 					  <tr>
                         <th scope="row">SEO{$_lang['title']}{$_lang['zh_mh']}</th>
                         <td><textarea cols="70" rows="2"  name="seo_title" value="{$art_cat_info['seo_title']}">{$art_cat_info['seo_title']}</textarea></td>
@@ -73,6 +75,7 @@
                         <th scope="row">SEO{$_lang['description']}{$_lang['zh_mh']}</th>
                         <td><textarea cols="70" rows="3" name="seo_desc" value="{$art_cat_info['seo_desc']}">{$art_cat_info['seo_desc']}</textarea></td>
                      </tr>
+                     {/if}
 					  <tr style="display:none;">
                         <th scope="row">{$_lang['is_recommend']}{$_lang['zh_mh']}</th>
                         <td>
@@ -106,4 +109,4 @@
 
  
 
-<!--{template admin/tpl/admin_footer}-->
+<!--{template ADMIN_DIRECTORY/tpl/admin_footer}-->

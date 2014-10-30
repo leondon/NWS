@@ -28,8 +28,9 @@ if (kekezu::submitcheck(isset($formhash))|| isset($login_type) ==3) {
 	 if (strtoupper ( CHARSET ) == 'GBK') {
 	 	$account = kekezu::utftogbk( $account );
 	 }
+	$account = kekezu::escape($account);
 	$objLogin = new keke_user_login_class();
- 	$arrUserInfo = $objLogin->user_login($account, $password,$strCode,$intLogin_type);
+ 	$arrUserInfo = $objLogin->user_login($account, kekezu::escape($password),$strCode,$intLogin_type);
 	$objLogin->save_user_info($arrUserInfo,$account, $ckb_cookie,$intLoginType,intval($autoLogin));
 	die();
 }

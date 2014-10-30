@@ -8,7 +8,7 @@ if ($sbt_edit){
 }
 kekezu::admin_system_log($_lang['edit_auth'] . $code);
 if($code!='weibo')
-	require  $template_obj->template('admin/tpl/admin_'. $do .'_'. $view);
+	require  $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_'. $do .'_'. $view);
 else
 	require  S_ROOT.'./auth/'.$auth_item['auth_dir'].'/admin/auth_config.php';
 function get_fid($path){

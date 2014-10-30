@@ -17,6 +17,9 @@ $objGoodsTime = new goods_time_class();
 $objGoodsTime->validtaskstatus();
 unset($objGoodsTime);
 $arrServiceInfo  				= keke_shop_class::get_service_info($sid);
+if ($uid != $arrServiceInfo ['uid']&&$arrServiceInfo ['service_status']!=2&&$arrServiceInfo ['service_status']!=5) {
+	$gUid == ADMIN_UID or kekezu::show_msg ( '操作提示', "index.php?do=goodslist", '1', '商品不存在', 'warning' );
+}
 $arrAllDistrict 				= CommonClass::getAllDistrict();
 $arrTopIndustrys = $kekezu->_indus_p_arr;
 $arrModelInfo  = $arrModelList [$arrServiceInfo['model_id']];

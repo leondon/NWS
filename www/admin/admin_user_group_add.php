@@ -31,5 +31,5 @@ if ($op == 'add') {
 	}
 	$grouprole_arr = array ();
 	$editgid and $grouprole_arr = explode ( ',', $groupinfo_arr ['group_roles'] );
-	require $template_obj->template ( 'admin/tpl/admin_user_group_add' );
+	require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_user_group_add' );
 }

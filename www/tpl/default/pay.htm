@@ -78,5 +78,14 @@
 	<!-- payfor end -->
 </div>        
 </div>
+<script type="text/javascript">
+
+var payStatus=$payStatus;
+$(function(){
+	if(payStatus==0){
+		tipsOp('<div  id="payTips"><p class="info">线上支付接口未开启，请去<label for="pay_out"><a href="index.php?do=user&view=finance&op=rechargeoffline" class="text-primary">线下充值</a></label>支付!</p></div>');
+	}
+});
+</script>
 <script type="text/javascript" src="static/js/model/pay/pay.js"></script>
 <!--{template footer}-->

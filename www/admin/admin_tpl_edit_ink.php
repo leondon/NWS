@@ -40,4 +40,4 @@ if ($sbt_edit) {
 		}
 	}
 }
-require $kekezu->_tpl_obj->template ( 'admin/tpl/admin_' . $do . '_' . $view );
+require $kekezu->_tpl_obj->template(ADMIN_DIRECTORY.'/tpl/admin_' . $do . '_' . $view );

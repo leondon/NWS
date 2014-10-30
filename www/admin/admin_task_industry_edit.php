@@ -30,4 +30,4 @@ if($sbt_edit){
 $temp_arr = array();
 kekezu::get_tree($indus_arr,$temp_arr,'option',$indus_pid,'indus_id');
 $indus_arr = $temp_arr;
-require $template_obj->template ( 'admin/tpl/admin_task_' . $view );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_task_' . $view );

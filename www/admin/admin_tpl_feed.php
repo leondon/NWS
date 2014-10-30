@@ -82,4 +82,4 @@ if (isset ( $sbt_action ) && $sbt_action == $_lang['mulit_delete']) {
 		kekezu::admin_show_msg ( $_lang['choose_operate_item'], $url ,3,'','warning');
 	}
 }
-require $kekezu->_tpl_obj->template ( 'admin/tpl/admin_tpl_' . $view . '_' . $type );
+require $kekezu->_tpl_obj->template(ADMIN_DIRECTORY.'/tpl/admin_tpl_' . $view . '_' . $type );

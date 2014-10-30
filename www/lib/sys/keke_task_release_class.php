@@ -219,10 +219,8 @@ abstract class keke_task_release_class {
 			$task_cash = $task_obj->getTask_cash_coverage();
 		}
 		$order_id = $this->create_task_order ( $task_id, $this->_model_id, $release_info,'wait' );
-		if(floatval($release_info ['hdn_total_costs']) >0){
+		if(floatval($release_info ['hdn_total_costs']) >= 0){
 			$this->createPayitemOrder($task_id,$release_info['payitem'],$order_id);
-		}else{
-			$this->createPayitemOrder($task_id,$release_info['payitem'],0);
 		}
 		$this->create_prom_event ( $task_id );
 		$this->del_task_obj ( $obj_name );
@@ -257,7 +255,7 @@ abstract class keke_task_release_class {
 		if($att_cash > 0){
 			$order_amount  = $task_cash + $att_cash;
 		}else{
-			$order_amount = $task_cash; 
+			$order_amount = $task_cash;
 		}
 		$order_body = $_lang ['pub_task'] . "<a href=\"index.php?do=task&id=$task_id\">" . $order_name . "</a>"; 
 		$order_amount>0 and $order_id = keke_order_class::create_order ( $model_id, $uid, $username, $order_name, $order_amount, $order_body, $order_status );
@@ -288,7 +286,7 @@ abstract class keke_task_release_class {
 		}
 	}
 	public function check_access($r_step, $model_id, $release_info, $task_id = null, $output = 'normal') {
-		global $_lang;
+		global $_lang,$gUid,$uid;
 		switch ($r_step) {
 			case "step1" :
 				break;
@@ -305,6 +303,9 @@ abstract class keke_task_release_class {
 			case "step4" : 
 				$sql = sprintf ( " select * from %switkey_task where task_id = '%d' ", TABLEPRE, $task_id );
 				$task_info = db_factory::get_one ( $sql );
+				if($task_info['uid'] != $uid){
+					kekezu::keke_show_msg ( "index.php?do=pubtask", '你没有权限访问该页面', "error", $output );
+				}
 				$task_info or kekezu::keke_show_msg ( "index.php?do=pubtask", $_lang ['the_page_timeout_notice'], "error", $output );
 				return $task_info;
 				break;

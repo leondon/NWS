@@ -1,4 +1,4 @@
-<?php keke_tpl_class::checkrefresh('admin/tpl/admin_index', '1412416690' );?><!DOCTYPE HTML>
+<?php keke_tpl_class::checkrefresh('admin/tpl/admin_index', '1414677885' );?><!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=<?php echo $_K['charset'];?>">
@@ -74,7 +74,7 @@ return false;
   	
 var nav_width = $("#nav_div").width();
 
-if(nav_width<750){ 
+if(nav_width<558){ 
 $("#a_show_more").show();
 $("#show_much").show();
 

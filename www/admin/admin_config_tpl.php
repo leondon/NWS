@@ -34,6 +34,10 @@ $arrColors = array (
 		array (
 				'title' => 'css-wordpressgrey-responsive',
 				'color' => '#464646'
+		),
+		array (
+				'title' => 'css-zbj-responsive',
+				'color' => '#ff9400'
 		)
 );
 $strThemePath = S_ROOT . SKIN_PATH . '/theme/';
@@ -89,4 +93,4 @@ if (isset ( $ac )) {
 			break;
 	}
 }
-require $template_obj->template ( 'admin/tpl/admin_config_' . $view );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_config_' . $view );

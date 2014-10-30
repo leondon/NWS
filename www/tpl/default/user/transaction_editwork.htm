@@ -14,9 +14,11 @@
 		    <div class="form-group">
               <label class="col-sm-2 control-label" for="goodsdesc">{$strServiceName}描述：</label>
               <div class="col-sm-8 row">
-                 <textarea id="goodsdesc" name="goodsdesc" rows="5" class="form-control">{$arrServiceInfo['content']}</textarea>
+                 <textarea id="goodsdesc" name="goodsdesc" rows="10" class="form-control ">{$arrServiceInfo['content']}</textarea>
               </div>
             </div>
+            
+
            <div class="form-group">
               <label class="col-sm-2 control-label">所属行业：</label>
                    <div class="col-sm-4">
@@ -231,3 +233,9 @@
 			var splitStr = ",";
 			//-->
 		  </script>
+
+		<script type="text/javascript">
+			 $(function(){
+			 	editor = $("#goodsdesc").xheditor({tools:'mini',urlBase:'$_K['siteurl']/',html5Upload:false,upImgUrl:'index.php?do=ajax&view=upload&file_type=att&filename=filedata',skin:'nostyle'});
+			 });
+		</script>

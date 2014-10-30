@@ -1,4 +1,4 @@
-<?php keke_tpl_class::checkrefresh('admin/tpl/admin_main', '1412589775' );?><!DOCTYPE HTML>
+<?php keke_tpl_class::checkrefresh('admin/tpl/admin_main', '1414677885' );?><!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=<?php echo $_K['charset'];?>">

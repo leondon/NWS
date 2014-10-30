@@ -57,4 +57,4 @@ switch ($op){
 		$fina_type = keke_glob_class::get_fina_charge_type();
 		break;
 }
-require keke_tpl_class::template('admin/tpl/admin_finance_revenue');
+require keke_tpl_class::template(ADMIN_DIRECTORY.'/tpl/admin_finance_revenue');

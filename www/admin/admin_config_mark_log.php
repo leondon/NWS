@@ -26,4 +26,4 @@ if ($ac == 'del' && $mark_id) {
 	$mark_data = $data ['data'];
 	$pages = $data ['pages'];
 }
-require $kekezu->_tpl_obj->template ( "admin/tpl/admin_" . $do . "_" . $view . "_" . $op );
+require $kekezu->_tpl_obj->template(ADMIN_DIRECTORY."/tpl/admin_" . $do . "_" . $view . "_" . $op );

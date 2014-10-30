@@ -43,7 +43,7 @@ if (isset ( $ac )) {
 					$bank_arr=keke_glob_class::get_bank();
 					$k_arr   = array_keys($bank_arr);
 				}
-				require $template_obj->template ( 'admin/tpl/admin_finance_withdraw_info' );
+				require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_finance_withdraw_info' );
 				die ();
 			} else {
 				kekezu::admin_show_msg ( $_lang['audit_withdraw_not_exist'], 'index.php?do=' . $do . '&view=' . $view,3,'','warning' );
@@ -150,4 +150,4 @@ if (isset ( $ac )) {
 	$withdraw_obj->setWhere ( $where . $pages ['where'] );
 	$withdraw_arr = $withdraw_obj->query_keke_witkey_withdraw ();
 }
-require $template_obj->template ( 'admin/tpl/admin_' . $do . '_' . $view );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_' . $do . '_' . $view );

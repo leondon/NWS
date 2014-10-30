@@ -62,7 +62,7 @@ switch ($op) {
 				kekezu::empty_cache ();
 				$res and kekezu::admin_show_msg ( $_lang ['edit_add_success'], "index.php?do=config&view=pay&op=offline", "3", '', 'success' ) or kekezu::admin_show_msg ( $_lang ['edit_add_fail'], "index.php?do=config&view=pay&op=offline", "3", '', 'warning' );
 			}
-			require $template_obj->template ( 'admin/tpl/admin_config_' . $view . '_offline' );
+			require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_config_' . $view . '_offline' );
 			die ();
 		}
 		break;
@@ -95,4 +95,4 @@ switch ($op) {
 		;
 		break;
 }
-require $template_obj->template ( 'admin/tpl/admin_config_' . $view );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_config_' . $view );

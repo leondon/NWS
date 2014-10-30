@@ -39,4 +39,4 @@ if (isset ( $ac ) && $fina_id) {
 	$finace_obj->setWhere ( $where . $pages [where] );
 	$finace_arr = $finace_obj->query_keke_witkey_finance ();
 }
-require $template_obj->template ( 'admin/tpl/admin_' . $do . '_' . $view );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_' . $do . '_' . $view );

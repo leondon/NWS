@@ -6,4 +6,4 @@ $target_ad_num = kekezu::get_table_data('target_id, count(*) as num', 'witkey_ad
 while (list($key, $value) = each($target_arr)){
 	$target_ad_arr[$key] = $target_ad_num[$key]['num'] ? $target_ad_num[$key]['num'] : '0';
 }
-require $template_obj->template ( 'admin/tpl/admin_' . $do . '_' . $view );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_' . $do . '_' . $view );

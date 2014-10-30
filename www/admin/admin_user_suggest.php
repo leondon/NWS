@@ -28,4 +28,4 @@ if ($ac == 'del') {
 	$suggestlist_arr = $d [data];
 	$pages = $d [pages];
 }
-require $template_obj->template ( 'admin/tpl/admin_user_suggest' );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_user_suggest' );

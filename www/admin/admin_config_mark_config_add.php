@@ -12,4 +12,4 @@ if ($sbt_add && $fds && $hdn_mark_config_id) {
 	$res = $mark_config_obj->save ( $fds, array ('mark_config_id' => $hdn_mark_config_id ) );
 	kekezu::admin_show_msg ( $_lang['edit_success'], $url,3,'','success' );
 }
-require $kekezu->_tpl_obj->template ( "admin/tpl/admin_" . $do . "_" . $view . "_" . $op );
+require $kekezu->_tpl_obj->template(ADMIN_DIRECTORY."/tpl/admin_" . $do . "_" . $view . "_" . $op );

@@ -1,4 +1,4 @@
-<!--{template admin/tpl/admin_header}-->
+<!--{template ADMIN_DIRECTORY/tpl/admin_header}-->
 <div class="page_title">
     <h1>{$_lang['prom_config_manage']}</h1>
     <div class="tool">
@@ -130,7 +130,7 @@
                <table width="100%" border="0" cellspacing="0" cellpadding="0">
                  <tr>
                     <th><font style="text-align:right">{$_lang['specified_task_model']}</font></th>
-                       <td>{$_lang['only_specified_will_be_prom']}<br/>
+                       <td>只有指定模型下的推广才能生效<br/>
                          {loop $model_info $k $v}
 							{if $v['model_type']==$model_type}
 								<label for="model_{$k}">
@@ -200,4 +200,4 @@ $(function(){
 
 //-->
 </script> 
-<!--{template admin/tpl/admin_footer}-->
+<!--{template ADMIN_DIRECTORY/tpl/admin_footer}-->

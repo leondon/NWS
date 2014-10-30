@@ -7,6 +7,7 @@ $(function(){
 		rules: {
 			indus_pid:	['not_empty'],
 			indus_id: 	['not_empty'],
+			file_ids:   ['not_empty'],
 			txt_title:	['not_empty',{min_length:2}, {max_length:50} ],
 	    	tar_content:['not_empty',{min_length:20},{max_length:65565} ],
 	    	txt_price:	['not_empty','decimal',{'max_length': 8}],
@@ -20,6 +21,9 @@ $(function(){
 			},
 			indus_id:{
 				not_empty : "请选择子行业"
+			},
+			file_ids:{
+				not_empty : "请上传附件"
 			},
 			txt_title:{
 				not_empty : "请输入标题名称",

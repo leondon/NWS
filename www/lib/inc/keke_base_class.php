@@ -1,8 +1,5 @@
 <?php
-
 class keke_base_class {
-
-
 	static public function k_addslashes($string) {
 		if (is_array ( $string )) {
 			$key = array_keys ( $string );
@@ -15,22 +12,16 @@ class keke_base_class {
 		}
 		return $string;
 	}
-
-
 	static function remove_xss($val) {
 		$val = preg_replace ( '/([\x00-\x08\x0b-\x0c\x0e-\x19])/', '', $val );
-
 		$search = 'abcdefghijklmnopqrstuvwxyz';
 		$search .= 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 		$search .= '1234567890!@#$%^&*()';
 		$search .= '~`";:?+/={}[]-_|\'\\';
 		for($i = 0; $i < strlen ( $search ); $i ++) {
-
 			$val = preg_replace ( '/(&#[xX]0{0,8}' . dechex ( ord ( $search [$i] ) ) . ';?)/i', $search [$i], $val );
-
 			$val = preg_replace ( '/(&#0{0,8}' . ord ( $search [$i] ) . ';?)/', $search [$i], $val );
 		}
-
 		$ra1 = array (
 				'javascript',
 				'vbscript',
@@ -128,7 +119,6 @@ class keke_base_class {
 				'onunload'
 		);
 		$ra = array_merge ( $ra1, $ra2 );
-
 		$found = true;
 		while ( $found == true ) {
 			$val_before = $val;
@@ -148,7 +138,6 @@ class keke_base_class {
 				$replacement = substr ( $ra [$i], 0, 2 ) . ' ' . substr ( $ra [$i], 2 );
 				$val = preg_replace ( $pattern, $replacement, $val );
 				if ($val_before == $val) {
-
 					$found = false;
 				}
 			}
@@ -158,7 +147,6 @@ class keke_base_class {
 
 	public static function set_star($str, $start, $end, $start_num = 3, $preg_str = "*") {
 		if (strlen ( $str ) <= ($start + $end)) {
-
 			return $str;
 		}
 		$start_str = mb_strcut ( $str, 0, $start, CHARSET );
@@ -167,7 +155,6 @@ class keke_base_class {
 		$replace_str = str_repeat ( $preg_str, $start_num );
 		return $start_str . $replace_str . $end_str;
 	}
-
 	static function redirect_second_domain() {
 		global $_K, $kekezu;
 		if ($kekezu->_sys_config ['second_domain']) { // 开启
@@ -195,7 +182,6 @@ class keke_base_class {
 		}
 		return $p_url;
 	}
-
 	static function exec_js($mode = 'set', $timer = 300) {
 		$path = S_ROOT . "/data/data_cache/time_cache.php";
 		switch ($mode) {
@@ -229,6 +215,27 @@ class keke_base_class {
 		} else {
 			return $_r;
 		}
+	}
+	static public function reAssignment($gpr,$r){
+		$gpr = strtolower($gpr);
+		$tmp = array();
+		switch ($gpr) {
+			case 'get':$tmp = $_GET;break;
+			case 'post':$tmp = $_POST;break;
+			case 'request':$tmp = $_REQUEST;break;
+		}
+		if (empty($tmp)) {
+			$tmp = $r;
+		}else {
+			foreach ($tmp as $k=>$v){
+				foreach ($r as $rk=>$rv){
+					if($k == $rk){
+						$tmp[$k] = $rv;
+					}
+				}
+			}
+		}
+		return $tmp;
 	}
 	static public function refer_url() {
 		global $_K;
@@ -315,7 +322,6 @@ class keke_base_class {
 				$string = $string;
 			}
 		}
-
 		return $string;
 	}
 
@@ -356,7 +362,6 @@ class keke_base_class {
 		if ($tree) {
 			$tree [0] or $tree [0] = $tree [$array [0] [$pid]];
 			if (is_array ( $tree [0] )) {
-
 				foreach ( $tree [0] as $k => $v ) {
 					if ($out == 'option') {
 						if ($index == $v [$id]) {
@@ -408,7 +413,7 @@ class keke_base_class {
 		$string = self::charset_encode ( "gbk", "utf-8", $string );
 		return $string;
 	}
-	static function utftogbk($string) { // gbk是gb2312(简体中文)的扩展,包括繁体等
+	static function utftogbk($string) {
 		$string = self::charset_encode ( "utf-8", "gbk", $string );
 		return $string;
 	}
@@ -445,7 +450,6 @@ class keke_base_class {
 				$output = iconv ( $_input_charset, $_output_charset, $input );
 			} else
 				die ( "sorry, you have no libs support for charset change." );
-
 			return $output;
 		}
 	}
@@ -457,7 +461,6 @@ class keke_base_class {
 			$status = self::gbktoutf ( $status );
 			$dataarr = self::gbktoutf ( $dataarr );
 		}
-
 		$arr = array (
 				'msg' => $msg,
 				'status' => $status,
@@ -476,7 +479,6 @@ class keke_base_class {
 		}
 	}
 
-
 	static function sstrtotime($time, $now = null) {
 		date_default_timezone_set ( 'Etc/GMT' );
 		$time = strtotime ( $time, $now );
@@ -493,7 +495,6 @@ class keke_base_class {
 		}
 		return $key;
 	}
-
 	static function get_rand_kf() {
 		$kf_arr = kekezu::get_table_data ( 'uid', 'witkey_space', ' group_id = 7' );
 		$kf_arr_count = count ( $kf_arr );
@@ -505,7 +506,6 @@ class keke_base_class {
 		global $_lang;
 		$tt = getdate ();
 		$tt = $tt ['year'];
-
 		$year = floor ( $time / 60 / 60 / 24 / 365 );
 		$time -= $year * 60 * 60 * 24 * 365;
 		$month = floor ( $time / 60 / 60 / 24 / 30 );
@@ -525,11 +525,9 @@ class keke_base_class {
 				$_lang ['hour'] => 'hour',
 				$_lang ['minute'] => 'minute'
 		);
-
 		foreach ( $unitArr as $cn => $u ) {
 			if ($$u > 0) {
 				$elapse.= $$u . $cn;
-
 			}
 			if ($u == $limit) {
 				return $elapse;
@@ -542,7 +540,6 @@ class keke_base_class {
 		global $_lang;
 		$tt = getdate ();
 		$tt = $tt ['year'];
-
 		$year = floor ( $time / 60 / 60 / 24 / 365 );
 		$time -= $year * 60 * 60 * 24 * 365;
 		$month = floor ( $time / 60 / 60 / 24 / 30 );
@@ -562,7 +559,6 @@ class keke_base_class {
 				$_lang ['hour'] => 'hour',
 				$_lang ['minute'] => 'minute'
 		);
-
 		foreach ( $unitArr as $cn => $u ) {
 			if ($$u > 0) {
 				$elapse= $$u . $cn;
@@ -586,7 +582,6 @@ class keke_base_class {
 			if ($res / $oneday > 0) {
 				$day = floor ( $res / $oneday ); // 天
 				$left_sec = $res % $oneday; // 剩余的秒
-
 				if ($left_sec / $onehour > 0) {
 					$hour = number_format ( ($left_sec / $oneday) * 24, 0 ); // 小时
 				} else
@@ -604,6 +599,26 @@ class keke_base_class {
 		return $res;
 	}
 
+	static function chinesesubstr($str, $start, $len) {
+		$str = strip_tags(htmlspecialchars_decode($str));
+		$str = str_replace("&nbsp;", "",$str);
+		$str = trim ( $str );
+		// 用$strlen存储字符串的总长度，即从字符串的起始位置到字符串的总长度
+		$strlen = $start + $len;
+		for($i = $start; $i < $strlen;) {
+			// 如果字符串中首个字节的ASCII序数值大于0xa0,则表示汉字
+			if (ord ( substr ( $str, $i, 1 ) ) > 0xa0) {
+				// 每次取出三位字符赋给变量$tmpstr，即等于一个汉字
+				$tmpstr .= substr ( $str, $i, 3 );
+				$i=$i+3; // 变量自加3
+			} else{
+				// 如果不是汉字，则每次取出一位字符赋给变量$tmpstr
+				$tmpstr .= substr ( $str, $i, 1 );
+				$i++;
+			}
+		}
+		return $tmpstr;
+	}
 	static function htmlencode($string) {
 		if(is_array($string)) {
 			foreach($string as $key => $val) {
@@ -614,7 +629,8 @@ class keke_base_class {
 		}
 		return $string;
 	}
-static function cutstr($string, $length = 0, $dot = '') {
+
+	static function cutstr($string, $length = 0, $dot = '') {
 		$string = strip_tags($string);
 		$string = trim($string);
 		$string = str_replace(array('&', '"', '<', '>'), array('&', '"', '<', '>'), $string);
@@ -678,31 +694,6 @@ static function cutstr($string, $length = 0, $dot = '') {
 		}
 		return self::htmlencode($string);
 	}
-
-	static function chinesesubstr($str, $start, $len) {
-
-		$str = strip_tags(htmlspecialchars_decode($str));
-
-		$str = str_replace("&nbsp;", "",$str);
-		$str = trim ( $str );
-		// 用$strlen存储字符串的总长度，即从字符串的起始位置到字符串的总长度
-		$strlen = $start + $len;
-		for($i = $start; $i < $strlen;) {
-			// 如果字符串中首个字节的ASCII序数值大于0xa0,则表示汉字
-			if (ord ( substr ( $str, $i, 1 ) ) > 0xa0) {
-				// 每次取出三位字符赋给变量$tmpstr，即等于一个汉字
-				$tmpstr .= substr ( $str, $i, 3 );
-				$i=$i+3; // 变量自加3
-			} else{
-				// 如果不是汉字，则每次取出一位字符赋给变量$tmpstr
-				$tmpstr .= substr ( $str, $i, 1 );
-				$i++;
-			}
-		}
-		// 返回字符串
-		return $tmpstr;
-	}
-
 	static function str_filter($content = '') {
 		global $basic_config;
 		if (is_array ( $content )) {
@@ -724,11 +715,9 @@ static function cutstr($string, $length = 0, $dot = '') {
 					$replase [] = '*';
 				}
 			}
-
 			return preg_replace ( $find, $replase, $content );
 		}
 	}
-
 	static function k_strpos($k) {
 		global $basic_config;
 		$user_arr = explode ( '|', $basic_config ['ban_users'] );
@@ -741,7 +730,6 @@ static function cutstr($string, $length = 0, $dot = '') {
 		}
 		return $r ? true : false;
 	}
-
 	public static function k_match($k_arr, $content) {
 		$m = 0;
 		foreach ( $k_arr as $value ) {
@@ -751,8 +739,6 @@ static function cutstr($string, $length = 0, $dot = '') {
 		}
 		return $m;
 	}
-
-
 	static function get_gmdate($timestamp) {
 		global $_lang;
 		global $_K;
@@ -770,7 +756,6 @@ static function cutstr($string, $length = 0, $dot = '') {
 		}
 		return $result;
 	}
-
 
 	static function formhash() {
 		$uid = null;
@@ -944,7 +929,6 @@ static function cutstr($string, $length = 0, $dot = '') {
 			}
 		}
 	}
-
 	static function k_round($v, $dec = 0) {
 		return round ( $v * pow ( 10, $dec ) ) / pow ( 10, $dec );
 	}

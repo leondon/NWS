@@ -48,4 +48,4 @@ function get_info($uid){
 	$info = db_factory::get_one($sql);
 	return $info;
 }
-require keke_tpl_class::template ( 'admin/tpl/admin_user_charge' );
+require keke_tpl_class::template ( ADMIN_DIRECTORY.'/tpl/admin_user_charge' );

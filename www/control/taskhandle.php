@@ -448,9 +448,9 @@ switch ($op) {
 		if($workId&&$workStatus&&$arrWorkInfo){
 			$resText = $objTask->work_choose($workId, $workStatus);
 			if($resText === true){
-				kekezu::show_msg ( '操作成功', 'index.php?do=task&id='.$taskId, 3, NULL, 'ok' );
+				kekezu::show_msg ( '操作成功', 'index.php?do=task&id='.$taskId.'&view=work&page='.intval($page), 3, NULL, 'ok' );
 			}else{
-				kekezu::show_msg ( $resText, 'index.php?do=task&id='.$taskId, 3, NULL, 'fail' );
+				kekezu::show_msg ( $resText, 'index.php?do=task&id='.$taskId.'&view=work&page='.intval($page), 3, NULL, 'fail' );
 			}
 		}
 		kekezu::show_msg ( '服务器繁忙,请重试...', 'index.php?do=task&id='.$taskId, 3, NULL, 'fail' );

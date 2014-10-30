@@ -1,4 +1,4 @@
- <!--{template admin/tpl/admin_header}-->
+ <!--{template ADMIN_DIRECTORY/tpl/admin_header}-->
 <div class="page_title">
     	<h1>{$_lang['tag_manage']}</h1>
         <div class="tool">         
@@ -20,7 +20,7 @@
             	{$_lang['tag_name']}{$_lang['zh_mh']}
 			</th>
             <td colspan="2">
-             	<input type="text" class="txt" name="txt_tagname" {if $taginfo['tagname']}readonly="readonly"{/if}   value="{$taginfo['tagname']}">
+             	<input type="text" class="txt" name="txt_tagname"    value="{$taginfo['tagname']}">
 				请不要随意更改名称,否则可能造成调用错误
             </td>
           </tr>
@@ -62,4 +62,4 @@
     </div>
 </div>	
  
-<!--{template admin/tpl/admin_footer}-->
+<!--{template ADMIN_DIRECTORY/tpl/admin_footer}-->

@@ -164,7 +164,13 @@ final class mysqli_drver extends DataBase {
 	}
 	public function fetch_array($type = MYSQL_ASSOC) {
 		$res = mysqli_fetch_array ( $this->_last_query_id, $type );
-		! $res and $this->free_result ();
+		if($res){
+			foreach ($res as $k=>$v){
+				$res[$k] = stripcslashes($v);
+			}
+		}else{
+			$this->free_result ();
+		}
 		return $res;
 	}
 	public function free_result() {

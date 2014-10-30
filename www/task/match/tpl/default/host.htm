@@ -1,0 +1,52 @@
+
+<div class="modal-body">
+		  <form role="form" action="index.php?do=taskhandle&op=taskHost&taskId={$taskId}" method="post" class="form-horizontal" name="hostCashForm" id="hostCashForm">
+          	 <input type="hidden" name="formhash" id="formhash" value="{FORMHASH}">
+			<input type="hidden" name="floatHostCash" id="floatHostCash" value="{$limit}">
+			<p class="text-info mb_10"><i class="fa fa-info-circle"></i> 请您放心托管赏金</p>
+           <div class="well well-sm">
+              <label>托管金额：</label>
+                   <strong class="money">
+					{c:$limit}
+                 </strong>
+           </div>
+
+
+
+		  	<ul class="form-group">
+		  		<li>1.请确保托管金额为双方商定金额,以免产生纠纷.</li>
+				<li>2.托管赏金后,请尽快通知威客确认并开始工作.</li>
+				<li>3.托管后无法再淘汰威客,您可以通过提交维权以便客服介入.</li>
+		  	</ul>
+
+
+
+              <div class="text-center">
+                <button class="btn btn-primary" type="submit" value="1" >确定</button>
+                <span class="text-success" id="tipsUser"></span>
+              </div>
+
+          </form>
+</div>
+<script type="text/javascript">
+$(function(){
+	$('#hostCashForm').scojs_valid({
+	    rules:{
+	    },
+	    messages: {
+	    },
+	    wrapper:'.form-group'
+	    ,onSuccess: function(response, validator) {
+	    	//关闭举报弹窗，延迟提示
+	    	$('.close').trigger('click');
+	    	var stt = setTimeout(function(){
+	    		tipsOp(response.data,response.status);
+	    		clearTimeout(stt);
+	    		if(response.url){
+	    			setTimeout(function(){window.location.href=response.url;},2000);
+	      	  	}
+	    	},1000);
+	    }
+	});
+});
+</script>

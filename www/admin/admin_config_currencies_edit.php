@@ -19,4 +19,4 @@ if($conf and $sbt_edit){
 		kekezu::admin_show_msg($_lang['operate_fail'],$url,2,$_lang['currency_code_fill_error'],"error");
 	}
 }
-require $template_obj->template ( 'admin/tpl/admin_config_' . $view.'_'.$op );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_config_' . $view.'_'.$op );

@@ -36,10 +36,12 @@ final class service_time_class extends time_base_class {
 		}
   }
   public function goods_top_end() {
-  	$goods_list = db_factory::query ( sprintf ( " select group_concat(a.service_id) as ids ,b.end_time from %switkey_service a left join %switkey_payitem_record b on a.service_id=b.obj_id
+  	$goods_list = db_factory::query ( sprintf ( " select a.service_id  ,b.end_time from %switkey_service a left join %switkey_payitem_record b on a.service_id=b.obj_id
 				 where a.model_id=7 and a.goodstop=1 and b.obj_type='goods' and b.end_time<%d order by service_id desc ", TABLEPRE,TABLEPRE, time () ) );
-  	if ($goods_list[0]['ids']) {
-  		keke_shop_class::updateGoodsTop($goods_list[0]['ids']);
+  	if (is_array ( $goods_list )) {
+  		foreach ( $goods_list as $k => $v ) {
+  			keke_shop_class::updateGoodsTop($v['service_id']);
+  		}
   	}
   }
 }

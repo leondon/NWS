@@ -44,7 +44,7 @@ $lang = array(
 	'task_audit_money_set'=>'任务审核金额',
 	'fill_in_right_audit_money'=>'填写正确任务审核金额',
 	'task_audit_money_allow_decimal'=>'任务审核金额允许小数',
-	'greater_money_not_audit_notice'=>'任务需审核后发布成功的金额最小值，设为0即无限制',
+	'greater_money_not_audit_notice'=>'发布赏金低于该设定金额的任务需要审核，设为0即无限制',
 	'task_min_money'=>'任务最小金额',
 	'task_min_money_input_error'=>'任务最小金额填写错误',
 	'task_min_money_allow_decimal'=>'任务最小金额为可以含小数',
@@ -62,7 +62,7 @@ $lang = array(
 	'task_fail_returned_smoke_scale'=>'任务失败返金抽成比例',
 	'task_time_rule_set'=>'任务时间规则设定',
 	'time_rule'=>'任务交稿截止时间最大规则',
-	
+
 	'task_min_money_error'=>'任务最小金额不正确',
 	'please_carefully_input_min_money'=>'请仔细填写规则允许最小金额,',
 	'day_must_greater_one'=>'天数必须为大于1的整数',

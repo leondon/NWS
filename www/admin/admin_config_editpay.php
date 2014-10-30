@@ -54,4 +54,4 @@ if (isset ( $sbt_edit )) {
 		unset($items);
 		kekezu::admin_show_msg ( $_lang['submit'], 'index.php?do=config&view=pay&op=' . $type,3,'','success' );
 }
-require $template_obj->template ( 'admin/tpl/admin_config_' . $view );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_config_' . $view );

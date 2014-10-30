@@ -24,16 +24,20 @@
 <script src="static/js/sco.valid.js"></script>
 <script src="static/js/holder.min.js"></script>
 <script src="static/js/model/common/base.js"></script>
-{if $do==user}
-<link href="tpl/default/{$_K['sitecss']}/user.css" rel="stylesheet" type="text/css">
-{elseif $do==seller}
-<link href="tpl/default/{$_K['sitecss']}/store.css" rel="stylesheet" type="text/css">
-{elseif $do=='index'}
- {if $_K['theme']}
- <link href="tpl/default/theme/{$_K['theme']}/home.css" type="text/css" rel="stylesheet" >
- {else}
- <link href="tpl/default/{$_K['sitecss']}/home.css" type="text/css" rel="stylesheet" >
- {/if}
-{else}
-<link href="tpl/default/{$_K['sitecss']}/style.css" rel="stylesheet" type="text/css">
-{/if}
+
+<!--{eval include(S_ROOT.'/control/include.php');}-->
+
+<script type="text/javascript">
+$(function(){
+	$('.color-selected .nav-sub-list a').click(function() {
+		var css = $(this).attr('data-css');
+		var color = $(this).attr('data-rel');
+		$('.nav-item-link span.style-color').removeClass().addClass('style-color '+ color);
+		$('#active-style').attr('href', 'tpl/default/'+ css +'/style.css');
+		$('#active-style-user').attr('href', 'tpl/default/'+ css +'/user.css');
+		$('#active-style-store').attr('href', 'tpl/default/'+ css +'/store.css');
+		$('#active-style-home').attr('href', 'tpl/default/'+ css +'/home.css');
+	});
+})
+	
+</script>

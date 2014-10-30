@@ -42,8 +42,8 @@
 	 {if $intLoginTimes}
     <input type="hidden" name="logins" id="logins" value='0'>
       <div class="form-group clearfix code-group">
+        <label class="sr-only" for="code">验证码</label>
         <div class="col-xs-3">
-          <label class="sr-only" for="code">验证码</label>
           <input type="text" class="form-control" id="code" name="code" placeholder="验证码">
         </div>
         <div class="col-xs-9 code-img">
@@ -52,14 +52,15 @@
         </div>
       </div>
 	  {/if}
-      <div class="form-group pull-right">
-        <a href="index.php?do=retrieve">忘记密码？</a>
+      <div class="form-group ">
+        <div class="checkbox">
+	        <label>
+	          <input type="checkbox"  name="autoLogin" value="1"> 记住我
+	        </label>
+	        <a href="index.php?do=retrieve" class="pull-right">忘记密码？</a>
       </div>
-      <div class="checkbox">
-        <label>
-          <input type="checkbox"  name="autoLogin" value="1"> 记住我
-        </label>
       </div>
+
       <div class="form-group text-center">
         <button type="submit" class="btn btn-primary btn-block">登录</button>
       </div>

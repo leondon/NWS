@@ -126,7 +126,8 @@ function d_time(end_time){
  * @param status  选择的状态
  */
 function chooseWork(id,status){
-	confirmOp('<div class="alert alert-warning"><i class="fa fa-exclamation-triangle"></i> 确定设置此稿件为'+jsonWorkStatus[status]+'?'+'</div>','index.php?do=taskhandle&op=workchoose&taskId='+taskId+'&workId='+id+'&status='+status,true);
+	var page = $("#worklist-curpage").val();
+	confirmOp('<div class="alert alert-warning"><i class="fa fa-exclamation-triangle"></i> 确定设置此稿件为'+jsonWorkStatus[status]+'?'+'</div>','index.php?do=taskhandle&op=workchoose&taskId='+taskId+'&workId='+id+'&status='+status+'&page='+page,true);
 }
 /***
  * 投票操作

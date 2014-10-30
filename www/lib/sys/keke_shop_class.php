@@ -218,7 +218,7 @@ class keke_shop_class {
 		db_factory::execute ( sprintf ( "DELETE FROM %switkey_feed where feedtype in('pub_service','service') and obj_id in(%s)", TABLEPRE, $ids ) );
 		return db_factory::execute ( sprintf ( "DELETE FROM %switkey_service where service_id in(%s)", TABLEPRE, $ids ) );
 	}
-	public static function updateGoodsTop($ids){
-         db_factory::execute("update ".TABLEPRE."witkey_service set goodstop=0  where service_id in ($ids)");
+	public static function updateGoodsTop($id){
+         db_factory::execute("update ".TABLEPRE."witkey_service set goodstop=0  where service_id = ".intval($id));
 	}
 }

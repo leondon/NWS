@@ -25,4 +25,4 @@ switch ($ac){
 		$admin_obj->rm_fast_menu($r_id);
 		break;
 }
-require $template_obj->template('admin/tpl/admin_'.$do);
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_'.$do);

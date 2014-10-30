@@ -17,4 +17,4 @@ if ($item_id) {
 			break;
 	}
 }
-require $template_obj->template ( 'admin/tpl/admin_payitem_' . $view );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_payitem_' . $view );

@@ -45,4 +45,4 @@ if ($ac == 'comment_info') {
 		$comment_info = $comment_info ['0'];
 	}
 }
-require $template_obj->template ( 'admin/tpl/admin_task_' . $view );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_task_' . $view );

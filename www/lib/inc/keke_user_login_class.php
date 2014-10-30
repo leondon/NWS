@@ -70,9 +70,9 @@ class keke_user_login_class {
 					}
 					$this->show_msg ( '用户名或密码错误，请检查账号是否输入正确', 3,$url,1 );
 				} elseif ($user_info ['status'] == 2) {
-					$this->show_msg ( '<div class="alert alert-danger"><i class="fa fa-ban"></i> '.$_lang ['account_has_freeze_or_unactivate'].'</div>', 4,'index.php?do=login' );
+					$this->show_msg ( $_lang ['account_has_freeze_or_unactivate'], 4,'index.php?do=login' );
 				} elseif ($user_info ['status'] == 3) {
-					$this->show_msg ('<div class="alert alert-danger"><i class="fa fa-ban"></i> '.$_lang ['account_has_not_excited'].'</div>', 6,'index.php?do=login' );
+					$this->show_msg ($_lang['account_has_not_excited'], 6,'index.php?do=login' );
 				}
 				break;
 			case "2" :
@@ -237,7 +237,6 @@ class keke_user_login_class {
 		$_SESSION ['username'] = $user_info ['username'];
 		$_SESSION['last_login_time'] = $user_info['last_login_time'];
 		$this->add_login_time(0);
-		$oauth_login = intval ( $oauth_login );
 		$login_type = $this->_login_type;
 		if ($auto_login == '1'){
 			$c = array();
@@ -252,6 +251,9 @@ class keke_user_login_class {
 			$r = 'index.php';
 		}
 		if($login_type){
+			$r = 'index.php';
+		}
+		if($oauth_login){
 			$r = 'index.php';
 		}
 		if ($this->_sys_config ['user_intergration'] ==2) { 

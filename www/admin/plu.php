@@ -2,8 +2,8 @@
 $tpl_mode = 1;
 define('ADMIN_KEKE',TRUE);
 require '../app_comm.php';
-define('ADMIN_ROOT',S_ROOT.'/admin/');
-$_K['admin_tpl_path']= S_ROOT.'/admin/tpl/';
+define ( 'ADMIN_ROOT', S_ROOT . '/'.ADMIN_DIRECTORY.'/' ); 
+$_K ['admin_tpl_path'] = S_ROOT . '/'.ADMIN_DIRECTORY.'/tpl/'; 
 if ($do == 'previewtag')
 {
 	$tagid = intval($tagid);

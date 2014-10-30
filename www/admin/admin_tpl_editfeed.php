@@ -36,4 +36,4 @@ if ($sbt_edit) {
 	}
 			$res and kekezu::admin_show_msg ( $_lang['edit_success'], $url,3,'','success' ) or kekezu::admin_show_msg ( $_lang['edit_fail'], $url,3,'','warning' );
 }
-require $template_obj->template ( 'admin/tpl/admin_tpl_' . $view . '_' . $type );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_tpl_' . $view . '_' . $type );

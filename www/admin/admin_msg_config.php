@@ -44,4 +44,4 @@ switch ($op) {
 function check_bind($k) {
 	return db_factory::get_count ( " select k from " . TABLEPRE . "witkey_basic_config where k='$k'" );
 }
-require $template_obj->template ( 'admin/tpl/admin_' . $do . '_' . $view );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_' . $do . '_' . $view );

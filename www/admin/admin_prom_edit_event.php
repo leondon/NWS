@@ -14,4 +14,4 @@ if($event_info['action']=='pub_task'||$event_info['action']=='bid_task'){
 	$objInfo['title'] = $objInfo['title'];
 	$objInfo['url'] = $_K['siteurl'].'/index.php?do=goods&id='.intval($objInfo['id']);
 }
-require $template_obj->template ( 'admin/tpl/admin_' . $do . '_' . $view );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_' . $do . '_' . $view );

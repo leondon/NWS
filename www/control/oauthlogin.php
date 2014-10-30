@@ -13,6 +13,9 @@ if(!$_SESSION[$type.'_oauthInfo']){
 	kekezu::show_msg ( '缺少参数', 'index.php?do=login', 3, NULL, 'warning' );
 }
 $arrOauthInfo = $_SESSION[$type.'_oauthInfo'];
+if (strtoupper ( CHARSET ) == 'GBK') {
+	$arrOauthInfo = kekezu::utftogbk($arrOauthInfo);
+}
 $objLogin = new keke_user_login_class();
 $arrBindInfo = keke_register_class::is_oauth_bind ( $type, $arrOauthInfo ['account'] );
 if ($_SESSION[$type.'_oauthInfo']&& $arrBindInfo) {
@@ -31,17 +34,15 @@ if (kekezu::submitcheck(isset($formhash))|| isset($login_type) ==3) {
 			kekezu::show_msg ( $tips, NULL, NULL, NULL, 'error' );
 		}
 	}
-	 isset($hdn_refer) and $_K['refer'] = $hdn_refer;
-	 isset($_COOKIE['kekeloginrefer']) and $_K['refer'] =  $_COOKIE['kekeloginrefer'];
 	 $strCode = isset($code)?$code:"";
 	 $intLoginType = isset($login_type)?$login_type:"";
 	 $ckb_cookie = isset($ckb_cookie)?$ckb_cookie:"";
 	 if (strtoupper ( CHARSET ) == 'GBK') {
 	 	$account = kekezu::utftogbk( $account );
 	 }
- 	$arrUserInfo = $objLogin->user_login($account, md5($password),$strCode,$intLogin_type);
+ 	$arrUserInfo = $objLogin->user_login($account, $password,$strCode,$intLoginType);
  	UserCenter::bindingAccount($arrUserInfo['uid'], $arrUserInfo['username'], $arrOauthInfo);
  	$_SESSION[$type.'_oauthInfo'] = null;
-	$objLogin->save_user_info($arrUserInfo,$account, $ckb_cookie,$intLoginType,intval($autoLogin));
+	$objLogin->save_user_info($arrUserInfo,$account, $ckb_cookie,$intLoginType,0,true);
 	die();
 }

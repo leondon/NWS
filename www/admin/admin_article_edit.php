@@ -49,7 +49,7 @@ if(isset($ac)&&$ac=='del'){
 }
 $cat_arr = array ();
 kekezu::get_tree ( $art_cat_arr, $cat_arr, 'option', $art_id, 'art_cat_id', 'art_cat_pid', 'cat_name' );
-require $template_obj->template ( 'admin/tpl/admin_' . $do . "_" . $view );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_' . $do . "_" . $view );
 function get_fid($path){
 	if(!path){
 		return false;

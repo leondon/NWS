@@ -34,4 +34,4 @@ if ($ac == 'del') {
 	$link_arr = $d [data];
 	$pages = $d [pages];
 }
-require $template_obj->template ( 'admin/tpl/admin_' . $do . '_' . $view );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_' . $do . '_' . $view );

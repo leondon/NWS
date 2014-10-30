@@ -84,7 +84,7 @@
             <td>{$arrTaskStatus[$v['task_status']]}</td>
             <td>
             	<!--{eval
-				if($v[model_id]==4||$v[model_id]==5){
+				if($v[model_id]==4||$v[model_id]==5||$v[model_id]==12){
 				$opera = master_opera($v['model_id'],$v['task_id'],$strUrl,$v['real_cash']);
 				}else{
 				$opera = master_opera($v['model_id'],$v['task_id'],$strUrl,$v['task_cash']);

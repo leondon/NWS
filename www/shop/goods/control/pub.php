@@ -17,6 +17,12 @@ switch ($step) {
 				$tips['errors']['txt_price'] = '你的商品价格不能少于￥'.$floatMinCash.'元';
 				kekezu::show_msg($tips,NULL,NULL,NULL,'error');
 			}
+			if($submit_method=='inside'){
+				if (!$file_path_2) {
+					$tips['errors']['file_path_2'] = '请上传源文件';
+					kekezu::show_msg($tips,NULL,NULL,NULL,'error');
+				}
+			}
 			if (strtoupper ( CHARSET ) == 'GBK') {
 				$_POST = kekezu::utftogbk($_POST );
 			}

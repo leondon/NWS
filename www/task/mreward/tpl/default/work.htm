@@ -12,6 +12,7 @@
 
   <div class="manuscripts">
   	<div  id="gj_summery">
+  	<input type="hidden" value="{if $page}{$page}{else}1{/if}" id="worklist-curpage">
   	{if $arrWorkInfo}
 	{loop $arrWorkInfo $k $v}
     <div id="{$v['work_id']}" class="manuscript-item">
@@ -30,7 +31,7 @@
         {if $gUid!=$v['uid']}
         <a href="javascript:sendMessage({$v['uid']});void(0);" class="btn btn-default btn-xs btn-block">联系我</a>
 		{/if}
-		{if $v['workhide']!=1||$gUid==$arrTaskInfo['uid']||$gUid==$v['uid']}
+		{if $v['workhide']!=1||$gUid==$arrTaskInfo['uid']||$gUid==$v['uid']||$v['work_status']!=8}
 		<a href="index.php?do=taskhandle&op=workinfo&taskId={$v['task_id']}&workId=$v['work_id']" class="btn btn-default btn-xs btn-block" target="_blank">稿件详情</a>
       {/if}
 	  </div>
@@ -42,7 +43,7 @@
 			<!--{eval $arrUserLeve=unserialize($v[seller_level])}-->
             {$arrUserLeve['pic']}
           </h2>
-		  {if $v['workhide']==1&&$gUid!=$arrTaskInfo['uid']&&$gUid!=$v['uid']}
+		  {if $v['work_status']==8||($v['workhide']==1&&$gUid!=$arrTaskInfo['uid']&&$gUid!=$v['uid'])}
 		      	<div class="no-data">
 				<p class="lead text-warning"><i class="fa fa-ban fa-2x"></i> 您无权查看 ！</p>
 				</div>

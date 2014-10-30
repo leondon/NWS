@@ -65,4 +65,4 @@ $sys = array (
 		'p_name' => P_NAME
 );
 $sysinfo = "http://www.kekezu.com/news.php?" . http_build_query ( $sys );
-require $template_obj->template ( 'admin/tpl/admin_' . $do );
+require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_' . $do );

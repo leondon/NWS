@@ -13,9 +13,7 @@ define( "WB_CALLBACK_URL" , $kekezu->_sys_config['website_url'].'/index.php?do=c
 define ( "APP_KEY", $arrOauthConfig['renren_app_id'] );
 define ( "APP_SECRET", $arrOauthConfig['renren_app_secret'] );
 define ( "CALLBACK_URL", $kekezu->_sys_config['website_url']."/index.php?do=callbackrenren" );
-/* define ( "DB_APIKEY", '0746aec06ddc286715d40c4149947935' );	
-define ( "DB_SECRET", 'aef76cf2102adc02' );					
 define ( "DB_APIKEY", $arrOauthConfig['douban_app_id'] );	
 define ( "DB_SECRET", $arrOauthConfig['douban_app_secret'] );					
 define ( "DB_CALLBACK_URL", $kekezu->_sys_config['website_url']."/index.php?do=callbackdb" );
-define ( "DB_SCOPE", "douban_basic_common,shuo_basic_r" );		
+define ( "DB_SCOPE", "douban_basic_common,shuo_basic_r" );		//权限列表，具体权限请查看官方的api文档

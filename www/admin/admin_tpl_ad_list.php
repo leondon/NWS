@@ -30,4 +30,4 @@
 	$ad_arr = $table_obj -> get_grid($where, $url, $page, $pagesize, null, 1, 'ajax_dom'); 
 	$pages = $ad_arr['pages'];
 	$ad_arr = $ad_arr['data'];
-	require $template_obj->template ( 'admin/tpl/admin_' . $do . '_' . $view);
+	require $template_obj->template(ADMIN_DIRECTORY.'/tpl/admin_' . $do . '_' . $view);

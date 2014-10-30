@@ -79,7 +79,7 @@
               <ul class="affix-list" id="fileList">
                {if !empty($arrFileLists)}
 	              {loop $arrFileLists $v}
-	              	<li class="affix-list-item" data-file-id="{$v['file_id']}">{$v['file_name']} 
+	              	<li class="affix-list-item" data-file-id="{$v['file_id']}">{$v['file_name']}
 	              	<a href="javascript:void(0);" data-file-id="{$v['file_id']}" data-class="delete-file">删除</a></li>
 	              {/loop}
               {/if}
@@ -109,7 +109,7 @@
           <div class="form-group">
             <label for="txt_mobile" class="col-sm-3 control-label">手机号码 <span class="text-danger">*</span></label>
             <div class="col-sm-6">
-              <input type="text" class="form-control" id="txt_mobile" name="txt_mobile" value="{$arrPubInfo['txt_mobile']}" placeholder="手机号码">
+              <input type="text" class="form-control" id="txt_mobile" name="txt_mobile" value="{if $arrPubInfo['txt_mobile']}{$arrPubInfo['txt_mobile']}{else}{$user_info['mobile']}{/if}" placeholder="手机号码">
             </div>
 
 
