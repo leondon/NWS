@@ -1,1 +1,0 @@
-<?php 'a:3:{s:19:\"__mp_cache_contents\";a:1:{i:0;a:5:{s:6:\"tpl_id\";s:3:\"199\";s:8:\"tpl_code\";s:7:\"timeout\";s:7:\"content\";s:152:\"<p>您发布的{模型名称}任务<a href=\"index.php?do=task&id={任务编号}\">{任务标题}</a>{投标}期已过，任务在自动进入下一阶段\";s:9:\"send_type\";s:1:\"1\";s:9:\"listorder\";s:1:\"0\";}}s:18:\"__mp_cache_created\";i:1414677745;s:23:\"__mp_cache_dependencies\";N;}';
