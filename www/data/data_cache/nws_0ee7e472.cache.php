@@ -1,1 +1,0 @@
-<?php 'a:3:{s:19:\"__mp_cache_contents\";a:5:{s:3:\"uid\";s:1:\"1\";s:8:\"username\";s:5:\"admin\";s:8:\"password\";s:32:\"e7205623860b5026024129d57446e64a\";s:9:\"rand_code\";s:6:\"ilu6e8\";s:5:\"email\";s:15:\"leon@newdesk.cn\";}s:18:\"__mp_cache_created\";i:1414677885;s:23:\"__mp_cache_dependencies\";N;}';
