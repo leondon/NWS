@@ -20,7 +20,7 @@
 			<table cellspacing="0" cellpadding="0">
 			 <tbody>
 			 	<tr>
-			 		<th>{$_lang['log']}编号</th>
+			 		<th>{$_lang['log']}{$_lang['num']}</th>
 					<td><input type="text" class="txt" name="txt_log_id" value="$txt_log_id" onkeyup="clearstr(this);"></td>
 					<th>{$_lang['operator']}</th>
 					<td><input type="text" class="txt" name='txt_username' value="{$txt_username}" onkeyup="clearspecial(this);"></td>
@@ -68,7 +68,7 @@
   		<table width="100%" border="0" cellspacing="0" cellpadding="0" >
           <tr>
           	<th>
-	<input type="checkbox" id="checkbox" onclick="checkall();" class="checkbox" >编号
+	<input type="checkbox" id="checkbox" onclick="checkall();" class="checkbox" >{$_lang['num']}
 </th>
             <th width="5%">{$_lang['operator']}</th>
 			<th width="5%">{$_lang['user_groups']}</th>

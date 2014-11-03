@@ -14,6 +14,7 @@ $lang=array(
 		'mulit_delete_log'=>'批量删除日志',
 /*admin_tool_log.htm*/      
       'log'=>'日志',
+      'num'=>'编号',
       'operator'=>'操作员',
       'log_time'=>'日志时间',
       'warm_prompt'=>'温馨提示：请慎重操作',
