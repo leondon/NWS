@@ -1,1 +1,7 @@
+.metadata
+logs
 tmp
+www/data/data_cache
+.metadata/.bak_2.log
+*.log
+*.log
